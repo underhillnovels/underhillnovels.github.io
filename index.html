@@ -105,9 +105,11 @@ section{padding:4.5rem 0; border-top:1px solid var(--rule)}
 .cta:hover{filter:brightness(1.12)}
 
 /* ---- about ---- */
-.about{display:grid; grid-template-columns:7rem minmax(0,var(--measure)); gap:2.2rem; align-items:start}
-.monogram{width:7rem; height:7rem; border-radius:50%; display:block}
-@media (max-width:560px){ .about{grid-template-columns:1fr; gap:1.4rem} .monogram{width:5.5rem; height:5.5rem} }
+.about{display:grid; grid-template-columns:11rem minmax(0,var(--measure)); gap:2.4rem; align-items:start}
+.portrait{width:11rem; height:11rem; border-radius:50%; display:block; object-fit:cover; border:1px solid var(--rule)}
+@media (max-width:560px){ .about{grid-template-columns:1fr; gap:1.4rem} .portrait{width:9rem; height:9rem} }
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .portrait{filter:brightness(.82) sepia(.15)} }
+:root[data-theme="dark"] .portrait{filter:brightness(.82) sepia(.15)}
 .about p{margin:0 0 1rem}
 
 footer{border-top:1px solid var(--rule); padding:2.5rem 0 4rem; text-align:center}
@@ -157,7 +159,7 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
   <section id="about">
     <p class="label">About</p>
     <div class="about">
-      <img class="monogram" src="images/author-mark.png" width="800" height="800" alt="">
+      <img class="portrait" src="images/author-portrait.jpg" width="800" height="800" alt="Pencil drawing of Sharyn Underhill">
       <div>
       <p>Sharyn Underhill came to fiction late, after twenty years of professional life and two children now grown and gone. She is in her fifties, which she mentions because the women in her books are rarely young and she is tired of pretending that reinvention belongs to people under thirty.</p>
       <p>She lives in rural Tasmania. The bush there is not scenic; it is old, indifferent and hard on the unprepared, and she prefers it to gentler country. Weather does things to a landscape slowly and without asking, which is roughly what her novels are about.</p>
