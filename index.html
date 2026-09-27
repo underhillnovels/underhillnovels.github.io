@@ -8,26 +8,31 @@
 <meta name="author" content="Sharyn Underhill">
 <meta property="og:title" content="Sharyn Underhill">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://underhillnovels.com/images/rowena-cover.jpg">
+<meta property="og:image" content="https://underhillnovels.com/images/rowena-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://underhillnovels.com/">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:description" content="Fiction by Sharyn Underhill: novels about power, reinvention and the lives women choose.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>&#128214;</text></svg>">
+<link rel="icon" type="image/png" href="images/icon-64.png">
+<link rel="apple-touch-icon" href="images/icon-180.png">
 <style>
 :root{
   --bg:#faf8f4; --ink:#22201d; --mute:#6d675f; --rule:#ddd6ca;
   --accent:#74294f; --card:#fffdf9;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --measure:34rem; --wide:62rem;
+  --measure:34rem; --wide:62rem; --veil:18%;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
-    --accent:#cf8fae; --card:#1c1a15;
+    --accent:#cf8fae; --card:#1c1a15; --veil:84%;
   }
 }
 :root[data-theme="dark"]{
   --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
-  --accent:#cf8fae; --card:#1c1a15;
+  --accent:#cf8fae; --card:#1c1a15; --veil:84%;
 }
 *{box-sizing:border-box}
 body{
@@ -61,7 +66,12 @@ a{color:inherit}
 @media (max-width:340px){ .mark{white-space:normal} }
 
 /* ---- hero ---- */
-.hero{text-align:center; padding:16vh 0 12vh}
+.hero-bg{
+  background:
+    linear-gradient(to bottom, color-mix(in srgb,var(--bg) var(--veil),transparent) 65%, var(--bg)),
+    url(images/banner.jpg) center 55%/cover;
+}
+.hero{text-align:center; padding:16vh 16px 12vh}
 .hero h1{
   font-size:clamp(2.4rem,8vw,4rem); line-height:1.08; font-weight:600;
   margin:0; letter-spacing:-.01em;
@@ -95,7 +105,9 @@ section{padding:4.5rem 0; border-top:1px solid var(--rule)}
 .cta:hover{filter:brightness(1.12)}
 
 /* ---- about ---- */
-.about{max-width:var(--measure)}
+.about{display:grid; grid-template-columns:7rem minmax(0,var(--measure)); gap:2.2rem; align-items:start}
+.monogram{width:7rem; height:7rem; border-radius:50%; display:block}
+@media (max-width:560px){ .about{grid-template-columns:1fr; gap:1.4rem} .monogram{width:5.5rem; height:5.5rem} }
 .about p{margin:0 0 1rem}
 
 footer{border-top:1px solid var(--rule); padding:2.5rem 0 4rem; text-align:center}
@@ -116,13 +128,15 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
   </div>
 </header>
 
-<main class="wrap">
-
+<div class="hero-bg">
   <div class="hero">
     <h1>Sharyn Underhill</h1>
     <div class="rule"></div>
     <p class="tag">Fiction about power, reinvention, and the lives women choose for themselves.</p>
   </div>
+</div>
+
+<main class="wrap">
 
   <section id="books">
     <p class="label">The latest novel</p>
@@ -143,9 +157,12 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
   <section id="about">
     <p class="label">About</p>
     <div class="about">
+      <img class="monogram" src="images/author-mark.png" width="800" height="800" alt="">
+      <div>
       <p>Sharyn Underhill came to fiction late, after twenty years of professional life and two children now grown and gone. She is in her fifties, which she mentions because the women in her books are rarely young and she is tired of pretending that reinvention belongs to people under thirty.</p>
       <p>She lives in rural Tasmania. The bush there is not scenic; it is old, indifferent and hard on the unprepared, and she prefers it to gentler country. Weather does things to a landscape slowly and without asking, which is roughly what her novels are about.</p>
       <p><em>The Transformation of Rowena Thornhill</em> is her first &mdash; a story of domination and remaking, written to be taken seriously rather than enjoyed quickly, and set a long way from home, in Italy, where nobody knows anyone.</p>
+      </div>
     </div>
   </section>
 
