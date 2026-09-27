@@ -9,12 +9,13 @@
 <meta name="rating" content="adult">
 <meta property="og:title" content="The Transformation of Rowena Thornhill">
 <meta property="og:type" content="book">
+<meta property="og:image" content="https://underhillnovels.github.io/images/rowena-cover.jpg">
 <meta property="og:description" content="A novel. Two strangers meet at a baggage carousel in Milan, and one of them is remade.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>&#128214;</text></svg>">
 <style>
 :root{
   --bg:#faf8f4; --ink:#22201d; --mute:#6d675f; --rule:#ddd6ca;
-  --accent:#7a5c3e; --card:#fffdf9;
+  --accent:#74294f; --card:#fffdf9;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --measure:34rem;
@@ -22,12 +23,12 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
-    --accent:#c9a87c; --card:#1c1a15;
+    --accent:#cf8fae; --card:#1c1a15;
   }
 }
 :root[data-theme="dark"]{
   --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
-  --accent:#c9a87c; --card:#1c1a15;
+  --accent:#cf8fae; --card:#1c1a15;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -54,7 +55,9 @@ body{
 .progress{position:fixed; left:0; top:0; height:2px; background:var(--accent); width:0; z-index:30}
 
 /* ---- title page ---- */
-.titlepage{text-align:center; padding:19vh 0 14vh}
+.titlepage{text-align:center; padding:9vh 0 14vh}
+.titlepage .cover{display:block; width:min(15rem,70%); height:auto; margin:0 auto 3rem; border-radius:4px;
+  box-shadow:0 1px 2px rgb(0 0 0 / .08), 0 18px 40px -18px rgb(0 0 0 / .35)}
 .titlepage h1{
   font-size:clamp(2rem,7vw,3.1rem); line-height:1.12; font-weight:600;
   margin:0 0 1.1rem; letter-spacing:-.01em;
@@ -134,6 +137,7 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
 <main class="wrap">
 
   <div class="titlepage">
+    <img class="cover" src="../images/rowena-cover.jpg" width="1410" height="2250" alt="Cover of The Transformation of Rowena Thornhill: a stone balustrade above a lake at dusk, a claret wrap draped over the rail">
     <h1>The Transformation<br>of Rowena Thornhill</h1>
     <p class="by">Sharyn Underhill</p>
     <div class="rule"></div>
@@ -1204,6 +1208,7 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
 <footer>
   <p>The Transformation of Rowena Thornhill</p>
   <p>&copy; Sharyn Underhill. All rights reserved.</p>
+  <p>Cover image created with AI.</p>
 </footer>
 
 <button class="top" id="top" type="button" aria-label="Back to top">&uarr;</button>
