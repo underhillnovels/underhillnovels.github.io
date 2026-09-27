@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Transformation of Rowena Thornhill</title>
+<meta name="description" content="A novel. Two strangers meet at a baggage carousel in Milan, and one of them is remade.">
+<meta name="author" content="Sharyn Underhill">
+<meta name="rating" content="adult">
+<meta property="og:title" content="The Transformation of Rowena Thornhill">
+<meta property="og:type" content="book">
+<meta property="og:description" content="A novel. Two strangers meet at a baggage carousel in Milan, and one of them is remade.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>&#128214;</text></svg>">
+<style>
+:root{
+  --bg:#faf8f4; --ink:#22201d; --mute:#6d675f; --rule:#ddd6ca;
+  --accent:#7a5c3e; --card:#fffdf9;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --measure:34rem;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
+    --accent:#c9a87c; --card:#1c1a15;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
+  --accent:#c9a87c; --card:#1c1a15;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--serif); font-size:1.075rem; line-height:1.72;
+  -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility;
+}
+.wrap{max-width:var(--measure); margin:0 auto; padding:0 16px}
+
+/* ---- top bar ---- */
+.bar{
+  position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--bg) 92%,transparent);
+  backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--rule);
+}
+.bar .wrap{display:flex; align-items:center; gap:12px; padding-top:10px; padding-bottom:10px}
+.bar .bt{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--mute); text-decoration:none; background:none; border:1px solid var(--rule);
+  border-radius:999px; padding:6px 12px; cursor:pointer;
+}
+.bar .bt:hover{color:var(--ink); border-color:var(--accent)}
+.bar .sp{flex:1}
+.progress{position:fixed; left:0; top:0; height:2px; background:var(--accent); width:0; z-index:30}
+
+/* ---- title page ---- */
+.titlepage{text-align:center; padding:19vh 0 14vh}
+.titlepage h1{
+  font-size:clamp(2rem,7vw,3.1rem); line-height:1.12; font-weight:600;
+  margin:0 0 1.1rem; letter-spacing:-.01em;
+}
+.titlepage .by{font-family:var(--sans); font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; color:var(--mute); margin:0}
+.titlepage .rule{width:60px; height:1px; background:var(--accent); margin:2.2rem auto}
+.titlepage .meta{font-family:var(--sans); font-size:.8rem; color:var(--mute); margin:0}
+
+.note{
+  border:1px solid var(--rule); background:var(--card); border-radius:10px;
+  padding:16px 18px; margin:0 0 4rem;
+  font-family:var(--sans); font-size:.86rem; line-height:1.6; color:var(--mute);
+}
+.note b{color:var(--ink); font-weight:600}
+
+/* ---- contents ---- */
+.contents{margin:0 0 5rem}
+.contents h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--mute); font-weight:600; margin:0 0 1rem;
+}
+.contents ol{list-style:none; margin:0; padding:0; counter-reset:none}
+.contents li{border-bottom:1px solid var(--rule)}
+.contents a{display:flex; gap:14px; align-items:baseline; padding:9px 2px; text-decoration:none; color:var(--ink)}
+.contents a:hover{color:var(--accent)}
+.contents .n{font-family:var(--sans); font-size:.74rem; color:var(--mute); min-width:1.6rem}
+.contents .t{font-style:italic}
+
+/* ---- chapters ---- */
+.chapter{padding:0 0 3.5rem}
+.ch-head{text-align:center; padding:4.5rem 0 2.2rem}
+.ch-num{font-family:var(--sans); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--mute); margin:0 0 .5rem}
+.ch-head h2{font-size:1.45rem; font-weight:500; font-style:italic; margin:0}
+.chapter p{margin:0; text-indent:1.35em; hanging-punctuation:first}
+.chapter .ch-num,.chapter .ch-head h2{text-indent:0}
+.chapter p + p{margin-top:0}
+.chapter .ch-head + p{text-indent:0}
+.chapter .ch-head + p::first-letter{font-size:1.05em}
+p.quote,p.msg{
+  text-indent:0; margin:1.25rem 0; padding-left:1.1rem;
+  border-left:2px solid var(--rule); font-style:italic; color:var(--mute);
+}
+p.msg{font-family:var(--sans); font-style:normal; font-size:.95rem}
+p.beat{text-indent:0; margin:1.3rem 0; text-align:center; letter-spacing:.04em}
+p.end{text-indent:0; text-align:center; color:var(--accent); margin:2.6rem 0 0; opacity:.6}
+
+footer{border-top:1px solid var(--rule); margin-top:2rem; padding:2.5rem 0 4rem; text-align:center}
+footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3rem 0}
+
+.top{
+  position:fixed; right:16px; bottom:16px; z-index:20;
+  width:42px; height:42px; border-radius:50%; border:1px solid var(--rule);
+  background:var(--card); color:var(--mute); font-size:1rem; cursor:pointer;
+  opacity:0; pointer-events:none; transition:opacity .2s;
+}
+.top.on{opacity:1; pointer-events:auto}
+
+@media print{
+  .bar,.top,.progress{display:none}
+  body{background:#fff; color:#000; font-size:11pt}
+  .chapter{page-break-before:always}
+  .titlepage{padding:25vh 0}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+
+<nav class="bar">
+  <div class="wrap">
+    <a class="bt" href="#contents">Contents</a>
+    <span class="sp"></span>
+    <button class="bt" id="theme" type="button" aria-label="Toggle light and dark">Theme</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="titlepage">
+    <h1>The Transformation<br>of Rowena Thornhill</h1>
+    <p class="by">Sharyn Underhill</p>
+    <div class="rule"></div>
+    <p class="meta">A novel &middot; 33 chapters &middot; 20,396 words</p>
+  </div>
+
+  <aside class="note">
+    <b>A note before you begin.</b> This is a work of fiction for adult readers. It deals with coercive control, psychological domination and bodily transformation, and it does not treat those things as harmless. Nothing in it is offered as a portrait of any real person or as a depiction of how anyone's life should go.
+  </aside>
+
+  <nav class="contents" id="contents">
+    <h2>Contents</h2>
+    <ol>
+<li><a href="#ch1"><span class="n">1</span><span class="t">The Transit</span></a></li>
+<li><a href="#ch2"><span class="n">2</span><span class="t">The Bellagio Encounter</span></a></li>
+<li><a href="#ch3"><span class="n">3</span><span class="t">The Boutiques</span></a></li>
+<li><a href="#ch4"><span class="n">4</span><span class="t">The Celebration</span></a></li>
+<li><a href="#ch5"><span class="n">5</span><span class="t">The First Layer</span></a></li>
+<li><a href="#ch6"><span class="n">6</span><span class="t">The Ferry</span></a></li>
+<li><a href="#ch7"><span class="n">7</span><span class="t">The Plaza</span></a></li>
+<li><a href="#ch8"><span class="n">8</span><span class="t">The Erasure</span></a></li>
+<li><a href="#ch9"><span class="n">9</span><span class="t">The Eradication of Friction</span></a></li>
+<li><a href="#ch10"><span class="n">10</span><span class="t">The March</span></a></li>
+<li><a href="#ch11"><span class="n">11</span><span class="t">The Complaint</span></a></li>
+<li><a href="#ch12"><span class="n">12</span><span class="t">The Matron&#x27;s Armour</span></a></li>
+<li><a href="#ch13"><span class="n">13</span><span class="t">The Threshold</span></a></li>
+<li><a href="#ch14"><span class="n">14</span><span class="t">The Vineyard</span></a></li>
+<li><a href="#ch15"><span class="n">15</span><span class="t">The Softening</span></a></li>
+<li><a href="#ch16"><span class="n">16</span><span class="t">The Deformity</span></a></li>
+<li><a href="#ch17"><span class="n">17</span><span class="t">The Day Off</span></a></li>
+<li><a href="#ch18"><span class="n">18</span><span class="t">The Graft</span></a></li>
+<li><a href="#ch19"><span class="n">19</span><span class="t">The Patchwork</span></a></li>
+<li><a href="#ch20"><span class="n">20</span><span class="t">The Echoes of Trevor</span></a></li>
+<li><a href="#ch21"><span class="n">21</span><span class="t">The Sculpting</span></a></li>
+<li><a href="#ch22"><span class="n">22</span><span class="t">The Baptism of Gaze</span></a></li>
+<li><a href="#ch23"><span class="n">23</span><span class="t">The Awakening</span></a></li>
+<li><a href="#ch24"><span class="n">24</span><span class="t">The Unmasking</span></a></li>
+<li><a href="#ch25"><span class="n">25</span><span class="t">The Voice and the Blade</span></a></li>
+<li><a href="#ch26"><span class="n">26</span><span class="t">The Architecture of the Frame</span></a></li>
+<li><a href="#ch27"><span class="n">27</span><span class="t">The Kitchen Trial</span></a></li>
+<li><a href="#ch28"><span class="n">28</span><span class="t">The Final Countdown</span></a></li>
+<li><a href="#ch29"><span class="n">29</span><span class="t">The Architect&#x27;s Vigil</span></a></li>
+<li><a href="#ch30"><span class="n">30</span><span class="t">The Bruising</span></a></li>
+<li><a href="#ch31"><span class="n">31</span><span class="t">The Instruction</span></a></li>
+<li><a href="#ch32"><span class="n">32</span><span class="t">The Statue</span></a></li>
+<li><a href="#ch33"><span class="n">33</span><span class="t">The Fork</span></a></li>
+    </ol>
+  </nav>
+
+<section class="chapter" id="ch1">
+<header class="ch-head"><p class="ch-num">Chapter 1</p><h2>The Transit</h2></header>
+<p>The cabin was sunk in the blue half-light of the descent into Milan.</p>
+<p>From her aisle seat in row forty-two, Sharon Taylor watched the back of the man three rows ahead. She had been watching him since Dubai. He was large, fifty-something, silver-grey hair barbered neat at the collar, in a charcoal jacket that had cost money and gave him no comfort. Even asleep, his shoulders were hunched forward.</p>
+<p>Sharon took a sip of her mineral water. For thirty years, in a cold house in Glenorchy, she had lived with Trevor, who counted the change in her purse on Fridays to see whether she had bought herself a decent cut of meat. Trevor was dead. The insurance money sat in her account, and she was fifty-five, and she was wearing a navy poly-cotton blouse and elastic-waisted slacks from a Hobart department store, and she was going to Italy.</p>
+<p>She knew men. She knew how the pride worked, and the anger, and how the tiredness got into the bones and stayed there.</p>
+<p>The man three rows ahead was not a Trevor. He was a beast of burden. She watched him rub his face with both hands as the lights came up amber.</p>
+<p>Three rows ahead, Warren stared at the flight map on the screen in front of him. Fifty-seven. Thirty years of coastal land, and then more money after Elizabeth&#x27;s illness went on and on and finally stopped. Elizabeth had been a good woman. She had turned the marriage into a fortress of beige routine, and he had been the provider, the rock, the one who decided.</p>
+<p>He didn&#x27;t want to decide anything else. He wanted to lay the steering wheel down.</p>
+<p>The aircraft banked. The gear came down with a shudder that went through the floor.</p>
+<p>They did not speak in the cabin. They did not speak in the corridors at Malpensa, or in the immigration queue.</p>
+<p>At Carousel 8 he wrestled a canvas suitcase off the belt. His fingers slipped on the handle and the bag hit the floor three inches from her shoes.</p>
+<p>Sharon&#x27;s hand was at her collarbone before she knew it had moved. She put it down again.</p>
+<p>&quot;Apologies.&quot; His voice was gravel from the dry air. He straightened up. &quot;Clumsy of me. The joints stiffen after twenty hours, and I&#x27;ve the drive up to the lakes yet.&quot;</p>
+<p>Sharon didn&#x27;t step back. &quot;Lake Como?&quot;</p>
+<p>&quot;Bellagio.&quot; He rubbed the back of his neck. &quot;Somewhere quiet for a few days.&quot;</p>
+<p>She took in the watch, the lines at his eyes, the slump.</p>
+<p>&quot;No harm done,&quot; she said. &quot;But you look like a man who has been carrying a heavy load for a very long time.&quot;</p>
+<p>Warren froze.</p>
+<p>&quot;I suppose I have.&quot; It was out before he could stop it. &quot;Warren. Warren Thornhill. Byron Bay.&quot;</p>
+<p>&quot;Sharon. Hobart.&quot; She did not offer her hand. She took a notepad and a pen from her handbag, wrote a sequence of numbers, tore the page free and held it out.</p>
+<p>&quot;I&#x27;m going to Bellagio myself. If you find you want to put that steering wheel down for an afternoon, send me a message. We&#x27;ll have coffee.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch2">
+<header class="ch-head"><p class="ch-num">Chapter 2</p><h2>The Bellagio Encounter</h2></header>
+<p>For two days Warren walked the cobbled salitas of Bellagio like a ghost haunting a postcard.</p>
+<p>The air smelled of pine and espresso. The lake glittered under the late August sun. It was the trip Elizabeth had planned and saved for over a decade, and she had died before they could board the flight. Now he was here, executing the itinerary of a dead woman from a polished suite at the Grand Hotel Villa Serbelloni.</p>
+<p>On the afternoon of his third day he sat at a marble-topped table at a lakeside cafe with a Campari and soda he did not want.</p>
+<p>Beside the glass lay the torn slip of paper from Carousel 8.</p>
+<p>He was a sensible man. He did not chase women, and he did not invite strange Australian widows he had met in baggage halls to coffee. He looked at the numbers for a long time.</p>
+<p>His fingers tapped the screen.</p>
+<p class="msg">Sharon. It&#x27;s Warren from the airport. I am at Cafe Sanremo by the ferry terminal. The steering wheel is getting heavy.</p>
+<p>He pressed send and expected to wait an hour. Perhaps a day.</p>
+<p>The reply came in ninety seconds.</p>
+<p class="msg">Order me a pot of Earl Grey. I am walking down from the basilica now.</p>
+<p>When she appeared on the promenade ten minutes later he stood up so quickly his knee knocked the iron table leg. She was not dressed for the Riviera. She wore the same navy slacks and a dusty-rose blouse that had come off a rack in Hobart five years ago, and she came through the crowded terrace at a pace that made the linen and the sunglasses at the other tables look like a great deal of effort.</p>
+<p>&quot;Warren,&quot; she said as he pulled out a chair. &quot;You found a good table. Out of the wind.&quot;</p>
+<p>&quot;It&#x27;s good to see you.&quot; He lowered himself back down. He felt large, and clumsy, and very close to the table.</p>
+<p>She folded her hands on the marble. She did not look at the lake.</p>
+<p>&quot;You haven&#x27;t slept properly since Milan,&quot; she said. &quot;In fact, looking at your jaw, I&#x27;d say you haven&#x27;t slept properly in about ten years. Are you still trying to manage everything? Even on a holiday?&quot;</p>
+<p>Warren opened his mouth to laugh it off and the sound died in his throat.</p>
+<p>&quot;My wife passed away fourteen months ago,&quot; he said. &quot;She was ill a long time. I handled the business, the nurses, the estate, the garden. I handled all of it.&quot; He turned his glass by the rim. &quot;I came here because it was her dream trip. But I&#x27;m so bloody tired, Sharon. I wake up and the thought of deciding what to do next feels like carrying lead.&quot;</p>
+<p>The waiter came with a silver teapot and a cup. She said nothing until he had gone.</p>
+<p>She poured.</p>
+<p>&quot;Elizabeth, I presume.&quot;</p>
+<p>Warren blinked. &quot;Yes. How did you—&quot;</p>
+<p>&quot;Men who look like you usually marry Elizabeths. Or Margarets, or Susans.&quot; She took a slow sip. &quot;Good women. Sensible women. Women who make austerity a virtue and run the house on a timetable. I imagine she picked out that charcoal jacket because it wouldn&#x27;t show the dirt.&quot;</p>
+<p>His face went red. &quot;She was very practical.&quot;</p>
+<p>&quot;I know she was.&quot; No judgment in it at all. &quot;Just as I know my Trevor was a bully who counted the pennies in my purse every Friday. We both played our parts. You played the stoic provider. I played the obedient mouse.&quot;</p>
+<p>She set the cup down. The china clicked against the saucer and it was the loudest thing on the terrace.</p>
+<p>&quot;But Trevor is dead,&quot; she said. &quot;And Elizabeth is dead. The play is over. The question is, Warren, why are you still wearing the costume?&quot;</p>
+<p>The breeze off the lake moved the collar of his shirt.</p>
+<p>&quot;The costume,&quot; he said. &quot;You think I&#x27;m still performing.&quot;</p>
+<p>&quot;I think you don&#x27;t know how to stop. You&#x27;ve spent thirty years being the rock. You made the money, you maintained the property, you managed the illness. And now you&#x27;re sitting on an Italian lake, a wealthy free man, and you look like you&#x27;re waiting for someone to hand you a shovel.&quot;</p>
+<p>She leaned forward, forearms on the table. The faded rose cotton pulled across her shoulders.</p>
+<p>&quot;You said the steering wheel is getting heavy. But you don&#x27;t want to pull over for a rest, do you. You want someone else to drive.&quot;</p>
+<p>Warren looked out at the ferry churning the water white. The urge to deny it came up and went down again.</p>
+<p>&quot;I don&#x27;t want to decide anything anymore,&quot; he said. &quot;I don&#x27;t want to decide where to eat, or what to wear, or where to go. I want to be told. I want to put it down, Sharon. All of it.&quot;</p>
+<p>He braced for pity, or disgust.</p>
+<p>When he looked back she was smiling. It was a small smile, the kind a mother wears when a fever breaks.</p>
+<p>&quot;I know, dear,&quot; she said. &quot;And it is perfectly alright to want that.&quot;</p>
+<p>She put her hand over his. Her palm was cool and her grip was firm.</p>
+<p>&quot;But surrender isn&#x27;t something you can wish into existence over a cup of tea. It has to be practised. It has to be structured. You need a framework to take the weight off those shoulders.&quot;</p>
+<p>&quot;How?&quot;</p>
+<p>&quot;By starting small.&quot; She withdrew her hand and sat back, and gestured down at her own blouse. &quot;We are both wearing the armour of our past lives. Trevor made sure I never spent more than twenty dollars on a garment. I promised myself on the flight over that I would leave this Tasmanian ghost behind and build a new wardrobe from the skin out.&quot;</p>
+<p>She looked out at the water.</p>
+<p>&quot;Though given Trevor&#x27;s refusal to invest in anything but cheap beer and bad cars, what he left was painfully modest. My reinvention will have to be a slow, budgeted affair. One good piece at a time.&quot;</p>
+<p>Warren looked at the faded rose cotton. Then he thought of his own accounts, and the seven figures sitting untouched and gathering interest, and of Elizabeth agonising for a week over a mid-range hotel room.</p>
+<p>This was something he understood. He could provide. It was a familiar role, and it asked nothing of him but money.</p>
+<p>&quot;Sharon,&quot; he said. &quot;Let me.&quot;</p>
+<p>&quot;Let you what, Warren?&quot;</p>
+<p>&quot;Let me fund it. All of it. Today.&quot;</p>
+<p>&quot;Warren, don&#x27;t be ridiculous. We only just met at—&quot;</p>
+<p>&quot;I am a very wealthy man.&quot; The words came out in a rush. &quot;Between the land on the coast and Elizabeth&#x27;s life insurance, I have more money than I could spend in two lifetimes. I never have to work again. But that money feels like lead. It&#x27;s a monument to thirty years of saving.&quot;</p>
+<p>He took the black titanium card out of his breast pocket and laid it flat on the marble between them.</p>
+<p>&quot;You want to step out of that old life. And I want to stop carrying the weight of mine. Let me carry the bags. Let me pay for the silk. Give me the privilege of being useful to you, without having to make a single decision.&quot;</p>
+<p>Sharon looked at the card on the marble. She did not reach for it. She studied it for a long moment, and then she looked up at his face, and what had been warm in her eyes went somewhere else.</p>
+<p>&quot;That is a very significant surrender,&quot; she said. &quot;Are you certain?&quot;</p>
+<p>&quot;I&#x27;ve never been more certain of anything.&quot;</p>
+<p>She nodded slowly. She still did not reach for it.</p>
+<p>&quot;Put that back in your pocket for now, dear.&quot; She stood and smoothed the creases from her slacks. &quot;You can handle the transactions at the counter. Let&#x27;s start with the foundations. I saw a lingerie boutique on the salita just up from the hotel.&quot;</p>
+<p>Warren stood. He slipped the card back into his pocket and followed her out through the tables.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch3">
+<header class="ch-head"><p class="ch-num">Chapter 3</p><h2>The Boutiques</h2></header>
+<p>The salita rose sharply from the lakefront, a narrow avenue of old cobbles between high stone walls and the glass fronts of the boutiques.</p>
+<p>For the first time in fourteen months Warren was not carrying the weight of the day. He followed half a step behind her with his shoulders loose and his mind quiet. No map to check. No itinerary. No reservations to confirm. He followed the line of her navy slacks through the crowd.</p>
+<p>The first stop was a lingerie boutique in amber light that smelled of bergamot.</p>
+<p>Sharon did not browse the way a woman browses when she is checking the tags. She went to the counter and spoke to the saleswoman in clipped English, and inside ten minutes she had chosen four sets of silk and French lace in blush, ivory and emerald, sheer hosiery, and a floor-length silk robe.</p>
+<p>When the tissue paper was folded, Warren stepped forward and tapped his card against the terminal. The sum was more than Elizabeth had spent on clothes in five years. The terminal beeped.</p>
+<p>He gathered the bags by their corded handles. &quot;Next?&quot;</p>
+<p>&quot;Leather goods,&quot; Sharon said. &quot;And then tailoring.&quot;</p>
+<p>For three hours they replaced Sharon Taylor of Glenorchy piece by piece. In a shop near the basilica she was fitted for cream wool slacks, an ivory silk blouse and a tailored navy blazer. In a leatherworker&#x27;s she chose calfskin loafers and a structured Italian handbag.</p>
+<p>Warren paid at every counter. He produced the card, tapped it, and gathered the bags into his hands. He was the packhorse. It was the most useful he had felt in a year.</p>
+<p>Walking back down, he had half a dozen bags and the handles were biting into his fingers, and he was sweating under the charcoal jacket.</p>
+<p>Halfway down the cobbles, Sharon stopped.</p>
+<p>She stood at the window of a jeweller, in front of the gold and the pearl and the cut stones on black velvet, looking at a thin gold chain. Her reflection lay over the top of it.</p>
+<p>Warren shifted the bags on his wrists. &quot;Let&#x27;s go inside.&quot;</p>
+<p>She stepped back from the glass. &quot;Don&#x27;t be ridiculous. We&#x27;ve spent enough of your money today. Besides, I haven&#x27;t had a new piece of jewellery since I married Trevor, and that was a discount ring he complained about for a decade. I wouldn&#x27;t know what to do with any of it.&quot;</p>
+<p>Warren set his jaw.</p>
+<p>&quot;Well, that settles it. I insist. You go in there and pick out two or three pieces. More, if you like. I&#x27;m not having you wear that silk without something proper around your neck.&quot;</p>
+<p>Sharon turned and looked at him — the flushed earnest face, the half-dozen paper bags hanging off his thick hands.</p>
+<p>&quot;You are a very stubborn man,&quot; she said.</p>
+<p>She unclasped her new handbag and held it open between them.</p>
+<p>&quot;If you&#x27;re going to insist, then put the card in here. Now. You look like a packhorse, and I will not have you fumbling with all those handles and dropping my new silk over a jeweller&#x27;s cabinet when it comes time to pay.&quot;</p>
+<p>It was a perfectly sensible domestic instruction.</p>
+<p>Warren shifted two bags to his left wrist, reached into his breast pocket with his right hand, and dropped the card into the open compartment.</p>
+<p>The brass clasp snapped shut.</p>
+<p>&quot;Thank you, dear. Wait out here in the fresh air. I won&#x27;t be long.&quot;</p>
+<p>Warren stood on the cobbles with her bags and watched her walk into the velvet-lined room. He watched her point into the case. The jeweller brought out a tray, and within five minutes she had a gold chain and a pair of pearl earrings.</p>
+<p>He watched her take his card out of her handbag and hand it across the counter. The jeweller put it into the terminal, pressed something, and then looked up and gestured politely at the keypad.</p>
+<p>Sharon came back to the door and opened it just enough to let the cool air spill onto the cobbles.</p>
+<p>&quot;Warren. The limit wants a PIN for an amount this size. You&#x27;ll need to come in and enter it.&quot; She glanced at the bags hanging from his wrists. &quot;Try not to knock over a cabinet on your way through the door.&quot;</p>
+<p>Warren looked at the narrow entrance, and the glass, and the bags biting into his fingers. Then he looked at her face, holding the door.</p>
+<p>He didn&#x27;t want to squeeze through the door. He didn&#x27;t want to see the total on the screen. He didn&#x27;t want to authorise it.</p>
+<p>&quot;No,&quot; he said. He stood where he was. &quot;I trust you. You do it.&quot;</p>
+<p>Sharon&#x27;s hand stayed on the brass handle. &quot;You are giving me the PIN to your primary account. Are you quite sure?&quot;</p>
+<p>&quot;It&#x27;s 1969,&quot; he said, without a second&#x27;s hesitation. &quot;Enter it yourself. Get whatever you want.&quot;</p>
+<p>She looked at him for a long moment. The chatter and the coffee cups on the salita seemed to go a long way off.</p>
+<p>&quot;Nineteen sixty-nine,&quot; she said. &quot;Stay right there, dear. I won&#x27;t be another minute.&quot;</p>
+<p>The glass door swung shut.</p>
+<p>Warren stood alone on the cobbles. Through the window he watched her walk back to the counter and punch four digits into the terminal. The machine beeped. The receipt printed. She lifted her hair and clasped the gold chain around her neck in front of the mirror, and turned her chin to see it.</p>
+<p>His wallet was still in his pocket.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch4">
+<header class="ch-head"><p class="ch-num">Chapter 4</p><h2>The Celebration</h2></header>
+<p>They did not go down to dinner. They carried the bags up to Sharon&#x27;s suite.</p>
+<p>The room was full of late gold light. Warren sat in the armchair by the window with a glass of mineral water and watched, for the next hour, as she came out of the bathroom in one thing after another.</p>
+<p>She was discreet. She did not model the emerald robe or the lace, though she let the tissue-lined boxes sit open on the bed. &quot;The foundations fit perfectly,&quot; she said, smoothing the front of the ivory blouse. &quot;You have a generous eye.&quot;</p>
+<p>She modelled the navy blazer, the cream slacks, the calfskin loafers. With the gold chain against her collarbones there was nothing left of the woman from the baggage hall.</p>
+<p>&quot;I need to use the facilities,&quot; Warren said, standing up. &quot;Just a moment.&quot;</p>
+<p>He went into the en suite and pulled the door shut.</p>
+<p>The moment the latch clicked, Sharon moved.</p>
+<p>She opened the bottom drawer of the dresser, where she had unpacked her old life, pulled out a heavy paper shopping bag, and began filling it. In went the frayed ribbed singlets. In went the beige 38D bras. In went the elastic-worn cotton briefs. Then she reached up under the new cream slacks, slid off the plain white knickers she had walked the cobbles in all day, and dropped them on top of the pile.</p>
+<p>She folded the bag shut as the plumbing rushed behind the door.</p>
+<p>When Warren came out she was by the door with her handbag over one shoulder and the rolled paper bag in her hand.</p>
+<p>&quot;A change of scenery, I think,&quot; she said, adjusting the lapels of the blazer. &quot;Let&#x27;s go over to your room. We can drop this rubbish in your bin on the way.&quot;</p>
+<p>They walked the carpeted corridor to Room 24. Warren unlocked the door and held it for her. His canvas bags sat where he had left them by the luggage rack.</p>
+<p>Sharon walked to the centre of the room and turned, her fingers at the gold links.</p>
+<p>&quot;This needs to be celebrated,&quot; she said. &quot;I haven&#x27;t felt this alive in thirty years. Go down to the bar and buy us a bottle of proper champagne. The best they have on ice.&quot;</p>
+<p>She opened her handbag, took out his card and held it out to him.</p>
+<p>Warren took it. This was his domain — the provider, fetching the wine. &quot;I won&#x27;t be ten minutes.&quot;</p>
+<p>The door clicked shut behind him.</p>
+<p>She went to the armoire and tipped the paper bag upside down onto the bed.</p>
+<p>Then she turned to the cedar shelves. On the centre shelf sat Warren&#x27;s folded underwear. Ribbed cotton boxer shorts. Thick white undershirts.</p>
+<p>With two sweeps of her arm she cleared the shelf into the empty bag.</p>
+<p>She gathered her own discarded life off the bed and laid it out on the bare cedar. She stacked the singlets. Beside them she laid the beige bras, the wide straps tucked neatly under. Then the washed-out briefs, and on the very top of the pile, squarely, the worn pair she had taken off an hour ago.</p>
+<p>She took a sheet of hotel stationery from the desk and wrote three lines.</p>
+<p>She propped the note against the stack and pulled the cedar doors shut.</p>
+<p>She was in the armchair by the window with her legs crossed and her hands in her lap, the rolled paper bag by her feet, when Warren came back.</p>
+<p>He had a green bottle of Bollinger and two crystal flutes. He was flushed and happy. He set the glasses down, poured, handed her one, and drank.</p>
+<p>He reached into his pocket and held the card out to her.</p>
+<p>She took it from his fingers and dropped it into her handbag.</p>
+<p>&quot;To new beginnings, Warren.&quot;</p>
+<p>&quot;To new beginnings.&quot;</p>
+<p>They finished the champagne as the sun went down behind the mountains.</p>
+<p>When the clock in the hall struck the quarter-hour she set her flute on the desk and stood, and picked up her handbag, and then the paper bag from the floor.</p>
+<p>&quot;I&#x27;m going to have the concierge book us a table by the water for eight,&quot; she said. &quot;Have a shower and get changed for dinner.&quot;</p>
+<p>&quot;I&#x27;ll see you downstairs.&quot;</p>
+<p>Sharon stepped into the corridor and pulled the door shut until the latch caught. She walked down the wide stairs to the lobby. Beside the velvet curtains stood a tall brass bin. Without breaking stride she dropped the paper bag into it and went on to the concierge desk.</p>
+<p>Upstairs, Warren finished the last of the Bollinger. He stripped off the charcoal jacket, unbuttoned his shirt, stepped out of his trousers and boxers and left them in a heap, and stood a long time under the hot water.</p>
+<p>With a towel around his waist he came back into the bedroom and opened the double doors of the armoire to get dressed.</p>
+<p>The shelf was bare, except for a stack of faded women&#x27;s underwear, and a sheet of hotel stationery propped against it.</p>
+<p>The handwriting was unhurried.</p>
+<p class="quote">A new beginning requires new foundations. Wear these tonight. — S.</p>
+<p>Warren dropped the paper and tore open his canvas bag by the door. Empty. He checked the drawers. Empty.</p>
+<p>He had no underwear. And she had his card.</p>
+<p>He went back to the armoire. On top of the pile was the elastic-worn pair she had been wearing all day. Beside it a white ribbed singlet, and tucked under that, the beige 38D bra.</p>
+<p>He was fifty-seven years old. He was wealthy. He was respected.</p>
+<p>He picked up the worn cotton knickers and stepped into them and pulled them up his thighs. The elastic bit at his waist. He pulled the singlet over his head and the jersey clung to his chest.</p>
+<p>He looked at the bra on the cedar.</p>
+<p>No. Not to dinner. I can&#x27;t wear a bra under a dinner shirt. I draw the line.</p>
+<p>He left it on the shelf. He pulled on a fresh dress shirt and his charcoal trousers and buttoned them fast, and every time he shifted his weight the elastic moved against his hips.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch5">
+<header class="ch-head"><p class="ch-num">Chapter 5</p><h2>The First Layer</h2></header>
+<p>The restaurant was candlelit and smelled of roasted garlic and lake water.</p>
+<p>Sharon was already seated. The gold chain caught the candlelight against the ivory silk. Warren sat down opposite her, stiff, careful, certain that the trim of the singlet was showing at his collar.</p>
+<p>She ordered the wine and the antipasti without asking him. She handed the menu back, folded her hands, and looked at him. The flat drape of his shirt told her he had left the bra on the shelf, and she said nothing about it. That was a battle for another day.</p>
+<p>&quot;You look uncomfortable,&quot; she said. &quot;Is the chair too hard?&quot;</p>
+<p>Under the heavy fabric of his trousers the elastic was digging in.</p>
+<p>&quot;The chair is fine.&quot; He looked at the tablecloth. &quot;Sharon. The wardrobe. My things.&quot;</p>
+<p>&quot;Your things are gone.&quot; She might have been confirming the weather. &quot;You told me this afternoon you wanted to stop carrying the weight of your old life. You gave me your card to prove it. I am taking you at your word, dear.&quot;</p>
+<p>She leaned forward. The candle caught the edge of something in her face.</p>
+<p>&quot;Tell me the truth. We aren&#x27;t play-acting. How does it actually feel?&quot;</p>
+<p>Warren closed his eyes.</p>
+<p>&quot;It feels shameful,&quot; he said. &quot;I&#x27;m sitting in a good restaurant and underneath my clothes I&#x27;m wearing a woman&#x27;s cast-offs. I feel ridiculous. I feel like you&#x27;ve taken every piece of dignity I had left.&quot;</p>
+<p>&quot;And yet?&quot;</p>
+<p>He opened his eyes.</p>
+<p>&quot;And yet I don&#x27;t want to go upstairs and take them off.&quot; His voice was thick. &quot;I feel trapped. But it&#x27;s the quietest my mind has been in thirty years. I feel like I&#x27;m finally allowed to be small.&quot;</p>
+<p>Sharon smiled.</p>
+<p>&quot;That is the paradox of surrender,&quot; she said, reaching across to pat his hand. &quot;The ego fights it. The soul craves it. You are wearing my past so that I can wear your future. It&#x27;s a fair trade.&quot;</p>
+<p>She picked up her wine.</p>
+<p>&quot;Now. Eat your dinner. Tomorrow we take the ferry to Menaggio, and we have a great deal of packing to do before then.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch6">
+<header class="ch-head"><p class="ch-num">Chapter 6</p><h2>The Ferry</h2></header>
+<p>Warren stood on the open deck as the ferry worked its way south towards Como.</p>
+<p>He wore his charcoal trousers and his jacket and looked like a respectable Australian widower. Every time the boat rolled, his thighs shifted and the worn elastic bit at his hips. The singlet clung under his shirt.</p>
+<p>He found he didn&#x27;t mind the chafing. The pinch of the elastic held him in place. He watched the villas go by and wondered, without much urgency, what she was going to do with him next. He had no money. He had no cards. He was a passenger.</p>
+<p>He went back inside to their table.</p>
+<p>Sharon was looking out at the shoreline in her blazer and her cream slacks. Beside her untouched espresso lay a book.</p>
+<p>She stood and smoothed her slacks. &quot;I&#x27;m going out to the bow for some air before we dock. Watch my things.&quot;</p>
+<p>She left the book on the table.</p>
+<p>Warren looked at it. It was a paperback, and the cover was plain: The Architecture of Surrender. He opened it where she had folded down a corner.</p>
+<p>A single line was underlined in black ink, twice.</p>
+<p class="quote">the male ego does not shatter — it sighs in relief</p>
+<p>He shut the book. Then he opened it again and read the line a second time, and put it back exactly where it had been, square to the edge of the table.</p>
+<p>When Sharon came back she said nothing about it. She slid the book into her handbag, next to his card, and gestured for him to pick up the luggage.</p>
+<p>An hour later they arrived at a small hotel on a cobbled square in Como.</p>
+<p>Sharon handled the check-in while Warren stood behind her holding the canvas bags. The concierge gave her two brass keys and they were shown up to a suite on the top floor.</p>
+<p>The layout was lopsided. To the left, double doors opened onto a master bedroom with a king bed and the lake. To the right, down a short hallway, was an annex with a narrow iron bed and a wooden dresser.</p>
+<p>&quot;Put my bags in the master,&quot; Sharon said, walking in and opening the balcony doors. &quot;You can put yours in the small room at the back.&quot;</p>
+<p>Warren carried the bags. He set his own on the narrow bed and came back.</p>
+<p>She had already opened hers. The Bellagio wardrobe was laid out across the master bed — the emerald robe, the lace, the tailored blouses. Beside the pile sat the rolled paper bag of her old Tasmanian clothes.</p>
+<p>Sharon stood at the foot of the bed holding up the lilac poly-cotton blouse and the navy elastic-waisted slacks. She ran her thumb over the pilled fabric.</p>
+<p>&quot;I have to thank you again for the silk,&quot; she said. &quot;It feels magnificent against the skin. I don&#x27;t think I could wear this Tasmanian rubbish again. But it seems a shame to throw them out. They&#x27;re perfectly serviceable garments for someone doing the heavy lifting. Don&#x27;t you think?&quot;</p>
+<p>Warren&#x27;s throat closed. The underlined line came back to him, whole.</p>
+<p>&quot;Yes,&quot; he said. &quot;I suppose they are.&quot;</p>
+<p>Sharon smiled. &quot;Good.&quot; She dropped the lilac blouse on the mattress. &quot;Take off your jacket, Warren.&quot;</p>
+<p>He stood with his hands hovering at his sides. &quot;Now? Sharon, it&#x27;s two in the afternoon.&quot;</p>
+<p>&quot;I am aware of the time. Take off the jacket. Unbutton the shirt. Put on the bra.&quot;</p>
+<p>There was no night to prepare in. The afternoon sun came through the balcony doors and lay across the bed.</p>
+<p>Warren slipped out of the jacket. He unbuttoned the shirt, let it fall, and stood in his trousers and the white singlet.</p>
+<p>&quot;The bra.&quot;</p>
+<p>He picked up the beige 38D. He put his arms through the straps and had to strain, his back flexing, to get the hooks together over the singlet. The underwire bit in beneath his chest.</p>
+<p>&quot;Now the socks.&quot; She pointed at his bag in the annex.</p>
+<p>Warren walked stiffly through, got two pairs of thick athletic socks, and came back. He pushed the rolled socks into the empty cups. He looked down. Two mounds, high on his chest.</p>
+<p>&quot;The slacks. And the blouse.&quot;</p>
+<p>He stepped out of his trousers. He was standing in her knickers. He pulled the navy slacks up his legs; the crotch was shallow and the waistband cinched high and round over his hips.</p>
+<p>Then the lilac blouse. His fingers were clumsy on the small mother-of-pearl buttons. As he fastened them, the stuffed cups pushed the thin cotton out in front of him.</p>
+<p>&quot;Leave your suit on the floor,&quot; Sharon said, picking up her handbag. &quot;We&#x27;re going down to the plaza for coffee.&quot;</p>
+<p>Warren slid his feet into his heavy brown leather travel shoes and followed her out.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch7">
+<header class="ch-head"><p class="ch-num">Chapter 7</p><h2>The Plaza</h2></header>
+<p>The square was busy with tourists and the late sun was laying long shadows over the outdoor tables.</p>
+<p>Warren walked half a step behind her with his shoulders hunched, trying to make less of the front of the lilac blouse. Every step felt like it belonged to somebody else.</p>
+<p>Sharon chose a table at the edge of the plaza and ordered an espresso for herself and a mineral water for him. She sat straight in the navy blazer. Warren sat opposite with his knees pressed together, afraid the hem of the slacks would ride up.</p>
+<p>The waiter set the drinks down and went away without looking at him twice.</p>
+<p>Sharon took a sip of her espresso. She looked at his flushed face, and then her eyes went down, under the table.</p>
+<p>Below the hem of the navy slacks, Warren&#x27;s feet were in the scuffed brown leather travel shoes. They were enormous. They sat on the cobbles like two bricks.</p>
+<p>Sharon set her cup down. The ceramic clicked against the saucer.</p>
+<p>&quot;Those shoes,&quot; she said, &quot;are ridiculous.&quot;</p>
+<p>Warren pulled his feet back under the chair. &quot;They&#x27;re my walking shoes. They&#x27;re the only ones I have.&quot;</p>
+<p>&quot;Not for much longer. They look absurd under those slacks. You look like a man playing dress-up, and I will not tolerate half-measures. A servant does not wear brogues.&quot;</p>
+<p>She finished her espresso and snapped the handbag shut.</p>
+<p>&quot;Drink your water. When we&#x27;re done here we&#x27;ll find a discount shoe shop, and we will buy you a pair of sensible wide-fit flats, and you will leave those boots in the shop&#x27;s bin.&quot;</p>
+<p>Warren looked down at the brown leather. They had carried him across Australia, through thirty years of marriage, and onto the flight to Milan.</p>
+<p>He looked back up at her.</p>
+<p>&quot;Yes, Sharon,&quot; he said, and picked up his glass.</p>
+<p>They walked two streets back from the water, away from the boutiques, into a shaded alley where the locals shopped.</p>
+<p>The shop was cramped and brightly lit and smelled of rubber and floor wax. The walls were stacked with boxes. Warren came through the door and felt enormous in the narrow aisles, and kept his arms pinned to his sides.</p>
+<p>A teenage assistant looked up from the counter, took in his shape, and looked away again.</p>
+<p>Sharon did not browse. She went to a rack of discounted comfort shoes at the back and ran her eye along it until she found the largest sizes.</p>
+<p>&quot;Sit down, Warren.&quot; She pointed at a low plastic stool.</p>
+<p>He lowered himself onto it. The shallow crotch of the slacks bit into him.</p>
+<p>She pulled a box from the bottom shelf and opened it. Inside was a pair of wide-fit slip-on flats in dull black synthetic, with a rounded toe and a thin rubber sole. They were the shoes of tired waitresses and of women doing the Tuesday shopping.</p>
+<p>&quot;Take off the boots.&quot;</p>
+<p>Warren reached down. His fingers fumbled at the waxed laces. He pulled the boots off and sat in his socks.</p>
+<p>&quot;Now try these.&quot;</p>
+<p>He slid his right foot in. It was tight across the bridge, but the synthetic gave. He put the left one on.</p>
+<p>He looked down. The brown leather was gone and there were two neat rounded black shoes on his feet, and a strip of pale ankle above each one.</p>
+<p>&quot;Stand up.&quot;</p>
+<p>Warren stood. Without the heel and the thick sole he felt suddenly unmoored. He could feel the linoleum.</p>
+<p>Sharon went to the counter, took his card out of her handbag, tapped it against the terminal, and came back. She pointed at a small metal bin beside the fitting stools.</p>
+<p>&quot;Drop the leather shoes in the bin. We&#x27;re leaving.&quot;</p>
+<p>Warren looked at the boots. He bent down, picked them up, and dropped them in. They hit the bottom with a hollow thud.</p>
+<p>He followed her out onto the street.</p>
+<p>The cobbles came straight up through the thin soles. He could not take his old stride — when he tried, the flats threatened to come off his heels. To keep them on he had to take shorter steps, and keep his knees closer together, and let his hips do the work.</p>
+<p>Sharon walked beside him and watched.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch8">
+<header class="ch-head"><p class="ch-num">Chapter 8</p><h2>The Erasure</h2></header>
+<p>The walk back to the hotel was slow. Without the tread of the boots Warren felt every groove in the cobbles, and he had to keep his knees together and let his hips shift with each short step to stop the flats slipping off his bare heels.</p>
+<p>When they got up to the suite, the charcoal trousers and the white shirt were still on the floor where he had dropped them.</p>
+<p>Sharon shut the door and leaned back against it, folding her arms.</p>
+<p>&quot;We are not carrying a canvas bag full of dead weight to Florence,&quot; she said. &quot;Gather it up.&quot;</p>
+<p>&quot;Gather what up?&quot;</p>
+<p>&quot;Everything.&quot; She pointed at the suit on the floor. &quot;The jacket. The trousers. The shirts in your bag. The belt. Every piece of men&#x27;s clothing in this suite. Bundle it over your arm.&quot;</p>
+<p>Warren went to the annex and unzipped the canvas bag. He took out his chinos, his polo shirts, his leather belt. He came back, picked up the charcoal suit and the white shirt, and draped the lot over his forearm.</p>
+<p>He stood in front of her in the poly-cotton slacks and the lilac blouse and the black flats, holding it.</p>
+<p>&quot;Good,&quot; Sharon said. &quot;Follow me.&quot;</p>
+<p>She led him down the hallway to the lift. His flats slapped softly on the floorboards and then they were in the marble lobby.</p>
+<p>The concierge looked up from the mahogany desk, a sharply dressed Italian in his forties, and smiled the professional smile.</p>
+<p>Sharon went to the desk. Warren stopped half a step behind her.</p>
+<p>&quot;Excuse me,&quot; Sharon said, warm and gracious. &quot;My companion and I are downsizing our luggage before we take the train south tomorrow. We have rather a good collection of men&#x27;s clothing here. Pure wool suits, good cotton shirts. They&#x27;re of no use to us.&quot;</p>
+<p>She stepped aside and gestured to Warren.</p>
+<p>The concierge&#x27;s eyes moved to him. The silver stubble. The front of the lilac blouse. The elastic waist. The cheap black flats. Then the charcoal suit folded over his arm.</p>
+<p>The smile held for a fraction of a second longer than it should have.</p>
+<p>&quot;I... see, Madam,&quot; the concierge said. He cleared his throat. &quot;Are you wishing to donate them?&quot;</p>
+<p>&quot;If the staff could find a use for them, or pass them to a charity, we&#x27;d be very grateful,&quot; Sharon said. &quot;Hand them over, Warren.&quot;</p>
+<p>Warren put the jacket, the trousers, the shirts and the belt down on the polished mahogany.</p>
+<p>&quot;Very generous,&quot; the concierge said. He did not look at Warren. He drew the pile behind the desk. &quot;I will see they are taken care of.&quot;</p>
+<p>&quot;Thank you.&quot; Sharon gave him a crisp nod and turned. &quot;Come along, Warren. We have packing to do.&quot;</p>
+<p>Warren turned on the thin rubber soles and walked to the lift.</p>
+<p>The sun went down behind the terracotta roofs and the suite went cool and dusky.</p>
+<p>Warren sat on the edge of the iron bed in the annex. The room smelled of acetone and cheap lavender — a bottle of old Tasmanian perfume out of Sharon&#x27;s toiletries bag. She had made him sit at the desk while she painted his fingernails a frosty pink she used to wear to church in Glenorchy.</p>
+<p>He was dressed for dinner. Not the slacks. She had laid out her best old clothes: white nylon panties with a fraying lace trim, and a sleeveless knee-length frock patterned with washed-out yellow daisies.</p>
+<p>The sleeves exposed the hair on his arms. The stuffed bra pushed the thin floral cotton out into a shelf. And the hem stopped just below his knees.</p>
+<p>&quot;Stand up, Warren.&quot;</p>
+<p>He stood. The evening air moved against his bare legs. He walked out into the master bedroom.</p>
+<p>Sharon was waiting by the door in cream slacks and a cashmere wrap. She looked him up and down, and her eyes rested for a moment on his calves, dense with dark hair above the cheap black flats. She didn&#x27;t laugh. She adjusted her handbag.</p>
+<p>&quot;Let&#x27;s go. I have a taste for pizza.&quot;</p>
+<p>The evening crowd was thick. Warren kept his arms pinned to his sides and took short steps, and the frock swished against his knees. He could smell the lavender coming off his own skin.</p>
+<p>Every time somebody glanced their way his breath caught.</p>
+<p>Sharon took them to a bright pizzeria on the edge of the square and chose a table at the front, open to the footpath.</p>
+<p>Warren sat down and pulled his knees together and tucked his legs as far under the table as they would go.</p>
+<p>She ordered a carafe of red and a pizza. As the waiter left, she reached into her handbag.</p>
+<p>She didn&#x27;t take out the card. She took out the book.</p>
+<p>She set it on the table between the salt and the candle and opened it at a chapter thick with black ink, turned so that the heading faced him.</p>
+<p class="quote">The Eradication of the Masculine Texture</p>
+<p>&quot;You&#x27;re blushing,&quot; Sharon said. &quot;And you&#x27;ve been hiding your legs under the table since we sat down. Why?&quot;</p>
+<p>&quot;Because I look ridiculous.&quot; His voice came out as a rasp. &quot;I&#x27;m a hairy man, Sharon. I&#x27;m sitting in a public square in a floral dress and everyone can see my legs. My arms.&quot;</p>
+<p>&quot;Yes. They can.&quot; She tapped a finger on the open page. &quot;The clothing is only the first layer. The fabric alters the shape, but the texture underneath is still fighting. As long as you have that skin, that hair, you will feel like a man playing dress-up.&quot;</p>
+<p>She leaned forward. The candle caught the gold at her throat.</p>
+<p>&quot;I don&#x27;t want a man playing dress-up.&quot;</p>
+<p>She pushed the book an inch closer.</p>
+<p>&quot;Read the underlined line. Aloud.&quot;</p>
+<p>Warren looked down at the page. He took a breath, and read it in a gravelly whisper.</p>
+<p>&quot;The shaving of the body serves to detach the subject from his armour, leaving him smooth, and vulnerable, and domesticated.&quot;</p>
+<p>He stopped. He could hear his own pulse.</p>
+<p>Sharon sat back as the waiter arrived with the pizza and put it between them.</p>
+<p>&quot;Tomorrow is going to be a warm day,&quot; she said, as though they had been discussing the weather. &quot;You&#x27;ll wear my old denim skirt and a sleeveless top. But before we leave the suite we&#x27;re going to fix the canvas. You&#x27;ll shave those legs. You&#x27;ll shave those arms. And then we&#x27;ll go and buy you sandals, so you can stop hiding your feet.&quot;</p>
+<p>Warren looked at the cheese going soft on the pizza.</p>
+<p>&quot;Eat your dinner,&quot; Sharon said, picking up a slice.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch9">
+<header class="ch-head"><p class="ch-num">Chapter 9</p><h2>The Eradication of Friction</h2></header>
+<p>Morning sun came through the frosted glass of the master bathroom.</p>
+<p>Warren stood at the marble basin with a towel around his waist. Sharon stood in the doorway, dressed, in cream slacks and a silk blouse. She put a packet of pink disposable razors and a can of floral shaving foam on the edge of the sink.</p>
+<p>&quot;We begin with the face,&quot; she said. &quot;The beard.&quot;</p>
+<p>Warren&#x27;s fingers went into the silver-grey bristles. &quot;Sharon, please. Not the face.&quot;</p>
+<p>&quot;There are no bearded maids in Tuscany. Lather it.&quot;</p>
+<p>He pressed a mound of the foam into the beard. He picked up the pink razor and scraped away thirty-five years of it. The silver hair came off in wet clumps and lay in the white basin.</p>
+<p>When he had washed his face and looked up, the man in the mirror was soft about the jaw, and older.</p>
+<p>Sharon nodded.</p>
+<p>&quot;Now get into the shower. Shave the legs, thigh down. I&#x27;ll wait out here.&quot;</p>
+<p>She pulled the door most of the way shut, leaving it ajar to hear him. She had not seen him naked and had no wish to. Her authority did not require it.</p>
+<p>Inside the cubicle the water beat down on his shoulders. He dragged the razor through the hair on his calves and his thighs. It took a long time, and his hands kept slipping on the cheap plastic.</p>
+<p>When he came out he wrapped the towel round his waist again and opened the door. The air felt cold against his calves.</p>
+<p>&quot;I&#x27;m finished.&quot;</p>
+<p>Sharon looked at his legs, then up at his arms and shoulders.</p>
+<p>&quot;You forgot your arms,&quot; she said. &quot;And your underarms. Did you think a sleeveless top would hide those? Go back to the sink and finish the job.&quot;</p>
+<p>He lathered his forearms and his armpits. Raising his arms to the razor made his breath catch. The hair went down the drain and left the skin pale and raw.</p>
+<p>He put the razor down. &quot;Done.&quot;</p>
+<p>Sharon stood behind him, looking at his reflection.</p>
+<p>&quot;Almost,&quot; she said. &quot;Before you put my underwear on, you&#x27;ll get back into the shower and shave your groin. All of it.&quot;</p>
+<p>Warren gripped the edges of the basin. &quot;Sharon—&quot;</p>
+<p>&quot;I don&#x27;t need to see it. I will not ask you to expose yourself to me. But you will know it&#x27;s gone. Every time you walk, every time the elastic pulls against your skin, you&#x27;ll feel the friction missing. You will know there is nothing masculine left under those clothes. Do you understand?&quot;</p>
+<p>&quot;I understand.&quot;</p>
+<p>&quot;Good. Don&#x27;t take too long. We have sandals to buy.&quot;</p>
+<p>Sharon turned and walked out of the bathroom and pulled the door shut behind her.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch10">
+<header class="ch-head"><p class="ch-num">Chapter 10</p><h2>The March</h2></header>
+<p>&quot;Much better,&quot; Sharon said, coming up behind him and resting her hands on his lilac shoulders. &quot;You look like a blank canvas. Now let&#x27;s fix your footwear.&quot;</p>
+<p>The afternoon sun was hard on the walk from the hotel to a shoe boutique off the main plaza. He was still in the cheap black flats, and they did nothing to distract from the denim skirt against his bare shaved calves, or the front of the sleeveless top.</p>
+<p>Calzature was hushed and smelled of leather and floor wax. There were mirrors at floor level along the walls.</p>
+<p>A young saleswoman came over, and her smile faltered for a fraction of a second as she took in his shape.</p>
+<p>Sharon didn&#x27;t pause. &quot;My companion requires two pairs,&quot; she said. &quot;A flat open-toed sandal for walking, and a closed pump with a two-inch heel for the evening. Size forty-three, wide fit.&quot;</p>
+<p>The girl swallowed. Her eyes went to Warren and back to Sharon. &quot;Of course, Signora. Please, sit.&quot;</p>
+<p>Warren lowered himself onto the velvet fitting stool. The denim rode up on his smooth thighs and he clamped his knees together and stared straight ahead as the young woman knelt on the floor in front of him.</p>
+<p>&quot;Take off the flats.&quot;</p>
+<p>He slipped his feet out. His feet were wide and the heels were thick with callous, and the toenails were the same frosty pink as his fingers. She had done them the night before, at the desk, while the perfume dried on his neck.</p>
+<p>The clerk came back with boxes and opened the first. Tan leather sandals, strappy, with a block heel an inch high.</p>
+<p>&quot;Try these.&quot;</p>
+<p>His fingers were too big for the little brass buckles. He pushed his foot onto the sole and the straps bit across the bridge.</p>
+<p>&quot;Stand up.&quot;</p>
+<p>Warren stood. An inch was enough to move his weight onto the balls of his feet.</p>
+<p>&quot;They&#x27;ll do for the daytime,&quot; Sharon said. &quot;Now the pumps.&quot;</p>
+<p>The clerk brought black patent with a two-inch heel. He pushed his right foot in. The toe box crushed it. When he stood, his pelvis tilted forward and his calves seized and the front of his top came out ahead of him.</p>
+<p>He took three steps to the mirror. Clack. Clack. Clack.</p>
+<p>&quot;We&#x27;ll take both pairs.&quot; Then her eye went to a display of cheap faux-leather shoulder bags by the counter, and she pointed at a navy one with a long strap. &quot;And that bag.&quot;</p>
+<p>Warren looked at it. &quot;For you?&quot;</p>
+<p>&quot;For you.&quot; Sharon walked to the counter to pay. &quot;Women&#x27;s clothing rarely has pockets. You&#x27;re wearing a denim skirt. Where exactly did you plan to carry my tissues, the room key, and your blister plasters? Take the pumps off. Keep the sandals on, and put the bag over your shoulder. We&#x27;re going for a walk.&quot;</p>
+<p>She did not take him along the flat paved promenade by the lake. She took him up into the old town, into the salitas — the stone stairways that go up sharply between the buildings.</p>
+<p>Warren followed half a step behind with the navy bag knocking against his hip. Going up, the block heel dragged his weight back and the straps cut into the top of his feet. Going down was worse; his weight slid forward and his toes crushed against the open front.</p>
+<p>He was sweating, and the shaved skin under his arms stung. His calves burned. He had walked across national parks in the brown leather boots. After two hours in these he could think about nothing else.</p>
+<p>Sharon did not slow down. She stopped only to look in windows, and he stood behind her and shifted his weight from one foot to the other and waited.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch11">
+<header class="ch-head"><p class="ch-num">Chapter 11</p><h2>The Complaint</h2></header>
+<p>They got back to the suite as the sun was going down, and Warren sat down heavily on the edge of the iron bed in the annex.</p>
+<p>He unbuckled the sandals with shaking fingers and peeled them off. Across the bridge of each foot the straps had left deep red channels. A blister was coming up on his left heel.</p>
+<p>Sharon stood in the doorway in her flat calfskin loafers.</p>
+<p>Warren rubbed his arches, and a groan got out of him.</p>
+<p>&quot;They&#x27;re too tight, Sharon.&quot; His voice was thick. &quot;The straps cut right into the bone. Every step on those cobbles felt like my foot was in a vice. I can&#x27;t walk properly in them.&quot;</p>
+<p>Sharon looked at his feet.</p>
+<p>&quot;Welcome to womanhood,&quot; she said. &quot;Did you think the clothes were only about fabric? Women have had their feet crushed and pinched and blistered for centuries to maintain an appearance for men. You are experiencing the physical reality of the gender you&#x27;ve assumed.&quot;</p>
+<p>Warren looked up. Whatever was in her face killed the complaint in his throat.</p>
+<p>&quot;I didn&#x27;t mean to complain.&quot;</p>
+<p>&quot;Yes, you did. You thought like a man. You thought comfort was your right.&quot; She paused, and something went across her face and was gone. &quot;It isn&#x27;t anymore.&quot;</p>
+<p>She reached down, picked up the box with the black patent pumps, and dropped it on the mattress beside him.</p>
+<p>&quot;Put plasters on those blisters. And then put the two-inch heels on. I&#x27;ve booked a table for eight.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch12">
+<header class="ch-head"><p class="ch-num">Chapter 12</p><h2>The Matron&#x27;s Armour</h2></header>
+<p>The morning they were to leave for Florence, Warren sat on the closed lid of the toilet in the master bathroom. His face and arms and legs were shaved. He was in the denim skirt, the stuffed bra and the lilac blouse.</p>
+<p>Sharon stood over him with a pair of hotel sewing scissors and a battery trimmer.</p>
+<p>&quot;Look straight ahead.&quot;</p>
+<p>The trimmer buzzed in the tiled room. She put the cold teeth against the skin in front of his ear and took the sideburn away, and then took the line higher, up past the top of the ear cartilage, and angled it to a point.</p>
+<p>With the sideburns gone his jaw had nothing holding it up.</p>
+<p>Warren&#x27;s hand came up to scratch his jaw and Sharon was two steps back against the basin with the trimmer held out in front of her before either of them had registered it.</p>
+<p>&quot;Keep your hands in your lap,&quot; she said.</p>
+<p>&quot;Sorry.&quot;</p>
+<p>&quot;Keep them in your lap.&quot;</p>
+<p>She waited until he had, and then came back in, and turned the trimmer off and picked up the scissors. She cut away the square edges of the barber&#x27;s cut, layered the back, softened the neckline and brushed the front down across his forehead.</p>
+<p>It was a short, severe, elderly woman&#x27;s cut.</p>
+<p>&quot;Your hair grows fast,&quot; Sharon said, brushing the silver clippings off the lilac shoulders. &quot;Within three months at the villa this will be a serviceable bob. Until then we bridge the gap.&quot;</p>
+<p>She opened a plastic box and glued a set of french-manicure press-ons over his pink nails. His hands stopped being his.</p>
+<p>She uncapped a tube of rose lipstick. &quot;Part your lips.&quot;</p>
+<p>She worked the colour in. She sprayed jasmine on his neck until he could not smell himself.</p>
+<p>Then she took a hairnet and a wig out of a box — a shoulder-length bob in ash-brown, with a slight wave in it. She stretched it over his own new hair and worked the hairline with her thumbs. She handed him a pair of oversized tortoiseshell sunglasses.</p>
+<p>&quot;Put them on and stand up.&quot;</p>
+<p>Warren stood in front of the mirror.</p>
+<p>The wig covered his head; under it, his own hair had been cut into a woman&#x27;s shape, and knowing that was worse than the wig. The sunglasses took his eyes. The lipstick, the nails, the front of the blouse.</p>
+<p>He did not look like a man being punished. He looked like a big, severe, broad-shouldered older woman.</p>
+<p>He could pass.</p>
+<p>&quot;The luggage is waiting,&quot; Sharon said, handing him the navy bag. &quot;Put your block heels on. It&#x27;s time to catch a train.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch13">
+<header class="ch-head"><p class="ch-num">Chapter 13</p><h2>The Threshold</h2></header>
+<p>The Trenitalia carriage was crowded and swaying as it picked up speed towards Milan and the southern connection.</p>
+<p>Warren stood at the end of the aisle holding the canvas bags and Sharon&#x27;s calfskin weekender. The block heels took none of the vibration. Under the wig his scalp prickled with sweat, and every time he breathed out he got the jasmine.</p>
+<p>He started down the narrow aisle. He had to turn half sideways, and his denim hips knocked the armrests.</p>
+<p>Halfway along, a businessman stood up to get a coat down from the rack and blocked the way. Warren stopped. He was a foot from the man. He was certain — the shoulders, the neck, the hands with the glued-on tips — he was certain.</p>
+<p>The businessman glanced down. He saw the ash-brown bob, the sunglasses, the floral blouse over a heavy bosom, the denim skirt.</p>
+<p>He stepped back and pressed himself against the seat to make room.</p>
+<p>&quot;Prego, Signora.&quot;</p>
+<p class="beat">Signora.</p>
+<p>Warren nodded and squeezed past.</p>
+<p>Two hours later the train came into Florence Santa Maria Novella.</p>
+<p>The station was a sea of tourists and commuters. Warren hauled the bags onto the platform, the one-inch heels clicking. His bladder was aching. Sharon had ordered him three espressos on the connection at Milan.</p>
+<p>&quot;Sharon.&quot; He dropped his voice. &quot;I need the bathroom. Badly.&quot;</p>
+<p>She stopped and pointed down the concourse to an illuminated sign.</p>
+<p>Somewhere behind them on the concourse a man began shouting at a ticket machine, a flat furious run of Italian that went up and did not come down.</p>
+<p>Sharon did not look round. She simply moved, one step, so that Warren was between her and the noise, and stayed there until they were past it.</p>
+<p>He hurried beside her, the navy bag knocking his hip. As they came up to it the crowd split into two streams under two signs. UOMINI to the left. DONNE to the right.</p>
+<p>Warren shifted his weight to the left.</p>
+<p>Sharon&#x27;s hand shot out and closed around his bicep and pulled him back.</p>
+<p>&quot;Where exactly do you think you&#x27;re going?&quot;</p>
+<p>Warren looked at the Uomini sign. &quot;I can&#x27;t go in the other one. I can&#x27;t. If there&#x27;s an attendant. If a woman sees me.&quot;</p>
+<p>&quot;Look at yourself.&quot; She turned him to face the dark glass of a station kiosk.</p>
+<p>He looked. The wig. The sunglasses. The lipstick. The front of the blouse. The skirt.</p>
+<p>&quot;If you walk into the men&#x27;s room dressed like that, they&#x27;ll arrest you or they&#x27;ll beat you,&quot; Sharon said. &quot;You are a woman. You sit down. You carry a handbag. You wear my knickers. You don&#x27;t have the right to male spaces anymore. Walk through the door on the right, use a cubicle, wash your hands, and come back out.&quot;</p>
+<p>She let go of his arm.</p>
+<p>Warren stood in the flow of the crowd. His bladder was screaming and the reflection in the glass was what it was. He put the strap of the navy bag back on his shoulder, kept his knees together and his head down, and walked through the door marked DONNE.</p>
+<p>Inside it smelled of soap and hairspray. It was full of women washing their hands and fixing their faces and queueing.</p>
+<p>Warren kept the sunglasses on and looked at the floor tiles and listened to his own heels on them. He joined the queue. The girl in front glanced back, saw a dowdy older woman, and turned round again.</p>
+<p>A cubicle came free. He slid the bolt shut with pink-tipped fingers and leaned back against the metal door.</p>
+<p>He lifted the denim skirt, pulled down the faded knickers, and sat.</p>
+<p>Outside, two women were laughing about something at the basins, and the hand dryer started, and somewhere further off a platform announcement was running in three languages.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch14">
+<header class="ch-head"><p class="ch-num">Chapter 14</p><h2>The Vineyard</h2></header>
+<p>The black town car wound up through the cypress hills of the Chianti and stopped at a set of iron gates outside Vinci.</p>
+<p>The gates opened onto a stone villa some centuries old, with vines and olives around it. There were no neighbours. There were no tourists.</p>
+<p>The driver parked on the gravel and opened the boot. Warren got out into the heat. His block heels went over in the gravel. He reached for the bags, his sunglasses sliding down his damp nose.</p>
+<p>The driver did not offer to help the large woman in the denim skirt. He nodded to Sharon, took his money, and drove away.</p>
+<p>The engine went down the valley and left a great deal of silence.</p>
+<p>Sharon unlocked the oak door. Inside were terracotta floors and beams and a kitchen full of light that smelled of dried herbs.</p>
+<p>&quot;Take my bags up to the master suite on the second floor,&quot; she said, going through towards the terrace doors. &quot;Your room is the small one off the kitchen. The one the housekeepers used.&quot;</p>
+<p>Warren hauled the bags up the stone stairs. The heels made every step a job. He left her weekender in the master bedroom and went back down.</p>
+<p>The housekeeper&#x27;s room had a narrow iron bed, a wooden dresser, and a small bathroom. He put his bag down and caught his reflection in the wall mirror. The wig was askew. The lipstick had gone. The socks in the bra sat wrong.</p>
+<p>&quot;Warren.&quot;</p>
+<p>He came out, heels on the terracotta.</p>
+<p>Sharon was on a sun lounger with a glass of cold white wine, looking out at the olives.</p>
+<p>&quot;I&#x27;m hungry,&quot; she said. &quot;The property managers stocked the fridge yesterday. Make us some dinner. We&#x27;ll eat on the terrace.&quot;</p>
+<p>Warren went to the kitchen and opened the refrigerator. Local produce, thick cuts of Florentine steak, cheeses, fresh pasta. His mouth watered. He reached for the steak.</p>
+<p>&quot;Put it back.&quot;</p>
+<p>Sharon was in the doorway with her wine.</p>
+<p>&quot;I was going to grill it.&quot;</p>
+<p>&quot;No, you aren&#x27;t.&quot; She took the meat out of his hands. She turned it over and found the sticker and read the price on it, the way she had read the price on everything for thirty years, and something happened in her face, and she put it in the fridge without saying anything about it.</p>
+<p>She pulled out a lettuce, some cherry tomatoes and a small chicken breast, and set them on the block.</p>
+<p>&quot;You are not a lumberjack. You don&#x27;t need two thousand calories of red meat. That diet sustains a masculine frame and we are dismantling yours.&quot;</p>
+<p>She poked a finger into his bicep.</p>
+<p>&quot;You&#x27;ll eat salads. Lean white fish, small portions of chicken. We&#x27;ll starve the muscle off your shoulders and your back until you soften.&quot; She looked at the lumps under the lilac blouse. &quot;And from tomorrow you&#x27;ll do squats and lunges. If you&#x27;re going to wear my skirts, you&#x27;re going to build the hips to fill them. Wash the lettuce.&quot;</p>
+<p>She went back out to the terrace.</p>
+<p>Warren ran the cold tap over the tomatoes. His feet hurt. The wig itched. As he reached up for a wooden bowl from the top shelf, one of the rolled socks shifted and rode up under his collarbone.</p>
+<p>He had to stop, and put his hand down the front of the blouse, and push it back into the cup.</p>
+<p>Out on the terrace Sharon&#x27;s glass clinked against the iron table.</p>
+<p>He hated the socks. He hated his shoulders. It was the first time the shame had not been about wearing a woman&#x27;s clothes.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch15">
+<header class="ch-head"><p class="ch-num">Chapter 15</p><h2>The Softening</h2></header>
+<p>Warren woke at six in the airless little room off the kitchen.</p>
+<p>For the first time in his adult life he did not reach for the beard trimmer. He stood at the small mirror and shaved his cheeks and his chin, careful to preserve the high point where the sideburns used to be. He shaved his chest, his arms, his legs. He glued back the two press-on nails that had come off in the night. He pulled on the faded knickers and the beige bra and rolled the socks into the cups.</p>
+<p>He carried a tray of black coffee out onto the terrace. Sharon was already up, in a silk kimono, reading the news on her tablet.</p>
+<p>&quot;Set it down,&quot; she said, without looking up. &quot;And take the blouse off. Just the knickers and the bra.&quot;</p>
+<p>The tray shook in his long pink hands. He set it on the iron table, unbuttoned the blouse and draped it over a chair, and stood in the morning sun with his shoulders bare and the beige bra straining across his chest.</p>
+<p>&quot;Feet shoulder-width apart.&quot; She put down the tablet and picked up her espresso. &quot;Toes out a little. Fifty deep squats. You need to build the glutes and widen the hips. Go.&quot;</p>
+<p>Warren went down. His knees popped. He came up. And down again.</p>
+<p>By the twentieth his skin was slick and his thighs were burning, and the socks had begun to move.</p>
+<p>The left one slid sideways and flattened into his armpit. The right one came out over the lace trim and sat up against his collarbone.</p>
+<p>He stopped mid-squat, panting, and pushed the sweaty things back down into the cups.</p>
+<p>&quot;It&#x27;s no use, Sharon.&quot; His voice cracked. &quot;They won&#x27;t stay. Every time I move they shift. I can&#x27;t fill the bra.&quot;</p>
+<p>Sharon took a slow sip of her coffee.</p>
+<p>&quot;I know,&quot; she said. &quot;Socks are for feet. They have no weight and no warmth. They sit on top of the muscle like the props they are.&quot;</p>
+<p>She tapped the tablet a few times and turned it round so he could see. It was an order confirmation from a prosthetics supplier in Milan.</p>
+<p>&quot;I placed that two days ago. They&#x27;ll be here this week. Surgical-grade silicone. Eight hundred grams each. They have the weight and the density and the thermal conductivity of the real thing. When you strap those into the bra they will pull against your shoulders. They will bounce when you walk. They will warm to your body temperature and they will sweat against your skin.&quot;</p>
+<p>Warren looked at the screen. Sixteen hundred grams, permanently. Then he looked down at the lumps ruining his front.</p>
+<p>&quot;Thank you,&quot; he said.</p>
+<p>&quot;Don&#x27;t thank me yet.&quot; Sharon reached into a bag beside her chair. Something came out with her hand and went onto the flagstones — a banknote, folded small and sealed into a little plastic sleeve, the creases gone soft and pale with handling.</p>
+<p>She had it up off the ground before it had properly settled, and back in the bag, and she did not look at him while she did it.</p>
+<p>Then she took out a white plastic handset with a glass window at one end and a thick cord. She held it out to him by the cord. &quot;I am not a beautician. And I have no wish to spend my mornings managing your body hair. Take it.&quot;</p>
+<p>Warren sat up on the edge of the lounger and took the handset.</p>
+<p>&quot;Every Saturday morning, after you&#x27;ve shaved, you&#x27;ll use this,&quot; she said. &quot;You&#x27;ll pulse it over every inch of your legs, your arms and your chest.&quot; Her eyes went down to the faded cotton at his waist. &quot;And you&#x27;ll use it between your legs.&quot;</p>
+<p>His head came up.</p>
+<p>&quot;Don&#x27;t interrupt me.&quot; She leaned in. &quot;From now on I will not see hair anywhere on you below the neck. If a skirt rides up or a blouse slips, there is to be nothing but skin. It will take months of weekly treatments to kill it properly. It will sting. You will do it every week. Begin.&quot;</p>
+<p>Warren looked down at his thigh and thought about what Saturdays were going to be.</p>
+<p>He put the glass window against his skin. He pressed the button.</p>
+<p class="beat">Crack.</p>
+<p>A flash of red light went across the terrace and the sting came with it. He hissed through his teeth.</p>
+<p>&quot;Again,&quot; Sharon said.</p>
+<p>He moved it down an inch and pressed it again. He spent an hour on the terrace working over his own legs and arms, and when he stood up his skin was flushed and raw and sensitive to the warm Tuscan air.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch16">
+<header class="ch-head"><p class="ch-num">Chapter 16</p><h2>The Deformity</h2></header>
+<p>That evening Sharon sat in the high-backed chair in the living room with a glass of Chianti. Warren had finished the dishes. His legs were raw from the laser and the denim skirt moved against his knees.</p>
+<p>&quot;Come here.&quot;</p>
+<p>He came in and stood in front of her with his hands clasped.</p>
+<p>&quot;Take the clothes off,&quot; Sharon said. &quot;Leave the bra on. It&#x27;s the only feminine potential you currently possess. And take off the flat sandals. Put the black pumps on.&quot;</p>
+<p>He unbuttoned the blouse and let it fall. He unzipped the skirt and let it pool at his ankles and pushed the knickers down his hairless thighs. He stepped into the two-inch patent heels.</p>
+<p>He stood in front of her, bare from the waist down. The heels tilted his pelvis forward. The beige bra, still lumpy with the socks, strained across his ribs.</p>
+<p>Sharon did not look at his face.</p>
+<p>The silence went on.</p>
+<p>&quot;You should be ashamed of that,&quot; she said at last. &quot;I am certainly not having it stretch and ruin my panties. It ruins the line of a skirt. From now on you&#x27;ll keep it between your legs. Tuck it away. Do whatever you have to do, but don&#x27;t put it in my line of sight.&quot;</p>
+<p>She looked up.</p>
+<p>&quot;And those heels you&#x27;re standing in. That&#x27;s your domestic footwear now. You&#x27;ll wear them while you cook, while you clean, and while you serve me. If you want to be a proper woman, you&#x27;re going to have to work at it.&quot;</p>
+<p>Warren shifted his weight and came up off his heels to straighten, and Sharon&#x27;s whole body went back an inch into the chair.</p>
+<p>It was over before he saw it. She picked up her book.</p>
+<p>&quot;Go and dust the bookshelves in the hallway. Like that. I want you to feel the air on it, so you remember what&#x27;s holding you back.&quot;</p>
+<p>Warren reached down, took hold of himself and pushed it back between his thighs, and squeezed his legs together to keep it there.</p>
+<p>He went out into the hallway on the heels, one hand on the wall.</p>
+<p>She was right. It was a deformity. If he was ever going to stop ruining the clothes, he was going to have to change what was under them.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch17">
+<header class="ch-head"><p class="ch-num">Chapter 17</p><h2>The Day Off</h2></header>
+<p>Sharon did not sleep well.</p>
+<p>She came down before six and sat on the terrace in the dark with her hands round a cup she had not filled, and watched the sky come up grey over the olives, and thought about the hallway the night before — about the sound the heels had made going away from her along the terracotta, and about what she had felt listening to it, which had not been satisfaction.</p>
+<p>At seven she heard him get up.</p>
+<p>He came out at half past in the denim skirt and the bra and the lilac blouse, shaved, with the nails glued back on, carrying the tray.</p>
+<p>&quot;Put it down,&quot; Sharon said. &quot;Sit.&quot;</p>
+<p>Warren sat on the edge of the other chair the way he sat now, knees together, weight forward.</p>
+<p>&quot;Today there are no rules,&quot; Sharon said.</p>
+<p>He looked at her.</p>
+<p>&quot;No squats. No chores. No heels. You may wear whatever is in that house that fits you, including nothing at all, and I will not remark on it. You may eat whatever you find in that refrigerator and as much of it as you like. Take the wig off. Take the bra off if you want it off.&quot; She put her cup down. &quot;It is a day. Have it however you want it.&quot;</p>
+<p>Warren did not move for a moment.</p>
+<p>&quot;Why?&quot;</p>
+<p>&quot;Because you ought to be able to,&quot; Sharon said, and did not elaborate, and did not look at him.</p>
+<p>He went back inside.</p>
+<p>She heard him go up the stone stairs, which he had no reason to do, and come down again. She heard the refrigerator open and close without anything being taken out of it. At nine he walked past the terrace doors twice in ten minutes with his hands at his sides.</p>
+<p>At twenty past nine he came out and asked her what she wanted for lunch.</p>
+<p>&quot;Whatever you want for lunch.&quot;</p>
+<p>&quot;Right,&quot; he said, and went away again.</p>
+<p>He was still in the skirt and the blouse at eleven. He had taken the wig off and put it back on. He came out once more and stood in the doorway and said, &quot;Do you want the terrace swept,&quot; and Sharon said no, and he stood there for a second longer than the question needed and then went.</p>
+<p>By one o&#x27;clock she could hear him in the kitchen doing nothing very slowly.</p>
+<p>She found him at half past standing at the open refrigerator with the cold coming out around him. The shelves were full. He had a jar of olives in one hand and had been holding it for some time.</p>
+<p>&quot;Warren.&quot;</p>
+<p>&quot;I can&#x27;t work out what I want,&quot; he said.</p>
+<p>&quot;Then have the olives.&quot;</p>
+<p>&quot;I don&#x27;t want the olives.&quot; His voice had gone up at the end of it, thin, and he heard it and stopped. He put the jar back on the shelf, carefully, in the place it had come from, and stood with his hand on the door. &quot;I&#x27;ve been awake since five deciding what to put on. I got dressed three times. I&#x27;ve been round this house all morning looking for something that needs doing so that I&#x27;m doing it.&quot;</p>
+<p>&quot;Nothing needs doing.&quot;</p>
+<p>&quot;I know.&quot; He shut the refrigerator. &quot;That&#x27;s what I can&#x27;t stand.&quot;</p>
+<p>Sharon leaned back against the butcher&#x27;s block and folded her arms and waited, because she had learned that he would go on if she let the silence do it.</p>
+<p>&quot;Thirty years I decided everything,&quot; Warren said. &quot;Every price. Every contract. Where we lived. Which surgeon. Which nursing home, in the end, and then not the nursing home. And I did it all right, and everybody said so, and not one of them ever asked me whether I could.&quot; He was looking at the floor. &quot;And then you took it off me and I could breathe. And this morning you handed it back and I have had it for six hours and I want to be sick.&quot;</p>
+<p>&quot;It&#x27;s a day off, Warren. It isn&#x27;t your whole life.&quot;</p>
+<p>&quot;I know what it is.&quot; He looked up. &quot;That&#x27;s worse.&quot;</p>
+<p>Neither of them said anything.</p>
+<p>&quot;It would be very easy,&quot; Sharon said at last, quietly, &quot;for me to be a person who never offered you that again.&quot;</p>
+<p>&quot;Don&#x27;t offer it again.&quot;</p>
+<p>&quot;That is not—&quot;</p>
+<p>&quot;Please.&quot; He came away from the refrigerator. He did not kneel. He stood in the middle of her kitchen in a dead woman&#x27;s skirt with his hands open at his sides, fifty-seven years old, entirely free to walk out of the gate and down the road and be a wealthy man in a hotel by six o&#x27;clock. &quot;Take it back. I&#x27;m asking you. I know what I&#x27;m asking.&quot;</p>
+<p>Sharon looked at him for a long time.</p>
+<p>&quot;Go and put the heels on,&quot; she said.</p>
+<p>The relief came off him so fast that his shoulders dropped an inch, and she saw it happen, and something in her went very still and very cold and did not object.</p>
+<p>He went.</p>
+<p>When he came back, clicking, she had already got the lettuce out and set it on the block for him, and the afternoon put itself back together, and by four they were both behaving as though the morning had belonged to some other pair of people.</p>
+<p>The jar of olives stayed where he had put it back for another eleven days, until Sharon moved it to get at something behind.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch18">
+<header class="ch-head"><p class="ch-num">Chapter 18</p><h2>The Graft</h2></header>
+<p>The delivery van came up the gravel at two o&#x27;clock. Warren signed for the box at the door, bare from the waist down behind the heavy oak, and shut it and leaned back against it until his breath came right.</p>
+<p>He looked down at the unmarked brown box in his hands.</p>
+<p>&quot;Bring it out here, Warren.&quot;</p>
+<p>He carried it through the kitchen and out into the sun and stood in front of her lounger in the two-inch pumps, tucked, with the socks shifting in the beige bra.</p>
+<p>Sharon took the box and cut the tape with the paring knife off her fruit plate. In the moulded foam lay two teardrop-shaped silicone forms.</p>
+<p>&quot;Take the bra off.&quot;</p>
+<p>He unhooked it. It came away with the socks in it and left his chest bare in the sunlight.</p>
+<p>Sharon lifted one of the forms. It sagged in her hands like something alive. She pressed it against his left pectoral and the cold weight of it stopped his breath.</p>
+<p>&quot;Hold it there.&quot; She picked up the bra and held it over the top, checking. &quot;Good. Go to the kitchen drawer and fetch me a black marker.&quot;</p>
+<p>Warren went back into the house. Without the bra he felt more naked than he had a minute ago. He found the marker and brought it out.</p>
+<p>&quot;Arms by your sides.&quot;</p>
+<p>She uncapped it and drew a dotted line onto his skin, outlining where the forms would have to sit.</p>
+<p>Then she dug under the foam. &quot;There should be one more thing in here. Ah.&quot;</p>
+<p>She pulled out a thick tube covered in warnings.</p>
+<p>&quot;What is that?&quot;</p>
+<p>&quot;Medical adhesive.&quot; She unscrewed the cap and the air went sharp and chemical. &quot;Actors use it. Amputees use it. It bonds silicone to skin. It&#x27;s waterproof and sweat-proof and it takes a solvent to remove.&quot;</p>
+<p>&quot;You&#x27;re gluing them to me?&quot;</p>
+<p>&quot;I am grafting them to you,&quot; she said. &quot;You aren&#x27;t going to take them off at night. You&#x27;ll sleep with the weight of them on your ribs. You&#x27;ll shower with them. They are your breasts now. Lie down.&quot;</p>
+<p>Warren turned and lay flat on the cushions. The heels were still on his feet, so his knees bent up awkwardly.</p>
+<p>Sharon spread a layer of the glue onto the back of the first form, and then onto his chest, keeping inside the marker lines.</p>
+<p>&quot;Press it down.&quot; She laid the eight hundred grams onto him.</p>
+<p>Warren put both hands over it and pushed. The glue squelched out at the edge and the seal took. She did the right side the same way.</p>
+<p>&quot;Keep the pressure firm,&quot; she said, looking down at him. &quot;Thirty minutes without moving while it cures. If you shift, they&#x27;ll dry crooked.&quot;</p>
+<p>She picked up her tablet and went back to her chair.</p>
+<p>Warren lay still under the Tuscan sun with his hands pressed against the silicone. The chemical coolness came up to his own temperature. The adhesive pulled tight on his skin as it set. His ribs took the weight.</p>
+<p>A bee went along the edge of the lounger and away again. Somewhere below the terrace the irrigation came on in the vines.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch19">
+<header class="ch-head"><p class="ch-num">Chapter 19</p><h2>The Patchwork</h2></header>
+<p>&quot;Time,&quot; Sharon said, not looking up from the tablet.</p>
+<p>Warren&#x27;s shoulders had gone stiff from lying still. He sat up slowly.</p>
+<p>The moment he came vertical, gravity took the sixteen hundred grams and dragged his own skin down with it. When he reached for the bra he had to scoop them into the cups with both hands, and the underwire locked in under his ribs and took the weight off the glue.</p>
+<p>&quot;Get up. The floors aren&#x27;t going to scrub themselves.&quot;</p>
+<p>Warren stood. His heels clicked on the terrace. When he turned towards the kitchen they swung, and the swing pulled at the bond.</p>
+<p>He dusted the bookshelves in the hallway and swept the terracotta for three hours. The pumps had raised new blisters. His calves would not stop trembling. The tape at his groin was chafing the laser-burnt skin.</p>
+<p>Going past the gilt mirror at the end of the hall, he stopped.</p>
+<p>Above the line of the bra: the ash-brown wig, the smeared lipstick, the heavy maternal swell. Below it: his stomach, still muscled, and the hairless tucked ruin of him between his thighs, and the patent heels.</p>
+<p>He was not a woman. He was not a man.</p>
+<p>His knees went. He caught the edge of the console table and a sob came up out of him. The silicone pulled at his skin and it was rubber and glue and he knew it was rubber and glue.</p>
+<p>He did not walk to the living room. He got there.</p>
+<p>Sharon was reading by the fireplace. She looked up as he went down on his raw knees in front of her chair, and the forms bounced in the bra, and he was crying with his nails dug into his own thighs.</p>
+<p>&quot;Sharon, please. I can&#x27;t live like this.&quot;</p>
+<p>She closed her book. &quot;Speak clearly. What can&#x27;t you live with?&quot;</p>
+<p>&quot;Me. This.&quot; He gestured at himself, and clawed at the marker lines still showing at the edge of the silicone. &quot;I&#x27;m a freak. The glue — I can feel it pulling. It&#x27;s fake. And that thing between my legs ruins everything. I want it gone. I want to be real, Sharon. Please. Make me real. I want to be a woman.&quot;</p>
+<p>He put his head down. His tears went onto the terracotta.</p>
+<p>Sharon looked at him for a long moment.</p>
+<p>She reached into the pocket of her cardigan and took out a small amber pharmacy bottle, and rattled it.</p>
+<p>&quot;Do you know what this is?&quot;</p>
+<p>He looked up and shook his head.</p>
+<p>&quot;Estradiol, and an anti-androgen.&quot; Her voice had gone quiet and careful. &quot;If you take these, they will castrate you chemically. Your muscle will waste. Your fat will move to your hips and your thighs. The skin on your face will thin, and you will grow real breast tissue under that glued-on silicone. You&#x27;ll have hot flushes. You&#x27;ll weep at nothing. And you will be permanently feminised.&quot;</p>
+<p>She opened the bottle and tipped one small blue pill into her palm, and held it out.</p>
+<p>&quot;I won&#x27;t force this on you. If you take it, you&#x27;re choosing to end Warren Thornhill. Are you asking me for it?&quot;</p>
+<p>Warren looked at the pill in her hand.</p>
+<p>He reached out and took it and swallowed it dry.</p>
+<p>&quot;Thank you,&quot; he said, and put his head back down against her knees.</p>
+<p>Sharon sat with the open bottle in her other hand. After a while she put the cap back on.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch20">
+<header class="ch-head"><p class="ch-num">Chapter 20</p><h2>The Echoes of Trevor</h2></header>
+<p>Three weeks in, the oestrogen had made a battleground of him.</p>
+<p>The testosterone crash left him hollowed out. The hauling and the scrubbing in the two-inch heels now had his arms trembling by midday. The hot flushes came without warning and soaked him, and the silicone peeled at the edges against his wet ribs. And his moods had come off their moorings. He wept over a dropped plate and could not have said why.</p>
+<p>His inhibitions were going too. He no longer felt like a man in a dress. He felt like a tired, clumsy woman who wanted to get things right.</p>
+<p>On a blistering Tuesday a local wine merchant called Isabella came up to the villa for a tasting lunch.</p>
+<p>Warren was kept to the kitchen, making a caprese and grilling sea bass. He had the wig on, and the makeup, and the bra under the lilac blouse, and the tape.</p>
+<p>&quot;Bring the wine,&quot; Sharon called from the terrace. And to Isabella, with a wave of the hand: &quot;My new housekeeper. Large, and clumsy, but she works for next to nothing.&quot;</p>
+<p>Warren picked up the tray with the Pinot Grigio and two glasses. He came out over the threshold, heels clicking, the weight swaying on his chest. Isabella looked at him for half a second, saw a broad-shouldered matron, and went back to her Italian.</p>
+<p>He had passed. He was not there at all.</p>
+<p>He leaned over the wrought-iron table to pour, and the flush came up through him like a wave breaking. His vision swam. His wrist gave, and the bottle knocked hard against Isabella&#x27;s glass, and a few drops of wine went onto the white cloth.</p>
+<p>Sharon stopped mid-sentence.</p>
+<p>Everything went out of her face.</p>
+<p>&quot;You stupid, lumbering cow.&quot; The words came out of her fast and flat. &quot;Are you entirely useless? Look what you&#x27;ve done. You clumsy, pathetic creature. Get on your hands and knees and clean it up. Now.&quot;</p>
+<p>Warren went down on his raw knees on the stone with his heels scraping out behind him and dabbed at the cloth with a napkin, and his eyes ran, and he could not stop them.</p>
+<p>Isabella looked at her wine and said nothing.</p>
+<p>An hour later the merchant left. Warren was at the sink washing the pans.</p>
+<p>He heard the loafers on the terracotta. He braced.</p>
+<p>But when he turned, Sharon was holding the edge of the butcher&#x27;s block with both hands. Her knuckles had gone white. She was looking at the floor.</p>
+<p>&quot;I sounded exactly like him,&quot; she said.</p>
+<p>Warren didn&#x27;t move.</p>
+<p>&quot;Thirty years.&quot; Her voice went. &quot;Thirty years he called me useless when I dropped a fork. And I just did it to you.&quot;</p>
+<p>A tear came down her cheek and she did not wipe it.</p>
+<p>Warren stood with his hands in the water. He looked at her — not at the woman who had cut his hair and glued his chest and put a pill in his mouth, but at the one from the cold house in Glenorchy who had learned to stand very still when a man came into a room.</p>
+<p>He dried his hands on the tea towel. He crossed the kitchen and went down on his knees in front of her, and it was not the way he had gone down on the terrace.</p>
+<p>He took her hands. They were shaking.</p>
+<p>&quot;It&#x27;s alright,&quot; he said. &quot;I know what he did to you. You can put it on me. I&#x27;m strong enough to carry it.&quot;</p>
+<p>Sharon looked down at him. Her mouth went out of shape.</p>
+<p>Then she pulled her hands out of his and pressed them flat against her eyes, and stood there in the middle of her own kitchen, and let it come.</p>
+<p>Warren stayed where he was on the floor and waited.</p>
+<p>After a while she wiped her face with the heel of her hand and looked at the bench, at the two clean pans and the third still under the water.</p>
+<p>&quot;That one&#x27;s not done,&quot; she said.</p>
+<p>The water had gone cold around his wrists.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch21">
+<header class="ch-head"><p class="ch-num">Chapter 21</p><h2>The Sculpting</h2></header>
+<p>The following week Sharon rewarded him. They took the Mercedes into Florence.</p>
+<p>The city was all heat and high fashion, but Warren crossed the cobbles in the pumps without thinking about it now, the navy bag swinging on his arm. They did not go to a clothing boutique. Sharon took him straight into a medical spa near the Ponte Vecchio.</p>
+<p>&quot;We&#x27;re taking off the last of the rough stone,&quot; she said in the waiting room. &quot;You have the breasts and the hormones. Your face is still fighting.&quot;</p>
+<p>The clinician took him into a white room.</p>
+<p>First they booked the electrolysis — the follicles on his face and neck and chest mapped out, and a standing appointment every second week to kill the roots and take the shadow out of his jaw for good.</p>
+<p>Then the sculpting.</p>
+<p>Warren was laid back in the chair. A beautician came at his eyebrows with hot wax and thread. It watered his eyes. When she stopped, the heavy male brow was gone and there was a high thin arch in its place. Lash extensions went on one at a time.</p>
+<p>Then the doctor came in with a tray.</p>
+<p>&quot;Botox and dermal fillers, Signora.&quot;</p>
+<p>Warren shut his eyes. The needle went into his forehead, into the muscle that had done thirty years of scowling. The doctor worked along it methodically.</p>
+<p>Then the needle went to his mouth. Filler went into the thin lips until they swelled. More went high into the cheekbones and took the square out of his jaw.</p>
+<p>When the doctor handed him a mirror, Warren looked for a long time.</p>
+<p>His face was red and puffed at the edges, but it had been rearranged. The lines across the forehead were gone. The brows and the lashes had changed what his eyes did. The mouth was not his mouth.</p>
+<p>He looked up at Sharon.</p>
+<p>&quot;You look beautiful, Rowena,&quot; she said.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch22">
+<header class="ch-head"><p class="ch-num">Chapter 22</p><h2>The Baptism of Gaze</h2></header>
+<p>Two weeks on, the swelling had gone down and left a soft contour behind. The Botox held her forehead smooth. The electrolysis was starving the blue-black out of her upper lip and her jaw.</p>
+<p>On a warm Friday evening Sharon announced they were going out.</p>
+<p>&quot;Tonight we dine in Florence,&quot; she said, inspecting her in the master bedroom.</p>
+<p>Rowena stood in front of the long mirror. No Tasmanian cast-offs. For the first time Sharon had put her in a proper Italian wardrobe: a fitted emerald wrap dress that went over the hips and draped across the weight of the silicone. A fine gold chain at her throat. Small diamond studs in her new-pierced ears. The ash-brown wig swept up into a twist, and her mouth a deep burgundy.</p>
+<p>The patent heels clicked as she practised the short hip-led walk Sharon had drilled into her.</p>
+<p>&quot;You look stunning, my dear,&quot; Sharon said, adjusting her collar. &quot;Let&#x27;s see whether the rest of the world agrees.&quot;</p>
+<p>They parked near the Piazza della Signoria. The evening smelled of coffee and woodsmoke and perfume, and the streets were full under the amber lamps.</p>
+<p>Rowena walked beside Sharon with her heart going. Every step in the heels was a tightrope. She kept her hands closed around the strap of the navy bag.</p>
+<p>They got a corner table at a busy bistro down a cobbled alley.</p>
+<p>Rowena kept her eyes on the tablecloth. She was aware of every man who went past. In the other life, men had looked at her with indifference or not at all.</p>
+<p>A well-dressed Italian in a tailored blazer came past the table with a companion on his arm. His eyes went over the emerald silk, over the weight under the wrap bodice, up to the filled cheekbones, and stopped for half a second on her mouth.</p>
+<p>&quot;Buona sera, Signora,&quot; he said, and nodded, and went on.</p>
+<p>Rowena&#x27;s breath caught. Her lips parted and she gave him a small nod back before she knew she was doing it.</p>
+<p>Sharon saw it. She put her hand over Rowena&#x27;s fingers on the table.</p>
+<p>&quot;You are not hiding anymore,&quot; she said. &quot;You are being perceived. How does it feel?&quot;</p>
+<p>Rowena looked at Sharon&#x27;s hand on hers, and then out across the piazza at the crowd going by in the warm light.</p>
+<p>&quot;Like nobody is looking for me,&quot; she said.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch23">
+<header class="ch-head"><p class="ch-num">Chapter 23</p><h2>The Awakening</h2></header>
+<p>Four months into the oestrogen, her body started doing it by itself.</p>
+<p>It began as an ache behind the nipples. At first she put it down to the adhesive. Then one evening, unbuttoning a silk blouse in the bathroom, she caught the back of her hand against her left pectoral.</p>
+<p>The tenderness went through her like a wire.</p>
+<p>She stopped with her hand in the air. Then, carefully, she peeled back the edge of the glue where the silicone met the skin. Underneath the form, her own flesh had changed. Small firm mounds were pushing up under it and altering the line of her chest.</p>
+<p>Warren Thornhill&#x27;s body was building a woman from the inside.</p>
+<p>That night Sharon was on the terrace with a glass of red, and the sun going down behind the hills. Rowena came out through the French doors in a loose cotton robe. The silicone was on the side table; the new tissue underneath had made the weight of it too much to bear.</p>
+<p>She knelt beside the chair and put her hands on Sharon&#x27;s knees.</p>
+<p>&quot;They&#x27;re growing.&quot;</p>
+<p>Sharon set the wine aside. She reached out and put her palm flat against Rowena&#x27;s bare chest and felt the warm swell of it under the skin.</p>
+<p>&quot;I know,&quot; she said. &quot;The oestrogen has taken. You aren&#x27;t wearing a costume anymore.&quot;</p>
+<p>Rowena leaned her forehead on Sharon&#x27;s knee and shut her eyes.</p>
+<p>&quot;The silicone feels clumsy now,&quot; she said. &quot;It&#x27;s rubber sitting on top of something that&#x27;s finally real. And underneath—&quot; She swallowed. &quot;The tucking. The tape. Every time I walk, every time I put the heels on, I know it&#x27;s there. It&#x27;s a foreign object.&quot;</p>
+<p>Sharon stroked the ash-brown wig, and her fingers went down the line of her jaw.</p>
+<p>&quot;Then we get rid of it.&quot;</p>
+<p>Rowena looked up. &quot;Surgery?&quot;</p>
+<p>&quot;Top first. Now that your own tissue is developing, a surgeon in Florence can take the prosthetics off, do a proper augmentation, and shape permanent breasts on your frame. No more glue. They&#x27;ll be yours.&quot; Sharon leaned in. &quot;And underneath, full reconstruction. No more tape. No more hiding. No more pretending when you go through the door on the right.&quot;</p>
+<p>Rowena&#x27;s heart went hard against her ribs. The fear that would have stopped Warren Thornhill dead was not anywhere in the room.</p>
+<p>And somewhere under it, far down, she heard that the words she had used about her own body — foreign object, deformity — were not words she had ever owned. She had been given them, across a kitchen, weeks ago. She thought about that for as long as it took to breathe in, and then she let it go.</p>
+<p>&quot;Will you arrange it?&quot; she said, gripping the fabric of Sharon&#x27;s trousers.</p>
+<p>Sharon leaned down and kissed her on the mouth, lightly.</p>
+<p>&quot;Of course I will, my dear. You&#x27;ve worked hard for this.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch24">
+<header class="ch-head"><p class="ch-num">Chapter 24</p><h2>The Unmasking</h2></header>
+<p>Before they met the surgical team, Sharon had one more stop in Florence.</p>
+<p>They went back to the spa near the Ponte Vecchio, but not to the white rooms. Sharon took her through to the salon at the back — mirrors, white leather chairs, and the sharp chemical smell of professional dye.</p>
+<p>The master stylist, a chic Italian with silver-tipped hair, kissed Sharon on both cheeks and ran an eye over the emerald dress.</p>
+<p>&quot;The transformation is coming along beautifully, Signora.&quot; He gestured at the chair. &quot;Sit, please.&quot;</p>
+<p>Rowena sat. She put her pink-tipped fingers up to the edge of the wig she had worn every day since Como.</p>
+<p>&quot;Take it off,&quot; Sharon said, standing behind the chair with her hands on Rowena&#x27;s shoulders. &quot;You don&#x27;t need it. Let&#x27;s see what&#x27;s been going on under there.&quot;</p>
+<p>Rowena found the clips under the lace. She unanchored it and lifted it straight up off her head, and put it down on the glass counter.</p>
+<p>She looked into the mirror.</p>
+<p>Underneath the hot synthetic fibre, her own hair had been growing for months. The square edges Sharon had cut away in a hotel bathroom were gone. What had come in was a soft shoulder-length silver, fine at the temples, and the sideburns had grown back thin and gone unnoticed.</p>
+<p>It was not a man&#x27;s grey. It was a silver an expensive woman would pay for.</p>
+<p>The stylist came forward and ran his fingers through it, looking at the texture.</p>
+<p>&quot;Magnificent,&quot; he said. &quot;The follicle has softened right off. Now we colour it.&quot;</p>
+<p>For the next two hours Rowena sat in the chair while he washed out the months of dust, put a toner through the silver until it came up a warm champagne with honey under it, and dried it into a sweep that fell along her jaw.</p>
+<p>When he turned the chair round, Rowena did not move.</p>
+<p>The wig lay dead on the counter behind her.</p>
+<p>What was in the mirror was a European woman in her late fifties with good hair and a soft mouth and clear, unshadowed skin.</p>
+<p>Rowena reached up and touched it. It moved the way her own hair had always moved and she had never once noticed.</p>
+<p>&quot;It&#x27;s growing out of my head,&quot; she said.</p>
+<p>Sharon leaned down and put her cheek against Rowena&#x27;s, and looked at the two of them in the glass.</p>
+<p>&quot;It always was,&quot; she said. &quot;Now let&#x27;s go and see the surgeon.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch25">
+<header class="ch-head"><p class="ch-num">Chapter 25</p><h2>The Voice and the Blade</h2></header>
+<p>Doctor Rossi&#x27;s clinic looked out over the Arno and gave nothing away.</p>
+<p>Rowena sat across the mahogany desk with the navy bag in her lap. Sharon sat beside her. The champagne-blonde caught the afternoon light off the river.</p>
+<p>&quot;Signora Thornhill.&quot; Rossi went through the chart and the hormone panels. &quot;Your adaptation to the estradiol has been exceptional. The tissue development is robust. We can proceed with a bilateral augmentation using anatomical implants to replace the temporary prosthetics. And for the lower procedure, the team is ready.&quot;</p>
+<p>He clicked his pen. Then his eyes went up from her chest to her neck, and he stopped, and tilted his head.</p>
+<p>Rowena swallowed, and felt it move.</p>
+<p>Rossi reached out and touched the cartilage at the front of her throat, professionally.</p>
+<p>&quot;The thyroid cartilage,&quot; he said. &quot;Even with the fillers and the Botox and the hair, this is a masculine landmark. In profile, under a hard light, it will give you away.&quot;</p>
+<p>Sharon leaned forward. &quot;Can it be corrected?&quot;</p>
+<p>&quot;Of course. A tracheal shave. A small incision under the chin, and we reduce the projection. We can do it at the same sitting as the top surgery.&quot;</p>
+<p>Rowena&#x27;s hand went up to the lump in her throat. Months of clothes and hair and needles, and this one piece of gristle had stayed exactly where it was.</p>
+<p>&quot;Yes,&quot; she said. &quot;Do that as well. I want all of it gone.&quot;</p>
+<p>Rossi paused. He looked at her, and then at Sharon.</p>
+<p>&quot;One more thing to consider, Signora,&quot; he said, folding his hands. &quot;Surgery alters bone and tissue and contour. It does not alter the vocal cords. When you speak, your resonance is deeply masculine. A stranger looking at your face will hear something else entirely the moment you open your mouth.&quot;</p>
+<p>Nobody said anything.</p>
+<p>Rowena looked down at the bag in her lap. He was right. In the villa with Sharon, or keeping quiet in public, she passed. But she could not order a coffee. She could not answer a question. Every time, the voice came up out of a fifty-seven-year-old man&#x27;s chest and put him back in the room.</p>
+<p>On the drive back to Vinci neither of them spoke. The vineyards went past the windows of the Mercedes, row after row, turning as they passed.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch26">
+<header class="ch-head"><p class="ch-num">Chapter 26</p><h2>The Architecture of the Frame</h2></header>
+<p>Rossi leaned back and tapped his pen against the blotter.</p>
+<p>&quot;If we are committing to this — if we are removing the last of the masculine frame — we should look at the architecture as a whole.&quot; His eye went over her outline. &quot;The oestrogen has moved some fat to the hips, and the squats have built the lower body. But the ratio is still android. Broad ribs. Narrow pelvis.&quot;</p>
+<p>Sharon nodded. &quot;Can it be engineered?&quot;</p>
+<p>&quot;Easily. While we do the tracheal shave, the augmentation and the lower reconstruction, we can also do a gluteal augmentation and take the flanks down. We harvest from the abdomen and the waist to cinch the core, and graft it — with implants if necessary — to round and project the buttocks. In profile, the line from the breast down through the waist to the hip will be classical.&quot;</p>
+<p>Rowena thought about walking through Florence without the rigid posture she had carried for thirty years.</p>
+<p>&quot;Do it,&quot; she said, pitching her voice up out of the chest register the way she had been taught. &quot;All of it. I want a woman&#x27;s body.&quot;</p>
+<p>Rossi made the last additions to the schedule. The cost ran into six figures. It was paid for out of thirty years of coastal land.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch27">
+<header class="ch-head"><p class="ch-num">Chapter 27</p><h2>The Kitchen Trial</h2></header>
+<p>That evening at Vinci the voice work began.</p>
+<p>Rowena stood at the counter in the denim skirt and the two-inch heels with her champagne-blonde tied back in a ribbon, seasoning a pan of vegetables.</p>
+<p>Sharon sat at the small table with a glass of wine.</p>
+<p>&quot;Describe the seasoning.&quot;</p>
+<p>Rowena parted her lips and pushed the breath up into her head. &quot;I have added the rosemary, and a pinch of sea salt, Sharon.&quot; It came out thin and effortful.</p>
+<p>&quot;Too forced. You sound like a parody. Take the strain off, keep the resonance high, and give me the consonants. Again.&quot;</p>
+<p>Rowena swallowed and tried to let her throat go.</p>
+<p>&quot;I have added the rosemary, and a pinch of sea salt, Sharon.&quot;</p>
+<p>&quot;Better. But the s at the end of salt dropped into your chest. Penalty.&quot;</p>
+<p>Rowena went still. &quot;Sharon, please—&quot;</p>
+<p>&quot;A penalty is a penalty.&quot; Sharon stood and came over to the counter, and took down the leather riding crop that had been hanging by the pantry door since before they arrived, an ornament left by somebody else.</p>
+<p>&quot;Bend over the counter. Hands flat. Skirt up.&quot;</p>
+<p>Rowena gripped the edge of the butcher&#x27;s block, lifted the denim, and bared herself.</p>
+<p>Sharon stood behind her. There was no anger in it. It was correction, applied so that speaking from the chest would come to cost something before the thought arrived.</p>
+<p class="beat">Thwack.</p>
+<p>The gasp that came out of Rowena was high, and startled, and not a man&#x27;s.</p>
+<p>&quot;There,&quot; Sharon said, running her fingers over the rising welt. &quot;Your body knows how to make the right sound when it&#x27;s paying attention. Straighten up, finish the vegetables, and tell me how the lamb is doing. In your head voice.&quot;</p>
+<p>Rowena took a breath. She wiped her cheek, straightened her skirt, and set her shoulders.</p>
+<p>&quot;The lamb is roasting beautifully, Sharon,&quot; she said, and it came out light, and easy, and nothing like him.</p>
+<p>Sharon took a sip of her wine.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch28">
+<header class="ch-head"><p class="ch-num">Chapter 28</p><h2>The Final Countdown</h2></header>
+<p>The last six weeks before the admission went past in discipline and small pain.</p>
+<p>The rules at Vinci were absolute. Every morning began with the makeup and the brushing out of her hair. The voice no longer cost her anything; the high resonance had gone into the muscle, put there by the crop. The electrolysis had finished the follicles on her face and left the skin pale and clear.</p>
+<p>Her body was moving faster now too. The tissue under the skin ached all day, a dull constant thing.</p>
+<p>On a cold Monday in late autumn the Mercedes went out through the iron gates.</p>
+<p>They came down into Florence and stopped under the awning of Rossi&#x27;s clinic on the Arno.</p>
+<p>Rowena looked into the vanity mirror on the sun visor. The brows. The sweep of the champagne-blonde. The soft mouth. There was nothing of Warren Thornhill in the glass.</p>
+<p>Sharon reached across the console and put her hand over Rowena&#x27;s.</p>
+<p>&quot;Are you ready to leave him behind?&quot;</p>
+<p>Rowena turned her hand over and gripped Sharon&#x27;s.</p>
+<p>&quot;There&#x27;s nothing to go back to,&quot; she said. &quot;Let&#x27;s go in.&quot;</p>
+<p>They got out. The clinic doors opened.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch29">
+<header class="ch-head"><p class="ch-num">Chapter 29</p><h2>The Architect&#x27;s Vigil</h2></header>
+<p>The private waiting room smelled of lilies. There were eleven of them in a glass vase on the low table, and Sharon knew there were eleven because she had counted them twice.</p>
+<p>Eight hours, Rossi had said. Tracheal shave, augmentation, gluteal augmentation, flank liposuction, and the reconstruction.</p>
+<p>She had an espresso at half past eight and did not drink it.</p>
+<p>At ten a nurse put her head in and asked, in careful English, whether the Signora wanted anything, and Sharon said no thank you, and then sat listening to the shoes go away down the corridor.</p>
+<p>The room had a clock. It was an antique and it did not tick evenly; there was a small hesitation in it every fourth or fifth second, and once she had noticed it she could not stop waiting for it.</p>
+<p>At eleven she went out onto the balcony. The Arno was the colour of milky tea and there was mist sitting on it in patches, and a man was walking a small dog along the far embankment with no particular purpose. She watched him until he had gone.</p>
+<p>At about midday she looked down and found that she was sitting with her feet flat on the floor and her knees together and her weight forward, the way you sit when you may need to get up quickly.</p>
+<p>She made herself sit back. Ten minutes later she was forward again.</p>
+<p>The memories came the way they always came, which was sideways and without being sent for.</p>
+<p>The sound of a car door in the drive, and the whole house going quiet while she worked out from the sound of it which Trevor had come home.</p>
+<p>Long sleeves in February, in Glenorchy, in a heatwave, and her mother saying nothing about it across a kitchen table for eleven years.</p>
+<p>And the fork. Not the shouting — the fork itself, the actual object, a cheap stainless thing from a set of six, and the noise it made on lino, and how she had stopped breathing before it had finished moving.</p>
+<p>She had never once dropped anything on purpose in thirty years. She had thought about it. She had stood at a bench with a plate in her hand and thought about simply opening her fingers, to find out what would happen, the way you stand at a railing and think about the drop.</p>
+<p>Her hands were steady. She turned them over and looked at the backs of them and they were perfectly steady, and she noticed that this was the third time she had checked.</p>
+<p>At two o&#x27;clock the nurse brought a tray she had not asked for and left it. At half past three Sharon ate all of it.</p>
+<p>At some point in the afternoon the hour in the kitchen came back — the white knuckles on the butcher&#x27;s block, the tea towel, a large weeping man on his knees in front of her holding her hands, saying he was strong enough to carry it.</p>
+<p>She got up and went to the window and stood there until it had gone.</p>
+<p>The oak door at the end of the corridor opened at twenty to six.</p>
+<p>Rossi came in without his cap, his grey hair flattened, pulling his mask down.</p>
+<p>Sharon was already standing.</p>
+<p>&quot;How is she?&quot;</p>
+<p>&quot;A success, Signora Taylor,&quot; Rossi said. &quot;It was long, and she will need weeks of strict recovery. But the architecture is complete. The profile is smooth, the implants are anchored, the contour is balanced, and the lower reconstruction went without incident.&quot;</p>
+<p>He stepped aside and gestured down the corridor.</p>
+<p>&quot;She is in recovery. The anaesthetic is wearing off. She is asking for you.&quot;</p>
+<p>Sharon smoothed the front of her cardigan, picked up her handbag, and went down the white hallway.</p>
+<p>The afternoon light came through the blinds in strips.</p>
+<p>Rowena was propped on white pillows. Her face was pale and swollen and bruised, and an orthopaedic wrap held her chin where the cartilage had been taken down. A drip ran into the back of her hand.</p>
+<p>Her eyes came open.</p>
+<p>She could not speak — the tube had left her throat raw — but her mouth moved, and a tear went down her swollen cheek.</p>
+<p>Sharon came to the side of the bed. She brushed a strand of champagne-blonde off Rowena&#x27;s forehead and kissed her cheek.</p>
+<p>&quot;It&#x27;s done,&quot; she said. &quot;You&#x27;re finished.&quot;</p>
+<p>The espresso was still on the glass table in the waiting room when the cleaners came through at eight.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch30">
+<header class="ch-head"><p class="ch-num">Chapter 30</p><h2>The Bruising</h2></header>
+<p>For the first three days she was not allowed to sit up past thirty degrees.</p>
+<p>She lay in the white room on the Arno and inventoried herself by what hurt. The throat was the sharpest — swallowing was an event she had to prepare for, and the wrap held her chin up so that she could only look at the ceiling and the top third of the window. Her chest was a deep, heavy soreness under the dressings, the kind that lives behind the bone. Her flanks stung where the cannulas had gone in. And low down, under the compression garment, there was a pressure she had no vocabulary for — not pain exactly, but the sensation of a place that had been made and had not yet agreed to it.</p>
+<p>The catheter came out on the fourth day. A nurse with cold hands and no small talk explained, in English she had clearly given many times, what would happen and what was normal and what was not.</p>
+<p>It was the first time Rowena understood that she was going to have to be taught how to use her own body.</p>
+<p>She could not stand unaided until day six. When they got her up, two of them took her weight, and the room swung.</p>
+<p>The first thing she noticed, upright, was that she was heavier behind than she had been, and that her weight wanted to sit further back. She had to think about where her hips were. She took three steps to the window with a nurse on each arm, and every one of them had to be decided in advance.</p>
+<p>The second thing she noticed she did not have words for either, and it took her until she was back on the bed to find them.</p>
+<p>There was nothing between her legs.</p>
+<p>Not absence, exactly. Something had been done there and it was swollen and taped and it hurt. But the old arrangement — the weight, the constant negotiation of it, the tuck and the tape of the last four months, the whole lifelong business of accommodating a thing that was always slightly in the way — was gone. Her thighs came together and stayed together. When she shifted on the mattress, nothing shifted with her.</p>
+<p>Fifty-seven years, and she had never once thought about it. It had been the floor of the world.</p>
+<p>On the ninth day they took the dressings off her chest for the first time.</p>
+<p>The implants sat high and firm and did not move when she breathed. Along the fold beneath each one ran a thin line of surgical tape, and under that, when the nurse peeled it back to check, a clean pale incision.</p>
+<p>The nurse had warned her about the rest of it in the same flat voice she used for everything. During the augmentation the areolae had been resited and reduced, and the nerve supply had been cut and would take months to decide what it was doing.</p>
+<p>Rowena put two fingers against her own right nipple and pressed.</p>
+<p>She could feel the pressure. She could feel the shape of her own fingers going in. But the sensation arrived from somewhere further off, the way a foot feels through a thick sock, and the small electric thing that had been there all her life — that had been there, absurdly, since she was a boy — was not there.</p>
+<p>She tried the left. The same.</p>
+<p>There was no glue. There was no marker line. There was nothing to take off. There was also, for the moment, nobody home.</p>
+<p>Rowena looked down at them for a long time and could not make herself believe that she could not put them on the side table.</p>
+<p>Her skin, from the ribs to the knees, was going through its colours. It had started purple-black over the hips and along the jaw and was moving into green and a sick yellow at the edges, the way a bruise does when it is doing what it should. The compression garment held everything where it had been put.</p>
+<p>Sharon came every day at eleven and again at four.</p>
+<p>She did not fuss, and she did not perform tenderness. She brought broth and water and a hairbrush. She read aloud from the Italian papers, badly, and let Rowena wheeze at her accent because laughing was the only thing that did not hurt. When the nurses were changing dressings she stood at the window with her back turned, not from squeamishness but because she had decided, without being asked, that there was a difference between being seen and being inspected.</p>
+<p>On the eleventh day Rowena asked for a mirror.</p>
+<p>&quot;Not yet,&quot; Sharon said.</p>
+<p>&quot;Sharon.&quot;</p>
+<p>&quot;Not yet. You&#x27;d be looking at the swelling and you&#x27;d think it was the result.&quot; She put the hairbrush down on the blanket. &quot;I have waited thirty years for one thing or another. You can wait a fortnight.&quot;</p>
+<p>On the fourteenth day they told her she could go home.</p>
+<p>Sharon carried the bag. Rowena walked out to the car on her own, slowly, in flat shoes, with a hand on Sharon&#x27;s forearm — down a corridor, through a door, across four metres of gravel — and sat down sideways into the seat and lifted her legs in together, the way she had watched women do her whole life without ever once wondering why.</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch31">
+<header class="ch-head"><p class="ch-num">Chapter 31</p><h2>The Instruction</h2></header>
+<p>They put her in the master suite. Not the room off the kitchen.</p>
+<p>Nobody discussed it. Sharon simply had the bags carried up, and after that the small room with the iron bed was where the linen went.</p>
+<p>For the first fortnight at Vinci, Rowena did nothing but heal, and be taught.</p>
+<p>Sharon taught her the way she did everything — exactly, in order, without any softening around the edges, and without once pretending that either of them found it comfortable.</p>
+<p>It began with the bathroom, because everything began with the bathroom.</p>
+<p>&quot;Front to back,&quot; Sharon said, standing in the doorway with a folded towel over her arm. &quot;Always. Never the other way, never once, not if you are in a hurry and not if you are tired. You have new tissue and a short urethra and you will get an infection that will put you back in Florence. Say it.&quot;</p>
+<p>&quot;Front to back.&quot;</p>
+<p>&quot;Good.&quot;</p>
+<p>It sounded like nothing. It was not nothing. It was a small precise motion that her hands had no memory of, and for the first week she caught herself getting it wrong and had to stop, mid-act, and start again. She had been in the world for fifty-seven years and had never had to think about this. Nobody had ever taught her. Somebody, once, had taught Sharon.</p>
+<p>Then there was the other thing.</p>
+<p>Sitting down was not the difficulty. She had been sitting down for months. The difficulty was that she had no idea, now, where anything was going to go.</p>
+<p>The first few times were a humiliation of a kind the book had never got round to. It went sideways. It went in two directions at once. It stopped and started. She had spent a lifetime with an instrument of aim she had never had to think about for a single second, and it had been removed, and what she had in its place did what it liked.</p>
+<p>She came out of the bathroom the third morning with her face burning and told Sharon, because there was no longer anything she did not tell Sharon.</p>
+<p>Sharon did not laugh at her.</p>
+<p>&quot;It settles,&quot; she said. &quot;Not completely. Lean forward slightly. And take the time — do not stand up until you are finished, because you will find out in the corridor that you weren&#x27;t.&quot; She went back to her paper. &quot;Every woman you have ever met has worked this out. None of them mentioned it to you.&quot;</p>
+<p>The dilation schedule was printed on a card in Rossi&#x27;s flat, unembarrassed English, and it ran three times a day for the first three months. It was not pleasant and it was not optional, and the alternative was losing what she had been given. Sharon put the card in a drawer in the master bathroom, set a timer on her own phone, and never once let a session be skipped or hurried. She did not attend them. She waited on the other side of the door, and when Rowena came out grey and sweating she had water ready, and she said nothing at all about it, which was the kindest thing available.</p>
+<p>In the fourth week Rowena took the hand mirror off the dresser and locked the bathroom door and looked at herself properly, for the first time.</p>
+<p>The swelling had gone down enough to see what was there rather than what had been done. It was still bruised at the edges. There was a line of healing that she would carry.</p>
+<p>It was not what she had imagined, because she had never really imagined it; she had only ever imagined the absence of the other thing.</p>
+<p>She sat on the edge of the bath for a long while with the mirror in her lap.</p>
+<p>Then she put it back on the dresser, face down, and went and stood at the window, and her hands would not quite stay still.</p>
+<p>Walking was its own curriculum.</p>
+<p>The gluteal work and the flanks had moved her centre of gravity — back and down — and for weeks she walked like a woman carrying something on a tray. Sharon made her do the length of the upstairs corridor every afternoon, barefoot on the terracotta, with a book on her head for the first fortnight and then without.</p>
+<p>&quot;Stop driving from the shoulders,&quot; Sharon said, from the far end. &quot;You are still walking like a man going somewhere. The hips carry you now. Let them.&quot;</p>
+<p>She got to the end of the corridor and turned, and looked down it at Sharon&#x27;s face before she looked at anything else.</p>
+<p>It was true, and she could feel it once it had been said. The weight went along a different path. The step came out shorter and the foot came down differently and the whole thing was less a matter of pushing forward than of falling and catching herself, over and over, in a rhythm she had watched other people use all her life.</p>
+<p>And her thighs touched.</p>
+<p>That was the detail that undid her, in the end. Not the mirror. Not the incisions. Walking down a hallway in her own house and feeling the inside of one thigh brush the inside of the other, and again, and again, with every step, all day, for the rest of her life.</p>
+<p>The sensation came back in patches and took its time about it.</p>
+<p>It started in the seventh week as pins and needles under the left areola, which woke her at four in the morning and went on for two days. Then a numb band across the outer curve that never came back at all. Then, one afternoon in the ninth week, she brushed against the edge of the kitchen table and the right one reported it — properly, immediately, with a sharpness that stopped her where she stood.</p>
+<p>It was not the old sensation returning. It was a new one, in a place that had not previously had opinions, and it did not always agree with the weather.</p>
+<p>&quot;They&#x27;ll go hard in the cold,&quot; Sharon said, when Rowena came in off the terrace in a thin blouse in November with her arms crossed over herself. &quot;Every woman in the northern hemisphere has been managing that since October. Wear something under it or stop crossing your arms. You look like you&#x27;re being told off.&quot;</p>
+<p>The implants she had to learn as weight. They did not come off, and so they had to be dressed for and slept with and reckoned into every movement. She learned to fold her arms under them without thinking. She learned, in the eighth week, to put a bra on behind her back instead of fastening it at the front and turning it round, and Sharon watched her do it and did not comment.</p>
+<p>By the ninth week the bruising had gone down to a yellow shadow over the hips.</p>
+<p>By the twelfth, her skin had gone back to its own colour, and the compression garment went into the bin, and she could stand under the shower and let the water come straight down onto her chest without holding on to the wall.</p>
+<p>On the last morning of the twelfth week, Sharon came into the bedroom while Rowena was dressing and stopped, and looked at her, and something went across her face and was gone.</p>
+<p>&quot;Don&#x27;t put anything on,&quot; she said. &quot;Come down to the pool.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch32">
+<header class="ch-head"><p class="ch-num">Chapter 32</p><h2>The Statue</h2></header>
+<p>The pool lay on the lower terrace, behind a hedge of clipped box, with the olive groves falling away below it and no house in sight for three kilometres.</p>
+<p>At the far end, on a plinth the property managers had never bothered to explain, stood a marble woman.</p>
+<p>She was a copy, and not a very good one — some nineteenth-century workshop&#x27;s version of a Roman version of a Greek original, four hands away from whoever had first seen her. Her nose was weathered off. One forearm was missing below the elbow. Two hundred years of rain had taken the detail off her breasts and left two smooth blanks, which nobody had ever thought to repair. She stood with her weight on her right leg and her left knee slightly bent, holding the fall of a robe against her hip with the hand she still had.</p>
+<p>The morning was cool and clear and the light came flat across the water.</p>
+<p>&quot;Stand beside her,&quot; Sharon said.</p>
+<p>Rowena stopped on the warm stone. &quot;Sharon—&quot;</p>
+<p>&quot;There is nobody for three kilometres. Stand beside her.&quot;</p>
+<p>Rowena let the robe go off her shoulders and hung it over the back of a chair, and walked across to the plinth, barefoot, with her thighs touching, and turned around.</p>
+<p>Sharon looked at her for a long time and did not say anything, and Rowena made herself stay where she was and not cover anything with her hands.</p>
+<p>The marble was at her shoulder. The stone woman&#x27;s weight was on her right leg. Without deciding to, Rowena found that her own had gone the same way.</p>
+<p>&quot;Do you know what she was for?&quot; Sharon said at last.</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;Neither does anybody else. She is a copy of a copy. Somebody carved the first one because of how a woman stood in a room, and then everybody carved her again for two thousand years, and they put her in gardens and in courthouses and on the fronts of banks.&quot; She came a few steps closer. &quot;Men made every one of them. They spent two thousand years making her out of stone because they could not make her any other way, and they put her up on a plinth where they could look at her.&quot;</p>
+<p>She stopped in front of her.</p>
+<p>&quot;Thirty years I was in a house with a man who called me a cow when I dropped a fork,&quot; she said. &quot;And the same species that made him carved her.&quot;</p>
+<p>Rowena looked at Sharon first, the way she now looked at Sharon first. Then at the marble hand holding the fall of the robe.</p>
+<p>&quot;That is what you are now,&quot; Sharon said. &quot;You were a man who was frightened of deciding what to have for dinner. Now you are the thing they build on plinths. Not useful. Not sensible. Not a rock or a provider or a shovel. Something to be worshipped.&quot;</p>
+<p>The water moved in the pool and put light up onto the underside of the olive leaves.</p>
+<p>Rowena thought about the airport at Malpensa, and a canvas bag hitting the floor three inches from a pair of black walking shoes.</p>
+<p>&quot;She&#x27;s missing an arm,&quot; she said.</p>
+<p>Sharon laughed — the short, surprised, unguarded sound she made perhaps twice a year — and picked the robe up off the chair.</p>
+<p>&quot;So she is,&quot; she said, and held it open. &quot;Come and have your breakfast.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+<section class="chapter" id="ch33">
+<header class="ch-head"><p class="ch-num">Chapter 33</p><h2>The Fork</h2></header>
+<p>They stayed.</p>
+<p>There was talk, in the second year, of Rome, and once of going back to look at the lake. Neither happened. The villa took them the way old houses take people — a room at a time, until the idea of being anywhere else required more organising than either of them was willing to do.</p>
+<p>They went out. Not often, and never to prove anything. Twice a year or so they drove into Florence and ate somewhere with a view of the river, and Rowena wore the emerald silk, and men looked at her and she let them, and it stopped being an event somewhere around the fourth time. There was one evening in a bar near the Arno when a younger man was persistent enough that Rowena leaned across the table and kissed Sharon in front of him to be rid of him, and they laughed about it in the car. She had been pleased with herself for a week. She was less pleased, later, when she worked out that she had looked at Sharon&#x27;s face before she did it, to check.</p>
+<p>She looked at Sharon&#x27;s face before most things.</p>
+<p>The rest of it was ordinary, which nobody had warned her about.</p>
+<p>She did the vegetable garden along the south wall and got good at it. She could not read Italian but she could conduct an entire transaction about tomatoes with the woman who came up from the village. Her hair went a paler blonde in summer. She put on four kilos in the third year and Sharon said nothing about it, which was its own kind of statement, and then said something about it, which was another.</p>
+<p>The heels had gone. She wore flats around the house and boots in the olive rows in winter, and her body had stopped being a project and gone back to being the thing she got about in. She still noticed her thighs. She supposed she always would.</p>
+<p>Sharon was sixty in the spring.</p>
+<p>She had got smaller. Not frail — Sharon would never manage frail — but there was less of her, and she had begun to sit down more deliberately, and there was a stick in the hall stand that had not been there the year before and that neither of them had ever mentioned.</p>
+<p>It was a Thursday evening in October. The kitchen smelled of rosemary. Rowena was laying the table and talking about the pruning, and she had a handful of cutlery, and a fork went out of her hand and hit the terracotta with a flat ringing clatter that went all the way up the stairwell.</p>
+<p>Rowena stopped.</p>
+<p>Everything in her got ready. Her shoulders came up. Her chin went down. The whole apparatus, two years out of use and perfectly maintained.</p>
+<p>Sharon bent down, picked the fork up off the floor, and put it in the sink.</p>
+<p>&quot;There&#x27;s another in the drawer,&quot; she said, and went back to the stove.</p>
+<p>Rowena did not move.</p>
+<p>She waited for the rest of it. She waited to be told what she was. She had been waiting for it in some part of herself since a wine merchant&#x27;s white tablecloth, and she had got very good at standing still, and the standing still was where she knew who she was and what she was for.</p>
+<p>It did not come. The kitchen went on being quiet around her. The rosemary spat in the pan.</p>
+<p>And what came up in her, from a long way down, was not relief.</p>
+<p>She stood in the middle of the floor holding five pieces of cutlery and understood, in the way you understand a thing you would rather not have found out, that she had wanted it.</p>
+<p>Sharon turned the gas down.</p>
+<p>&quot;Rowena.&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;The drawer.&quot;</p>
+<p>Rowena got a clean fork out of the drawer and finished laying the table. She put the wine out and the bread and the oil, and the two of them sat down in the window where the light was going, and ate.</p>
+<p class="end">&#10022;</p>
+</section>
+
+</main>
+
+<footer>
+  <p>The Transformation of Rowena Thornhill</p>
+  <p>&copy; Sharyn Underhill. All rights reserved.</p>
+</footer>
+
+<button class="top" id="top" type="button" aria-label="Back to top">&uarr;</button>
+
+<script>
+(function(){
+  var root=document.documentElement, KEY="rt-theme";
+  try{var s=localStorage.getItem(KEY); if(s) root.setAttribute("data-theme",s);}catch(e){}
+  document.getElementById("theme").addEventListener("click",function(){
+    var cur=root.getAttribute("data-theme");
+    if(!cur){ cur = matchMedia("(prefers-color-scheme: dark)").matches ? "dark":"light"; }
+    var next = cur==="dark" ? "light":"dark";
+    root.setAttribute("data-theme",next);
+    try{localStorage.setItem(KEY,next);}catch(e){}
+  });
+  var prog=document.getElementById("prog"), top=document.getElementById("top");
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    prog.style.width = (max>0 ? (h.scrollTop/max*100):0) + "%";
+    top.classList.toggle("on", h.scrollTop > 800);
+  }
+  addEventListener("scroll",onScroll,{passive:true}); onScroll();
+  top.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"});});
+})();
+</script>
+</body>
+</html>
