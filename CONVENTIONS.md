@@ -39,6 +39,7 @@ images/author-portrait.jpg  Pencil portrait (About section)
 images/author-mark.png      "su" monogram (source for the icons)
 images/icon-64.png, icon-180.png   Browser-tab and home-screen icons
 CNAME                       underhillnovels.com — do not edit
+sitemap.xml, robots.txt     Search-engine files — update sitemap.xml for every new page
 .nojekyll                   Keeps GitHub Pages from processing files
 ```
 
@@ -215,9 +216,13 @@ cover, portrait, other images).
    Earlier books move into an **"Also by Sharyn Underhill"** list below it:
    small cover, title, one-line hook, link. Update the home page's `og:image`
    if the share card should now feature the new book.
-5. Check the page at desktop width and at 320px, in light and dark mode, and
+5. **Search:** add the new page to `sitemap.xml` (and bump `<lastmod>` on the
+   home page entry); give the book page its own `<link rel="canonical">` and a
+   `Book` JSON-LD block copied from `rowena-thornhill.html`, with its own title,
+   url, image, description, datePublished and wordCount.
+6. Check the page at desktop width and at 320px, in light and dark mode, and
    confirm there is no sideways scroll.
-6. Commit and push (§7), then load the live page to confirm.
+7. Commit and push (§7), then load the live page to confirm.
 
 ---
 
