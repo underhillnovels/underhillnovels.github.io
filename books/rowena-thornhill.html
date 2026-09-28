@@ -112,6 +112,9 @@ p.end{text-indent:0; text-align:center; color:var(--accent); margin:2.6rem 0 0; 
 
 .colophon{text-align:center; padding:3rem 0 1rem; max-width:28rem; margin:0 auto; font-family:var(--sans); font-size:.86rem; line-height:1.6; color:var(--mute)}
 .colophon p{margin:0 0 .6rem}
+.comments{border-top:1px solid var(--rule); margin-top:2rem; padding:3rem 0 1rem}
+.comments .ch-num{text-align:center}
+.comments .c-intro{font-family:var(--sans); font-size:.82rem; color:var(--mute); text-align:center; margin:0 0 2rem}
 footer{border-top:1px solid var(--rule); margin-top:2rem; padding:2.5rem 0 4rem; text-align:center}
 footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3rem 0}
 
@@ -212,6 +215,7 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
 <li><a href="#ch32"><span class="n">32</span><span class="t">The Statue</span></a></li>
 <li><a href="#ch33"><span class="n">33</span><span class="t">The Fork</span></a></li>
 <li><a href="#about-this-book"><span class="n">&middot;</span><span class="t">About this book</span></a></li>
+<li><a href="#comments"><span class="n">&middot;</span><span class="t">Readers&rsquo; comments</span></a></li>
     </ol>
   </nav>
 
@@ -1236,6 +1240,12 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
   <p><em>The Transformation of Rowena Thornhill</em> was developed in consultation with AI. The cover image and the author portrait were also created with AI.</p>
 </section>
 
+<section class="comments" id="comments">
+  <p class="ch-num">Readers&rsquo; comments</p>
+  <p class="c-intro">Comments are read before they appear.</p>
+  <hyvor-talk-comments website-id="16160" page-id="rowena-thornhill" page-title="The Transformation of Rowena Thornhill" page-url="https://underhillnovels.com/books/rowena-thornhill.html"></hyvor-talk-comments>
+</section>
+
 </main>
 
 <footer>
@@ -1255,7 +1265,14 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
     var next = cur==="dark" ? "light":"dark";
     root.setAttribute("data-theme",next);
     try{localStorage.setItem(KEY,next);}catch(e){}
+    syncComments();
   });
+  function syncComments(){
+    var c=document.querySelector("hyvor-talk-comments"); if(!c) return;
+    var t=root.getAttribute("data-theme");
+    c.setAttribute("colors", t ? t : "os");
+  }
+  syncComments();
   var prog=document.getElementById("prog"), top=document.getElementById("top");
   function onScroll(){
     var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
@@ -1266,5 +1283,6 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
   top.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"});});
 })();
 </script>
+<script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
 </body>
 </html>
