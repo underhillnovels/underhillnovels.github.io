@@ -170,6 +170,17 @@ content. That keeps the CSS, script, bar and footer identical. The parts:
 <script>/* copy unchanged from rowena-thornhill.html */</script>
 ```
 
+**Letters from readers** follow the colophon (`section.letters#letters`). Readers
+write via the Google Form linked from the "Write to Sharyn" button. Only letters
+whose writer ticked a "Yes" publishing option are added, newest first:
+```html
+<blockquote class="letter">
+  <p>Letter text (trimmed or excerpted if needed, never reworded).</p>
+  <p class="from">&mdash; Name as given, or &ldquo;A reader&rdquo; if anonymous</p>
+</blockquote>
+```
+Never publish a reader's email address or any detail they didn't ask to share.
+
 **AI disclosure** lives only in the `About this book` colophon at the end of each
 book — never on the title page or cover. List every AI-assisted element (text,
 cover, portrait, other images).
