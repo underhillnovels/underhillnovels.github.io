@@ -116,6 +116,9 @@ p.end{text-indent:0; text-align:center; color:var(--accent); margin:2.6rem 0 0; 
 .letters .c-intro{font-family:var(--sans); font-size:.82rem; color:var(--mute); max-width:26rem; margin:0 auto 2rem}
 .letter{margin:0 0 2.2rem; padding:0; text-align:left; font-style:italic}
 .letter p{margin:0 0 .6rem}
+.letter .label-sm{font-style:normal; font-family:var(--sans); font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin:0 0 .8rem}
+.letter .t-up{font-style:normal}
+.author-note{border-left:2px solid var(--accent); padding-left:1.2rem}
 .letter .from{font-style:normal; font-family:var(--sans); font-size:.8rem; color:var(--mute); margin:0}
 .cta{display:inline-block; font-family:var(--sans); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase;
   text-decoration:none; color:var(--bg); background:var(--accent); border-radius:999px; padding:11px 22px}
@@ -1248,7 +1251,13 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
 <section class="letters" id="letters">
   <p class="ch-num">Letters from readers</p>
   <p class="c-intro">Sharyn reads every letter. With the writer&rsquo;s permission, a selection is published here.</p>
-  <!-- Published letters go here, newest first:
+  <blockquote class="letter author-note">
+    <p class="label-sm">From Sharyn</p>
+    <p>Thank you for reading <span class="t-up">The Transformation of Rowena Thornhill</span>. A first novel goes out into the world rather like its characters do &mdash; a long way from home, among strangers &mdash; and it means a great deal that you came this far with it.</p>
+    <p>If the book stayed with you, unsettled you, or left you arguing with it, I would like to hear. Every letter is read, and with your permission I may share a few here.</p>
+    <p class="from">&mdash; Sharyn</p>
+  </blockquote>
+  <!-- Published reader letters go here, newest first, below the author's note:
   <blockquote class="letter">
     <p>Letter text.</p>
     <p class="from">&mdash; Name, or &ldquo;A reader&rdquo;</p>
