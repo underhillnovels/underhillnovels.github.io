@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sharyn Underhill</title>
-<meta name="description" content="Fiction by Sharyn Underhill: novels about power, reinvention and the lives women choose.">
+<meta name="description" content="Sensual literary fiction by Sharyn Underhill: novels about desire, power and the lives women choose.">
 <meta name="author" content="Sharyn Underhill">
 <meta property="og:title" content="Sharyn Underhill">
 <meta property="og:type" content="website">
@@ -13,117 +13,130 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://underhillnovels.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:description" content="Fiction by Sharyn Underhill: novels about power, reinvention and the lives women choose.">
+<meta property="og:description" content="Sensual literary fiction by Sharyn Underhill: novels about desire, power and the lives women choose.">
 <link rel="icon" type="image/png" href="images/icon-64.png">
 <link rel="apple-touch-icon" href="images/icon-180.png">
 <link rel="canonical" href="https://underhillnovels.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#faf8f4; --ink:#22201d; --mute:#6d675f; --rule:#ddd6ca;
-  --accent:#74294f; --card:#fffdf9;
+  --bg:#faf8f4; --ink:#22201d; --mute:#6d675f; --rule:#ddd6ca; --card:#ffffff;
+  --accent:#74294f;
+  --plum:#2b1724; --plum-2:#45203a; --on-plum:#f6efe6; --on-plum-mute:#cdb8c4;
+  --gold:#d9a54e; --gold-ink:#8a5a14; --gold-wash:#f4e7cf;
+  --dusk:#3d5876;
+  --display:"Cormorant Garamond","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
   --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --measure:34rem; --wide:62rem; --veil:18%;
+  --measure:34rem; --wide:68rem;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
-    --accent:#cf8fae; --card:#1c1a15; --veil:84%;
+    --bg:#15140f; --ink:#e9e2d6; --mute:#a0978a; --rule:#33302a; --card:#1d1b16;
+    --accent:#cf8fae; --plum:#1f1019; --plum-2:#2f1729;
+    --gold-ink:#e2b468; --gold-wash:#2a2116; --dusk:#8fa9c6;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
-  --accent:#cf8fae; --card:#1c1a15; --veil:84%;
+  --bg:#15140f; --ink:#e9e2d6; --mute:#a0978a; --rule:#33302a; --card:#1d1b16;
+  --accent:#cf8fae; --plum:#1f1019; --plum-2:#2f1729;
+  --gold-ink:#e2b468; --gold-wash:#2a2116; --dusk:#8fa9c6;
 }
 *{box-sizing:border-box}
-body{
-  margin:0; background:var(--bg); color:var(--ink);
-  font-family:var(--serif); font-size:1.075rem; line-height:1.72;
-  -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility;
-}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--serif); font-size:1.075rem; line-height:1.72;
+  -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility}
 a{color:inherit}
-.wrap{max-width:var(--wide); margin:0 auto; padding:0 16px}
-.label{
-  font-family:var(--sans); font-size:.74rem; letter-spacing:.18em; text-transform:uppercase;
-  color:var(--mute); font-weight:600; margin:0 0 1rem;
-}
+img{display:block; max-width:100%; height:auto}
+.wrap{max-width:var(--wide); margin:0 auto; padding:0 20px}
+.label{font-family:var(--sans); font-size:.74rem; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--mute); margin:0 0 1rem}
+h2.sec{font-family:var(--display); font-weight:600; font-size:clamp(2rem,5vw,2.8rem); line-height:1.1; margin:0 0 2.2rem}
 
-/* ---- top bar ---- */
-.bar{
-  position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--bg) 92%,transparent);
-  backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--rule);
-}
-.bar .wrap{display:flex; align-items:center; gap:12px; padding-top:10px; padding-bottom:10px}
-.mark{font-size:1.05rem; letter-spacing:.02em; text-decoration:none; font-weight:600; white-space:nowrap}
-.bar .sp{flex:1}
-.bar nav{display:flex; gap:8px}
-.bt{
-  font-family:var(--sans); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase;
-  color:var(--mute); text-decoration:none; background:none; border:1px solid var(--rule);
-  border-radius:999px; padding:6px 12px; cursor:pointer;
-}
-.bt:hover{color:var(--ink); border-color:var(--accent)}
-@media (max-width:560px){ .bar nav .opt{display:none} }
+/* ---- bar ---- */
+.bar{position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--plum) 94%,transparent);
+  backdrop-filter:saturate(140%) blur(8px); color:var(--on-plum); border-bottom:1px solid rgb(255 255 255 / .08)}
+.bar .wrap{display:flex; align-items:center; gap:10px; padding-top:10px; padding-bottom:10px}
+.mark{font-family:var(--display); font-size:1.35rem; font-weight:600; letter-spacing:.01em; text-decoration:none; white-space:nowrap}
+.sp{flex:1}
+.bar nav{display:flex; gap:6px}
+.bt{font-family:var(--sans); font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--on-plum-mute);
+  text-decoration:none; background:none; border:1px solid rgb(255 255 255 / .18); border-radius:999px; padding:6px 12px; cursor:pointer}
+.bt:hover{color:var(--on-plum); border-color:var(--gold)}
+@media (max-width:620px){ .bar nav .opt{display:none} }
 @media (max-width:340px){ .mark{white-space:normal} }
 
 /* ---- hero ---- */
-.hero-bg{
-  background:
-    linear-gradient(to bottom, color-mix(in srgb,var(--bg) var(--veil),transparent) 65%, var(--bg)),
-    url(images/banner.jpg) center 55%/cover;
+.hero{background:
+   radial-gradient(60rem 30rem at 85% 30%, rgb(217 165 78 / .22), transparent 60%),
+   linear-gradient(160deg,var(--plum-2),var(--plum) 70%);
+  color:var(--on-plum); overflow:hidden}
+.hero .wrap{display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:3rem; align-items:center; padding-top:5.5rem; padding-bottom:5.5rem}
+.eyebrow{font-family:var(--sans); font-size:.74rem; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); font-weight:600; margin:0 0 1.2rem}
+.hero h1{font-family:var(--display); font-weight:600; font-size:clamp(3rem,8vw,5.4rem); line-height:.98; margin:0; letter-spacing:-.005em}
+.hero .rule{width:64px; height:2px; background:var(--gold); margin:1.8rem 0}
+.hero .tag{font-family:var(--display); font-style:italic; font-size:clamp(1.3rem,3vw,1.7rem); line-height:1.35; color:var(--on-plum-mute); margin:0 0 2.2rem; max-width:28rem}
+.genre{font-family:var(--sans); font-size:.74rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin:-1.2rem 0 2.2rem}
+.btns{display:flex; flex-wrap:wrap; gap:12px}
+.btn{display:inline-block; font-family:var(--sans); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase; text-decoration:none;
+  border-radius:999px; padding:12px 22px; border:1px solid transparent}
+.btn.gold{background:var(--gold); color:#2b1724; font-weight:600}
+.btn.gold:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:rgb(255 255 255 / .35); color:var(--on-plum)}
+.btn.ghost:hover{border-color:var(--gold)}
+.stack{position:relative; height:clamp(24rem,46vw,32rem)}
+.stack a{position:absolute; border-radius:4px; overflow:hidden;
+  box-shadow:0 2px 4px rgb(0 0 0 / .25), 0 30px 60px -20px rgb(0 0 0 / .65); transition:transform .25s}
+.stack .front{width:min(18rem,54%); right:4%; top:0; z-index:2}
+.stack .back{width:min(15rem,45%); left:0; top:14%; transform:rotate(-6deg)}
+.stack .front:hover{transform:translateY(-4px)}
+.stack .back:hover{transform:rotate(-6deg) translateY(-4px)}
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr; padding-top:3.5rem; padding-bottom:3.5rem; gap:2.5rem}
+  .stack{height:24rem; max-width:24rem; width:100%; margin:0 auto}
 }
-.hero{text-align:center; padding:16vh 16px 12vh}
-.hero h1{
-  font-size:clamp(2.4rem,8vw,4rem); line-height:1.08; font-weight:600;
-  margin:0; letter-spacing:-.01em;
-}
-.hero .rule{width:60px; height:1px; background:var(--accent); margin:2rem auto}
-.hero .tag{font-style:italic; font-size:clamp(1.1rem,3vw,1.35rem); color:var(--mute); margin:0 auto; max-width:30rem}
 
-section{padding:4.5rem 0; border-top:1px solid var(--rule)}
+/* ---- novels ---- */
+section.block{padding:5.5rem 0}
+.novels{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,26rem),1fr)); gap:2rem}
+.novel{--book:var(--gold-ink); display:grid; grid-template-columns:9.5rem minmax(0,1fr); gap:1.6rem; align-items:start;
+  background:var(--card); border:1px solid var(--rule); border-top:4px solid var(--book); border-radius:6px; padding:1.6rem}
+.novel.rowena{--book:var(--dusk)}
+.novel .cv{border-radius:3px; overflow:hidden; box-shadow:0 1px 2px rgb(0 0 0 / .1), 0 14px 28px -14px rgb(0 0 0 / .45)}
+.novel h3{font-family:var(--display); font-weight:600; font-size:1.7rem; line-height:1.1; margin:0 0 .35rem}
+.novel .meta{font-family:var(--sans); font-size:.76rem; color:var(--mute); margin:0 0 .9rem; letter-spacing:.02em}
+.novel .hook{margin:0 0 1rem; font-size:1rem}
+.novel .warn{font-family:var(--sans); font-size:.76rem; color:var(--mute); margin:0 0 1.1rem}
+.novel .go{font-family:var(--sans); font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; color:var(--book); text-decoration:none}
+.novel .go:hover{text-decoration:underline; text-underline-offset:.25em}
+.badge{display:inline-block; font-family:var(--sans); font-size:.66rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600;
+  color:var(--book); border:1px solid currentColor; border-radius:999px; padding:2px 9px; margin:0 0 .7rem}
+.badge.adult{color:var(--accent); margin-left:4px}
+@media (max-width:520px){ .novel{grid-template-columns:1fr; gap:1.2rem; padding:1.3rem} .novel .cv{width:9rem} .novel h3{font-size:1.55rem} }
 
-/* ---- featured book ---- */
-.book{display:grid; grid-template-columns:minmax(0,15rem) minmax(0,1fr); gap:3.5rem; align-items:center}
-@media (max-width:720px){ .book{grid-template-columns:1fr; gap:2.2rem} .cover{max-width:15rem; margin:0 auto} }
-.cover{display:block; border-radius:4px; overflow:hidden;
-  box-shadow:0 1px 2px rgb(0 0 0 / .08), 0 18px 40px -18px rgb(0 0 0 / .35);
-  transition:transform .2s}
-.cover:hover{transform:translateY(-2px)}
-.cover img{display:block; width:100%; height:auto}
-.book h2{font-size:clamp(1.6rem,4vw,2.1rem); line-height:1.15; font-weight:600; margin:0 0 .4rem}
-.book .meta{font-family:var(--sans); font-size:.8rem; color:var(--mute); margin:0 0 1.4rem}
-.book .blurb{margin:0 0 1.6rem; max-width:var(--measure)}
-.also{margin-top:4rem; padding-top:2.5rem; border-top:1px solid var(--rule)}
-.also-book{display:flex; gap:1.4rem; align-items:center; text-decoration:none; max-width:40rem}
-.also-book img{width:5.5rem; height:auto; border-radius:3px; flex:none;
-  box-shadow:0 1px 2px rgb(0 0 0 / .08), 0 10px 24px -12px rgb(0 0 0 / .35)}
-.also-book > span{display:flex; flex-direction:column; gap:.25rem}
-.also-t{font-size:1.2rem; font-weight:600; line-height:1.25}
-.also-book:hover .also-t{color:var(--accent)}
-.also-h{font-style:italic; color:var(--mute)}
-.also-m{font-family:var(--sans); font-size:.78rem; color:var(--mute)}
-.note{
-  border:1px solid var(--rule); background:var(--card); border-radius:10px;
-  padding:14px 16px; margin:0 0 1.8rem; max-width:var(--measure);
-  font-family:var(--sans); font-size:.82rem; line-height:1.6; color:var(--mute);
-}
-.note b{color:var(--ink); font-weight:600}
-.cta{
-  display:inline-block; font-family:var(--sans); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase;
-  text-decoration:none; color:var(--bg); background:var(--accent); border-radius:999px; padding:11px 22px;
-}
-.cta:hover{filter:brightness(1.12)}
+/* ---- quote ---- */
+.quote{background:var(--gold-wash); text-align:center}
+.quote blockquote{margin:0 auto; max-width:46rem; font-family:var(--display); font-style:italic; font-weight:500;
+  font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.3; color:var(--ink)}
+.quote .q-mark{display:block; font-family:var(--display); font-size:4rem; line-height:.6; color:var(--gold-ink); margin-bottom:.6rem}
+.quote cite{display:block; margin-top:1.6rem; font-family:var(--sans); font-style:normal; font-size:.76rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-ink)}
 
 /* ---- about ---- */
-.about{display:grid; grid-template-columns:11rem minmax(0,var(--measure)); gap:2.4rem; align-items:start}
-.portrait{width:11rem; height:11rem; border-radius:50%; display:block; object-fit:cover; border:1px solid var(--rule)}
-@media (max-width:560px){ .about{grid-template-columns:1fr; gap:1.4rem} .portrait{width:9rem; height:9rem} }
-@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .portrait{filter:brightness(.82) sepia(.15)} }
-:root[data-theme="dark"] .portrait{filter:brightness(.82) sepia(.15)}
+.about{display:grid; grid-template-columns:13rem minmax(0,var(--measure)); gap:3rem; align-items:start}
+.portrait{width:13rem; height:13rem; border-radius:50%; object-fit:cover; border:4px solid var(--card); box-shadow:0 0 0 1px var(--rule), 0 18px 36px -18px rgb(0 0 0 / .4)}
 .about p{margin:0 0 1rem}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .portrait{filter:brightness(.85) sepia(.15)} }
+:root[data-theme="dark"] .portrait{filter:brightness(.85) sepia(.15)}
+@media (max-width:640px){ .about{grid-template-columns:1fr; gap:1.6rem} .portrait{width:10rem; height:10rem} }
 
-footer{border-top:1px solid var(--rule); padding:2.5rem 0 4rem; text-align:center}
-footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3rem 0}
+/* ---- write ---- */
+.write{background:linear-gradient(160deg,var(--plum-2),var(--plum)); color:var(--on-plum); text-align:center}
+.write h2.sec{margin-bottom:1rem}
+.write p{color:var(--on-plum-mute); max-width:32rem; margin:0 auto 2rem}
+
+footer{background:var(--plum); color:var(--on-plum-mute); text-align:center; padding:2.2rem 0 3rem; border-top:1px solid rgb(255 255 255 / .08)}
+footer p{font-family:var(--sans); font-size:.78rem; margin:.3rem 0}
 </style>
 <script type="application/ld+json">
 {
@@ -144,53 +157,82 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
     <a class="mark" href="./">Sharyn Underhill</a>
     <span class="sp"></span>
     <nav>
-      <a class="bt opt" href="#books">Books</a>
+      <a class="bt opt" href="#novels">Novels</a>
       <a class="bt opt" href="#about">About</a>
+      <a class="bt opt" href="#write">Write</a>
       <button class="bt" id="theme" type="button" aria-label="Toggle light and dark">Theme</button>
     </nav>
   </div>
 </header>
 
-<div class="hero-bg">
-  <div class="hero">
-    <h1>Sharyn Underhill</h1>
-    <div class="rule"></div>
-    <p class="tag">Fiction about power, reinvention, and the lives women choose for themselves.</p>
-  </div>
-</div>
-
-<main class="wrap">
-
-  <section id="books">
-    <p class="label">The latest novel</p>
-    <div class="book">
-      <a class="cover" href="books/silk-purse.html">
-        <img src="images/silk-purse-cover.jpg" width="1200" height="1800" alt="Cover of Silk Purse: two empty folding chairs beside a farm dam at sunset, a tall gum tree and golden paddocks behind">
-      </a>
-      <div>
-        <h2>Silk Purse</h2>
-        <p class="meta">A novel &middot; 26 chapters &middot; about 30,000 words &middot; free to read online</p>
-        <p class="blurb">Robyn Cooper has run eleven thousand acres on the western slopes alone for eleven years. She is up at ten to five, she keeps her own counsel, and she has stopped expecting anything. Then Leonie Vasey, a schoolteacher who fixes people, comes to stay for the summer &mdash; and the husband Robyn left in Sydney comes up the drive.</p>
-        <aside class="note"><b>For adult readers.</b> Contains frank sexual content and the end of a long marriage.</aside>
-        <a class="cta" href="books/silk-purse.html">Start reading</a>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">New novel &middot; Silk Purse</p>
+      <h1>Sharyn<br>Underhill</h1>
+      <div class="rule"></div>
+      <p class="tag">Fiction about desire, power, and the lives women choose for themselves.</p>
+      <p class="genre">Sensual literary fiction &middot; for adult readers</p>
+      <div class="btns">
+        <a class="btn gold" href="books/silk-purse.html">Read Silk Purse</a>
+        <a class="btn ghost" href="#novels">All novels</a>
       </div>
     </div>
-
-    <div class="also">
-      <p class="label">Also by Sharyn Underhill</p>
-      <a class="also-book" href="books/rowena-thornhill.html">
-        <img src="images/rowena-cover.jpg" width="1410" height="2250" alt="">
-        <span>
-          <span class="also-t">The Transformation of Rowena Thornhill</span>
-          <span class="also-h">Two strangers meet at a baggage carousel in Milan, and one of them is remade.</span>
-          <span class="also-m">A novel &middot; 33 chapters &middot; for adult readers</span>
-        </span>
+    <div class="stack">
+      <a class="back" href="books/rowena-thornhill.html" aria-label="The Transformation of Rowena Thornhill">
+        <img src="images/rowena-cover-600.jpg" srcset="images/rowena-cover-600.jpg 600w, images/rowena-cover.jpg 1410w" sizes="16rem" width="600" height="957" alt="Cover of The Transformation of Rowena Thornhill">
+      </a>
+      <a class="front" href="books/silk-purse.html" aria-label="Silk Purse">
+        <img src="images/silk-purse-cover-600.jpg" srcset="images/silk-purse-cover-600.jpg 600w, images/silk-purse-cover.jpg 1200w" sizes="19rem" width="600" height="900" alt="Cover of Silk Purse: two empty folding chairs beside a farm dam at sunset, a tall gum tree and golden paddocks behind">
       </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about">
-    <p class="label">About</p>
+<section class="block" id="novels">
+  <div class="wrap">
+    <p class="label">The novels</p>
+    <h2 class="sec">Free to read online</h2>
+    <div class="novels">
+      <article class="novel silk">
+        <a class="cv" href="books/silk-purse.html"><img src="images/silk-purse-cover-600.jpg" width="600" height="900" alt="Cover of Silk Purse"></a>
+        <div>
+          <span class="badge">New</span> <span class="badge adult">18+</span>
+          <h3>Silk Purse</h3>
+          <p class="meta">A novel &middot; 26 chapters &middot; about 30,000 words</p>
+          <p class="hook">Robyn Cooper has run eleven thousand acres on the western slopes alone for eleven years. Then Leonie Vasey, a schoolteacher who fixes people, comes to stay for the summer &mdash; and the husband Robyn left in Sydney comes up the drive.</p>
+          <p class="warn">For adult readers. Contains frank sexual content and the end of a long marriage.</p>
+          <a class="go" href="books/silk-purse.html">Start reading &rarr;</a>
+        </div>
+      </article>
+      <article class="novel rowena">
+        <a class="cv" href="books/rowena-thornhill.html"><img src="images/rowena-cover-600.jpg" width="600" height="957" alt="Cover of The Transformation of Rowena Thornhill"></a>
+        <div>
+          <span class="badge">First novel</span> <span class="badge adult">18+</span>
+          <h3>The Transformation of Rowena Thornhill</h3>
+          <p class="meta">A novel &middot; 33 chapters &middot; about 20,000 words</p>
+          <p class="hook">Two strangers meet at a baggage carousel in Milan, and one of them is remade. A newly widowed businessman, a woman leaving a small life behind, and a stay in Italy that rearranges who holds the power, and what it costs.</p>
+          <p class="warn">For adult readers. Deals with coercive control, psychological domination and bodily transformation.</p>
+          <a class="go" href="books/rowena-thornhill.html">Start reading &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block quote">
+  <div class="wrap">
+    <blockquote>
+      <span class="q-mark" aria-hidden="true">&ldquo;</span>
+      She had her hand on a woman&rsquo;s bare back in the middle of a hot afternoon. She could feel her own pulse in her thumb.
+      <cite>Silk Purse</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap">
+    <p class="label">About the author</p>
     <div class="about">
       <img class="portrait" src="images/author-portrait.jpg" width="800" height="800" alt="Pencil drawing of Sharyn Underhill">
       <div>
@@ -200,9 +242,17 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3
       <p><em>Silk Purse</em>, her second, stays closer to home: a woman not remade but uncovered.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-</main>
+<section class="block write" id="write">
+  <div class="wrap">
+    <p class="eyebrow">Letters</p>
+    <h2 class="sec">Write to Sharyn</h2>
+    <p>Sharyn reads every letter. With the writer&rsquo;s permission, a selection is published on each book&rsquo;s page.</p>
+    <a class="btn gold" href="https://docs.google.com/forms/d/e/1FAIpQLScuGYPs_Ox6s7XhYL7QzpCi9FilTWQGFcc0iGi19Mo_mQELeA/viewform" target="_blank" rel="noopener">Write a letter</a>
+  </div>
+</section>
 
 <footer>
   <p>&copy; Sharyn Underhill. All rights reserved.</p>

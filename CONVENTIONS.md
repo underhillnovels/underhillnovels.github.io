@@ -30,11 +30,11 @@ Read this before adding or changing anything.
 ## 2. Site structure
 
 ```
-index.html                  Home: hero, latest novel, About, footer
+index.html                  Home: plum hero with fanned covers, novel cards, pull quote, About, Write band
 books/<slug>.html           One self-contained page per book
-images/<slug>-cover.jpg     Book cover
+images/<slug>-cover.jpg     Book cover (full size)
+images/<slug>-cover-600.jpg 600px-wide sharpened copy for the home page
 images/<slug>-share.jpg     Link-preview card for that book
-images/banner.jpg           Home hero background
 images/author-portrait.jpg  Pencil portrait (About section)
 images/author-mark.png      "su" monogram (source for the icons)
 images/icon-64.png, icon-180.png   Browser-tab and home-screen icons
@@ -63,8 +63,17 @@ exactly; never hard-code a colour.
 | `--rule`   | `#ddd6ca` | `#33302a` | Hairlines and borders            |
 | `--accent` | `#74294f` | `#cf8fae` | Claret-plum: rules, button, progress bar |
 | `--card`   | `#fffdf9` | `#1c1a15` | Note boxes, back-to-top button   |
+| `--plum`   | `#2b1724` | `#1f1019` | Top bar, hero, Write band, footer |
+| `--plum-2` | `#45203a` | `#2f1729` | Gradient partner for plum bands  |
+| `--gold`   | `#d9a54e` | `#d9a54e` | Buttons on plum, rules, progress bar, eyebrows |
+| `--gold-wash` | `#f4e7cf` | `#2a2116` | Pull-quote band (home only)    |
 
-- **Serif (all reading text, titles):** `"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif`
+Each book has its own card colour on the home page: Silk Purse gold-ink
+(`#8a5a14`), Rowena dusk blue (`#3d5876`). Pick one for each new book from
+its cover.
+
+- **Display (names, book titles, chapter titles, section headings):** `Cormorant Garamond` from Google Fonts (weights 500, 600, italic 500), falling back to the serif stack.
+- **Serif (all reading text):** `"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif`
 - **Sans (labels, buttons, meta, notes):** `ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif`
 - Labels are sans, small, uppercase, letter-spaced (`.18em`).
 - Reading measure `34rem`; home page wide measure `62rem`; 16px side gutter.
@@ -73,7 +82,11 @@ exactly; never hard-code a colour.
   choice in `localStorage` under the key **`su-theme`** (shared site-wide).
 - Everything must work at 320px wide with no sideways scrolling.
 
-Tone: literary, calm, understated. A good publisher's list, not the romance aisle.
+Tone: literary, warm, sensual but never explicit on the home page. A good publisher's list, not the romance aisle.
+The home page describes the work as **"Sensual literary fiction · for adult readers"** and each
+novel card carries an **18+** badge. Keep explicit terms off the home page (it is not
+adult-tagged, so it stays visible in SafeSearch); book pages carry `rating=adult`
+and plain content notes.
 No script fonts, no pastels, no stock photos of people.
 
 ---
@@ -228,11 +241,17 @@ cover, portrait, other images).
    title page, note, contents, chapters and colophon.
 2. Search the manuscript for stray names, places or bylines (§1).
 3. Add `images/SLUG-cover.jpg` and `images/SLUG-share.jpg`, cleaned (§5).
-4. **Home page (`index.html`):** the newest book takes the "The latest novel"
-   slot (cover, title, meta, blurb, content note, Start reading button).
-   Earlier books move into an **"Also by Sharyn Underhill"** list below it:
-   small cover, title, one-line hook, link. Update the home page's `og:image`
-   if the share card should now feature the new book.
+4. **Home page (`index.html`):**
+   - Hero: the new book's 600px cover becomes `.stack .front`; the previous
+     front cover moves to `.stack .back`. Update the eyebrow
+     (`New novel · TITLE`) and the gold button (`Read TITLE`).
+   - Novels: add an `article.novel` card first in `.novels`, with the `New`
+     and `18+` badges, its own `--book` colour, meta, blurb, content note and
+     Start reading link. Change the previous book's badge from `New` to
+     nothing (or `Second novel` etc.).
+   - Optionally swap the pull quote for a line from the new book: suggestive,
+     never explicit, under ~30 words.
+   - Update `og:image` to the new book's share card.
 5. **Search:** add the new page to `sitemap.xml` (and bump `<lastmod>` on the
    home page entry); give the book page its own `<link rel="canonical">` and a
    `Book` JSON-LD block copied from `rowena-thornhill.html`, with its own title,
