@@ -212,7 +212,7 @@ cover, portrait, other images).
 |------------------|------------------|--------|---------|--------------------------|
 | Book cover       | ~1600 × 2400 (2:3) | JPG  | ~84     | `SLUG-cover.jpg`         |
 | Link-preview card| 1200 × 630       | JPG    | ~86     | `SLUG-share.jpg`         |
-| Home banner      | 2400 × 1000      | JPG    | ~78     | `banner.jpg`             |
+| Home-page cover  | 600 wide, sharpened | JPG | ~88     | `SLUG-cover-600.jpg`     |
 | Portrait / marks | 800 × 800        | JPG/PNG| —       | `author-*.jpg/png`       |
 
 - **Clean every image before committing** by re-encoding from pixels only, which
