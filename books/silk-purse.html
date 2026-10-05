@@ -1,0 +1,1985 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silk Purse</title>
+<meta name="description" content="A woman alone on eleven thousand acres, the schoolteacher who comes to stay for the summer, and a marriage that has outlasted itself.">
+<meta name="author" content="Sharyn Underhill">
+<meta name="rating" content="adult">
+<meta property="og:title" content="Silk Purse">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://underhillnovels.com/images/silk-purse-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://underhillnovels.com/books/silk-purse.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:description" content="A woman alone on eleven thousand acres, the schoolteacher who comes to stay for the summer, and a marriage that has outlasted itself.">
+<link rel="icon" type="image/png" href="../images/icon-64.png">
+<link rel="apple-touch-icon" href="../images/icon-180.png">
+<link rel="canonical" href="https://underhillnovels.com/books/silk-purse.html">
+<style>
+:root{
+  --bg:#faf8f4; --ink:#22201d; --mute:#6d675f; --rule:#ddd6ca;
+  --accent:#74294f; --card:#fffdf9;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --measure:34rem;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
+    --accent:#cf8fae; --card:#1c1a15;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15140f; --ink:#e6e0d4; --mute:#9a9284; --rule:#33302a;
+  --accent:#cf8fae; --card:#1c1a15;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--serif); font-size:1.075rem; line-height:1.72;
+  -webkit-text-size-adjust:100%; text-rendering:optimizeLegibility;
+}
+.wrap{max-width:var(--measure); margin:0 auto; padding:0 16px}
+
+/* ---- top bar ---- */
+.bar{
+  position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--bg) 92%,transparent);
+  backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--rule);
+}
+.bar .wrap{display:flex; align-items:center; gap:12px; padding-top:10px; padding-bottom:10px}
+.bar .bt{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--mute); text-decoration:none; background:none; border:1px solid var(--rule);
+  border-radius:999px; padding:6px 12px; cursor:pointer;
+}
+.bar .bt:hover{color:var(--ink); border-color:var(--accent)}
+.bar .sp{flex:1}
+.progress{position:fixed; left:0; top:0; height:2px; background:var(--accent); width:0; z-index:30}
+
+/* ---- title page ---- */
+.titlepage{text-align:center; padding:9vh 0 14vh}
+.titlepage .cover{display:block; width:min(15rem,70%); height:auto; margin:0 auto 3rem; border-radius:4px;
+  box-shadow:0 1px 2px rgb(0 0 0 / .08), 0 18px 40px -18px rgb(0 0 0 / .35)}
+.titlepage h1{
+  font-size:clamp(2rem,7vw,3.1rem); line-height:1.12; font-weight:600;
+  margin:0 0 1.1rem; letter-spacing:-.01em;
+}
+.titlepage .by{font-family:var(--sans); font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; color:var(--mute); margin:0}
+.titlepage .rule{width:60px; height:1px; background:var(--accent); margin:2.2rem auto}
+.titlepage .meta{font-family:var(--sans); font-size:.8rem; color:var(--mute); margin:0}
+
+.note{
+  border:1px solid var(--rule); background:var(--card); border-radius:10px;
+  padding:16px 18px; margin:0 0 4rem;
+  font-family:var(--sans); font-size:.86rem; line-height:1.6; color:var(--mute);
+}
+.note b{color:var(--ink); font-weight:600}
+
+/* ---- contents ---- */
+.contents{margin:0 0 5rem}
+.contents h2{
+  font-family:var(--sans); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--mute); font-weight:600; margin:0 0 1rem;
+}
+.contents ol{list-style:none; margin:0; padding:0; counter-reset:none}
+.contents li{border-bottom:1px solid var(--rule)}
+.contents a{display:flex; gap:14px; align-items:baseline; padding:9px 2px; text-decoration:none; color:var(--ink)}
+.contents a:hover{color:var(--accent)}
+.contents .n{font-family:var(--sans); font-size:.74rem; color:var(--mute); min-width:1.6rem}
+.contents .t{font-style:italic}
+
+/* ---- chapters ---- */
+.chapter{padding:0 0 3.5rem}
+.ch-head{text-align:center; padding:4.5rem 0 2.2rem}
+.ch-num{font-family:var(--sans); font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--mute); margin:0 0 .5rem}
+.ch-head h2{font-size:1.45rem; font-weight:500; font-style:italic; margin:0}
+.chapter p{margin:0; text-indent:1.35em; hanging-punctuation:first}
+.chapter .ch-num,.chapter .ch-head h2{text-indent:0}
+.chapter p + p{margin-top:0}
+.chapter .ch-head + p{text-indent:0}
+.chapter .ch-head + p::first-letter{font-size:1.05em}
+p.quote,p.msg{
+  text-indent:0; margin:1.25rem 0; padding-left:1.1rem;
+  border-left:2px solid var(--rule); font-style:italic; color:var(--mute);
+}
+p.msg{font-family:var(--sans); font-style:normal; font-size:.95rem}
+p.beat{text-indent:0; margin:1.3rem 0; text-align:center; letter-spacing:.04em}
+p.end{text-indent:0; text-align:center; color:var(--accent); margin:2.6rem 0 0; opacity:.6}
+
+.colophon{text-align:center; padding:3rem 0 1rem; max-width:28rem; margin:0 auto; font-family:var(--sans); font-size:.86rem; line-height:1.6; color:var(--mute)}
+.colophon p{margin:0 0 .6rem}
+.letters{border-top:1px solid var(--rule); margin-top:2rem; padding:3rem 0 1rem; text-align:center}
+.letters .c-intro{font-family:var(--sans); font-size:.82rem; color:var(--mute); max-width:26rem; margin:0 auto 2rem}
+.letter{margin:0 0 2.2rem; padding:0; text-align:left; font-style:italic}
+.letter p{margin:0 0 .6rem}
+.letter .label-sm{font-style:normal; font-family:var(--sans); font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin:0 0 .8rem}
+.letter .t-up{font-style:normal}
+.author-note{border-left:2px solid var(--accent); padding-left:1.2rem}
+.letter .from{font-style:normal; font-family:var(--sans); font-size:.8rem; color:var(--mute); margin:0}
+.cta{display:inline-block; font-family:var(--sans); font-size:.8rem; letter-spacing:.1em; text-transform:uppercase;
+  text-decoration:none; color:var(--bg); background:var(--accent); border-radius:999px; padding:11px 22px}
+.cta:hover{filter:brightness(1.12)}
+footer{border-top:1px solid var(--rule); margin-top:2rem; padding:2.5rem 0 4rem; text-align:center}
+footer p{font-family:var(--sans); font-size:.78rem; color:var(--mute); margin:.3rem 0}
+
+.top{
+  position:fixed; right:16px; bottom:16px; z-index:20;
+  width:42px; height:42px; border-radius:50%; border:1px solid var(--rule);
+  background:var(--card); color:var(--mute); font-size:1rem; cursor:pointer;
+  opacity:0; pointer-events:none; transition:opacity .2s;
+}
+.top.on{opacity:1; pointer-events:auto}
+
+@media print{
+  .bar,.top,.progress{display:none}
+  body{background:#fff; color:#000; font-size:11pt}
+  .chapter{page-break-before:always}
+  .titlepage{padding:25vh 0}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Silk Purse",
+  "author": {"@type": "Person", "name": "Sharyn Underhill", "url": "https://underhillnovels.com/"},
+  "url": "https://underhillnovels.com/books/silk-purse.html",
+  "image": "https://underhillnovels.com/images/silk-purse-cover.jpg",
+  "description": "A woman alone on eleven thousand acres, the schoolteacher who comes to stay for the summer, and a marriage that has outlasted itself.",
+  "genre": "Literary fiction",
+  "bookFormat": "https://schema.org/EBook",
+  "inLanguage": "en-AU",
+  "isAccessibleForFree": true,
+  "contentRating": "Adult",
+  "datePublished": "2026-10-05",
+  "wordCount": 30047
+}
+</script>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+
+<nav class="bar">
+  <div class="wrap">
+    <a class="bt" href="../">&larr; Sharyn Underhill</a>
+    <a class="bt" href="#contents">Contents</a>
+    <span class="sp"></span>
+    <button class="bt" id="theme" type="button" aria-label="Toggle light and dark">Theme</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="titlepage">
+    <img class="cover" src="../images/silk-purse-cover.jpg" width="1200" height="1800" alt="Cover of Silk Purse: two empty folding chairs beside a farm dam at sunset, a tall gum tree and golden paddocks behind">
+    <h1>Silk Purse</h1>
+    <p class="by">Sharyn Underhill</p>
+    <div class="rule"></div>
+    <p class="meta">A novel &middot; 26 chapters &middot; 30,047 words</p>
+  </div>
+
+  <aside class="note">
+    <b>A note before you begin.</b> This is a work of fiction for adult readers. It contains frank sexual content and the end of a long marriage.
+  </aside>
+
+  <nav class="contents" id="contents">
+    <h2>Contents</h2>
+    <ol>
+<li><a href="#ch1"><span class="n">1</span><span class="t">The Rounds</span></a></li>
+<li><a href="#ch2"><span class="n">2</span><span class="t">The Long Paddock</span></a></li>
+<li><a href="#ch3"><span class="n">3</span><span class="t">Leonie</span></a></li>
+<li><a href="#ch4"><span class="n">4</span><span class="t">The Invitation</span></a></li>
+<li><a href="#ch5"><span class="n">5</span><span class="t">The Summer Skirt</span></a></li>
+<li><a href="#ch6"><span class="n">6</span><span class="t">The Shower</span></a></li>
+<li><a href="#ch7"><span class="n">7</span><span class="t">Evenings</span></a></li>
+<li><a href="#ch8"><span class="n">8</span><span class="t">The Hallway</span></a></li>
+<li><a href="#ch9"><span class="n">9</span><span class="t">The Ute in the Drive</span></a></li>
+<li><a href="#ch10"><span class="n">10</span><span class="t">The Table</span></a></li>
+<li><a href="#ch11"><span class="n">11</span><span class="t">The Envelope</span></a></li>
+<li><a href="#ch12"><span class="n">12</span><span class="t">The Drive-In</span></a></li>
+<li><a href="#ch13"><span class="n">13</span><span class="t">The River</span></a></li>
+<li><a href="#ch14"><span class="n">14</span><span class="t">The Bank</span></a></li>
+<li><a href="#ch15"><span class="n">15</span><span class="t">The Square of Moon</span></a></li>
+<li><a href="#ch16"><span class="n">16</span><span class="t">Going First</span></a></li>
+<li><a href="#ch17"><span class="n">17</span><span class="t">Ten Past Seven</span></a></li>
+<li><a href="#ch18"><span class="n">18</span><span class="t">The Far Dam</span></a></li>
+<li><a href="#ch19"><span class="n">19</span><span class="t">Town</span></a></li>
+<li><a href="#ch20"><span class="n">20</span><span class="t">Thirty-Five Minutes</span></a></li>
+<li><a href="#ch21"><span class="n">21</span><span class="t">The Drawer</span></a></li>
+<li><a href="#ch22"><span class="n">22</span><span class="t">Emma</span></a></li>
+<li><a href="#ch23"><span class="n">23</span><span class="t">The Third Night</span></a></li>
+<li><a href="#ch24"><span class="n">24</span><span class="t">Out Loud, In Words</span></a></li>
+<li><a href="#ch25"><span class="n">25</span><span class="t">The Pavilion</span></a></li>
+<li><a href="#ch26"><span class="n">26</span><span class="t">March</span></a></li>
+<li><a href="#about-this-book"><span class="n">&middot;</span><span class="t">About this book</span></a></li>
+<li><a href="#letters"><span class="n">&middot;</span><span class="t">Letters from readers</span></a></li>
+    </ol>
+  </nav>
+
+<section class="chapter" id="ch1">
+<header class="ch-head"><p class="ch-num">Chapter 1</p><h2>The Rounds</h2></header>
+<p>Robyn Cooper woke at ten to five, ten minutes before the alarm, the way she had woken every morning for eleven years.</p>
+<p>She lay still and took the inventory. The right hip first, which had opinions now. Then the knees, then the hands, which had closed themselves in the night into two loose fists and had to be talked open. The sheet was on the floor. Some time after two she had thrown it off in a wet, furious heat, and then lain there in the dark with her nightdress stuck to her ribs and waited for the cold to come and find her, as it always did.</p>
+<p>Nobody had told her about that. Her mother had gone through it and never said a word, and Robyn had come to it at fifty-two with no warning at all, standing in the yards at noon with the sweat running out of her hair and the terrible conviction that she was about to be sick in front of a stock agent.</p>
+<p>She got up before the alarm could make it an argument.</p>
+<p>The kitchen was cold and smelled of the wood stove and the dogs. She put the kettle on and stood at the window with her back to the room while it boiled. Out past the machinery shed the sky was the colour of a dish left to soak. Good rain in winter, and the dams were full to their lips, and the paddocks were greener than they had been in years. It was October. In a month it would all start to turn.</p>
+<p>She drank her tea standing up. She did not sit at the table in the mornings. If she sat, she stayed.</p>
+<p>Then the ritual, in its order. Bra, the good one, because the old ones had given up. Work shirt, moleskins, the thick socks. She twisted her hair up and pinned it hard against her head so that it would sit under the hat, and did not look at herself in the mirror over the dresser. She had looked in it on a Sunday in August and found her mother looking back, and she had turned the light off.</p>
+<p>The dogs were at the back door before she reached for the latch. Tilly worked the lower paddocks and Ned worked everything else, and both of them went up onto the tray of the ute without being asked and sat facing the direction they wanted to go.</p>
+<p>&quot;Bore first,&quot; Robyn told them, and they settled down on the tray to wait.</p>
+<p>The property ran to eleven thousand acres and the rounds took the whole day. She started at the bore behind the shearing shed and worked outward: troughs, floats, the pipe that always leaked at the third joint, the gate whose hinge the rams had worked loose over winter. The gravel road climbed through the box gums and then dropped away, and the country opened. Slopes of good grass, dams with the sky pinned in them, the long blue line of the range to the east. She had never once, in all her life, got used to how big it was. It was the only thing about the place that had never felt like a chore.</p>
+<p>At the top gate she found a ewe cast on her back in a hollow, legs going, her belly tight with lamb. Robyn was out of the cab before the ute had stopped rocking. She got her hands under the wool and heaved, and the ewe scrambled up and stood shaking and then walked off with dignity, as though she had chosen to be there.</p>
+<p>Robyn stayed bent over with her hands on her knees, waiting for her heart to slow down.</p>
+<p>She was fifty-five. She could still lift a ewe, but it took her longer to get her breath back than it used to, and she had noticed.</p>
+<p>By midday the wind had got up and was pulling dust off the fence line, and her back had set into one long ache. She ate her sandwich on the tailgate with the dogs watching every mouthful. The nearest person was a hundred kilometres away, in a town with one pub, one pharmacy and a bakery that shut at two. The radio in the cab said no rain for the week. She turned it off and listened to the fence wire humming.</p>
+<p>She spent the afternoon on the north boundary with a roll of wire and a pair of pliers, and she thought about the kids, who rang on Sundays and were always in a hurry. She thought about her father&#x27;s hands, which had looked like this. And for no reason at all she thought about a ute coming up the drive, years ago, and the way she had put down whatever she was holding.</p>
+<p>She stopped that thought the way she would have stopped a gate swinging. Then she picked up the pliers and got on with it.</p>
+<p class="beat">* * *</p>
+<p>It was dark when she got back. She fed the dogs and stood under the shower until the hot water gave out, then put on the old cardigan and sat down on the sofa with a plate of toast and a glass of wine she had promised herself she would sip.</p>
+<p>The television was on, and she did not know what it was showing.</p>
+<p>She picked her phone up off the arm of the sofa. There was no reception at the house and never had been, so anything that came in reached her out on the hill and sat there until she looked.</p>
+<p>There was one from Leonie, sent from the staffroom at ten past three: a photograph of a child&#x27;s drawing, thick crayon on butcher&#x27;s paper. A sheep, more or less, with a small round face and a very large hat.</p>
+<p class="msg">Grade 2 did &quot;an animal that reminds me of a friend.&quot; Guess who&#x27;s the sheep. xx</p>
+<p>Robyn looked at it for a long moment.</p>
+<p>Then she laughed. It came out of her before she knew it was there, a short, rusty sound in the empty room, and it startled the older dog awake at her feet.</p>
+<p>She was still smiling when she fell asleep. The plate slid off her knee onto the floor, and she did not wake for it.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch2">
+<header class="ch-head"><p class="ch-num">Chapter 2</p><h2>The Long Paddock</h2></header>
+<p>On Saturdays she went to the far dam, because it was the furthest and because nobody would ring her there.</p>
+<p>There was no signal past the second ridge. She had found that out years ago, and had never mentioned it to the phone company.</p>
+<p>The track went out along the old boundary, past the sheep camp and the stand of white cypress her grandfather had planted for shade. Six kilometres of it was rough and the last two were worse. Ned rode in the cab with his chin on the gearstick. Tilly had been left at the house with a sore foot.</p>
+<p>At the top of the rise Robyn stopped the ute and got out and stood with her hand on the warm bonnet and looked at the driveway.</p>
+<p>She could see the whole of it from here. Four kilometres of gravel running straight down to the road, with a cattle grid halfway and the letterbox at the end, small as a matchbox. It was the driveway she had walked to the school bus every morning for thirteen years.</p>
+<p>She had left the house at twenty past six. In winter it was dark and the frost on the gravel was white, and she carried her lunch in a bread bag and her shoes in her hand until she was past the house paddock, because her mother had not raised a girl to walk to school in muddy shoes. Then she put them on. She timed it so that she reached the letterbox as the bus came over the rise, and she never once missed it. Missing it meant a lift with her father, and her father did not have the morning to spare.</p>
+<p>In summer the dust came up in a slow yellow cloud behind the bus and sat over the road long after it had gone. She used to lick her lips and taste it.</p>
+<p>She had thought, at fifteen, that the walk was the most boring stretch of her life. She had thought that she would spend the rest of it somewhere with pavements.</p>
+<p>Ned put his head out the window and looked at her.</p>
+<p>&quot;I know,&quot; she said, and got back in.</p>
+<p>The dam was full to the top of the wall and there was a pair of black ducks sitting in the middle of it. She checked the float, the fence, the trough on the far side, and counted the sheep on the slope until she had counted them twice. Then, because there was nobody to see, she sat down on the tailgate with her boots hanging and did nothing at all for a quarter of an hour.</p>
+<p>It felt strange, and slightly criminal. She looked at her hands.</p>
+<p>They were her mother&#x27;s hands. She had not decided that, it had simply happened. Square nails, broad knuckles, the skin at the back gone thin and freckled. Her mother had used to peel potatoes for twenty people with those hands and put a roast on for the shearers before it was light, and still have time to tell Robyn how to do her plaits. She had never sat down in the daytime in her life. She had stood at the kitchen bench to eat.</p>
+<p>Her father had been the same. Up at four, in at dark, and a hand raised to her from the tractor as he went past. He had not been a man who said much, and what he did say was mostly about weather. But when Robyn had got into the university, he had gone quiet for a whole evening, and then at dinner he had cleared his throat and said, &quot;Well, that&#x27;s a good thing,&quot; and gone out to check the yards. She had understood that it was the longest speech of his life.</p>
+<p>They had never asked her to come back.</p>
+<p>It was her father&#x27;s fall that did it. He had gone off the tray of the ute onto concrete while fixing a pump, and lain there for two hours before her mother, whose eyes were failing by then, had found him. Robyn had driven out from Sydney in a day with one bag and no plan. She had meant to stay a month, to sort out the hospital and the paperwork and find someone to run the place.</p>
+<p>That was eleven years ago.</p>
+<p>Her parents had died within two years of each other. Her father first. Her mother, after that, had just got smaller, and asked for him in the evenings, and Robyn had said each time that he was out at the yards.</p>
+<p>They were buried in town, a hundred kilometres away, side by side. She went to the cemetery twice a year, in March and in October, and took a bucket and a brush and cleaned the stones.</p>
+<p>She had not been for this October yet.</p>
+<p class="beat">* * *</p>
+<p>The sun was low when she started back. She drove with the window down and the smell of the cut grass coming in, and the sheep went slowly out of her way.</p>
+<p>She let herself think about Burt, once, on the ridge, because that was where the signal came back and so did everything else.</p>
+<p>He had said he would follow her out. He had said it on the phone, in the voice he used for other people, warm and reasonable, and had not come. He had not rung the children either. He had not rung anyone. The last she had heard of him, from a woman in a bank, was that he was still in Sydney and doing well.</p>
+<p>It was strange how little she had been afraid, once she was here. The fear had been in the house in Sydney, in the way he came through a door, in the sound of his keys. She had left it there.</p>
+<p>The work had been a different matter. The work she had taken up gratefully, from the first morning, with a kind of hunger. She got up in the dark and did the next thing, and then the next, until there was no room in the day for anything else. She had simply found out that if she was tired enough, she slept. And if she slept, she did not lie awake and listen.</p>
+<p>On the ridge the phone in the cab began to buzz against the dashboard, one message after another as the signal came in.</p>
+<p>She pulled up at the house gate and read them with the engine still running. Her daughter, asking whether she was eating properly. Her son, a photograph of a cake. And Leonie, three messages in a row, each one an exclamation mark longer than the last.</p>
+<p class="msg">School finishes in nine weeks. I have SO many plans for you.</p>
+<p>Robyn read it twice. Then she turned the engine off and sat with her hands on the wheel, while the dogs waited on the tray and the light went out of the paddocks.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch3">
+<header class="ch-head"><p class="ch-num">Chapter 3</p><h2>Leonie</h2></header>
+<p>Once a fortnight she drove into town for supplies. She always took a list.</p>
+<p>The stock and station agent first, for drench and ear tags and a roll of fence wire. Then the hardware, the post office, the bank, and the IGA, where she filled the ute&#x27;s back seat with tins and flour and dog food. The pharmacy was last. She kept it for the end so that nothing she bought there would sit in the sun.</p>
+<p>The pharmacist was a large, kind woman called Denise, who had known her mother. She looked over the counter at Robyn&#x27;s face and said, &quot;You look tired, love,&quot; the way she said it every fortnight, and Robyn said she was fine, the way she said it every fortnight.</p>
+<p>She bought magnesium tablets, which the internet said helped with sleep. She bought a tube of hand cream and put it back, and then picked it up again and took it to the counter.</p>
+<p>On the way out she passed the shelf of hair colour. There were forty boxes, each with a smiling woman on the front. She stopped and looked at one called Warm Chestnut. The woman on the box had thick glossy hair and no lines round her mouth.</p>
+<p>Robyn put her hand up to her own. It was pinned flat under her hat, the colour of dry grass, and she had not had it cut since June.</p>
+<p>She left the shelf alone and went out.</p>
+<p class="beat">* * *</p>
+<p>The bakery closed at two, but on Fridays Marg kept the back door open until half past three for the teachers.</p>
+<p>Robyn came round the side of the building with the paper bag of pies, and Leonie was already sitting at the plastic table in the yard with her shoes off and her feet up on the opposite chair.</p>
+<p>&quot;There she is,&quot; Leonie said. &quot;The Lady of the Manor.&quot;</p>
+<p>She was forty and looked younger. She was small and quick and freckled, with dark hair cut short so that it stood up at the back where she had pushed her hands through it all day. She wore a green dress with a red cardigan, which nobody else in town would have put together, and a pair of earrings shaped like small brass fish.</p>
+<p>&quot;Sit,&quot; she said. &quot;I bought you a coffee. It went cold twenty minutes ago but the thought was there.&quot;</p>
+<p>Robyn sat. She put the pies down and her hands flat on the table, and noticed the dirt in the creases of her knuckles.</p>
+<p>&quot;You&#x27;ve got half a paddock in your hair,&quot; Leonie said.</p>
+<p>She reached across the table without any fuss and picked a grass seed out from behind Robyn&#x27;s ear. She held it up between two fingers to show her, then tucked it into the saucer.</p>
+<p>It was a small thing. Robyn felt it in her scalp for some time afterwards.</p>
+<p>&quot;How was your week?&quot; Leonie said.</p>
+<p>&quot;Fine.&quot;</p>
+<p>&quot;Robyn.&quot;</p>
+<p>&quot;I fixed the top gate. I pulled a ewe out of a hollow. I found a dead fox in the trough.&quot; She thought. &quot;I got your photo.&quot;</p>
+<p>&quot;The sheep.&quot;</p>
+<p>&quot;The sheep.&quot;</p>
+<p>&quot;Daisy Chen drew it. She&#x27;s seven, and she&#x27;s the only child in Grade 2 who has ever been to a farm. She told me it was because you always look like you know where everything is.&quot; Leonie grinned. &quot;I said that was the highest compliment I could think of.&quot;</p>
+<p>Robyn laughed. It came out easily this time, and she was more startled by that than by the laugh.</p>
+<p>Leonie talked, as she always did, and Robyn listened. She had a way of telling a story that started in one place and went off through six others and came back exactly on time. A boy in Grade 5 had stuck a pea up his nose. The principal wanted a mural. Her landlady had opinions about the bins. Robyn ate a pie and let it wash over her, and felt her shoulders come down from where they had been sitting all morning.</p>
+<p>It was strange to be around someone who wanted nothing from her. Nobody in this town was cruel, but everybody wanted something: a lift, a favour, a loan of the trailer, a word about the price of wool. Leonie asked her how she was and then waited to hear.</p>
+<p>&quot;Give me your hand,&quot; Leonie said.</p>
+<p>&quot;What?&quot;</p>
+<p>&quot;Your hand.&quot;</p>
+<p>Robyn put it on the table, and Leonie took it in both of hers and turned it over.</p>
+<p>The palm was hard, split along the base of the fingers, with a yellow callus from the wire pliers. Leonie ran her thumb across it slowly.</p>
+<p>&quot;These are working hands,&quot; she said. &quot;Have you got anything on them?&quot;</p>
+<p>&quot;I bought some cream.&quot;</p>
+<p>&quot;Is it in the bag?&quot;</p>
+<p>&quot;It&#x27;s in the bag.&quot;</p>
+<p>&quot;Good.&quot; She let go, and Robyn&#x27;s hand stayed where it was on the table. &quot;Use it tonight. Properly. I&#x27;ll know if you haven&#x27;t.&quot;</p>
+<p>&quot;You won&#x27;t know.&quot;</p>
+<p>&quot;I&#x27;ll know.&quot;</p>
+<p>Robyn took her hand back and put it under the table, and looked at the sky above the bakery roof. It was a clear, hard blue.</p>
+<p>&quot;Shearing starts in three weeks,&quot; she said, to say something. &quot;I&#x27;ve got Col and Mick coming for the yards, and the contractor&#x27;s got the shed booked for the Tuesday.&quot;</p>
+<p>&quot;Tell me what it&#x27;s like.&quot;</p>
+<p>&quot;It&#x27;s loud.&quot;</p>
+<p>&quot;Robyn.&quot;</p>
+<p>She thought about it properly. She had not been asked before.</p>
+<p>&quot;It smells of lanolin and diesel and hot sheep,&quot; she said. &quot;It&#x27;s twelve men and one radio. When I was a girl I wasn&#x27;t allowed on the board, so I skirted fleeces on the table. You pull off the belly wool and the dags and throw it on the floor. You learn to see what&#x27;s good in about a second. And at ten o&#x27;clock I&#x27;d go up to the house and help Mum with smoko. She used to bake for twenty. Scones, and a sponge, and sausage rolls.&quot; She stopped. &quot;I could smell the sponge from the shed. It was the best smell in the world.&quot;</p>
+<p>Leonie was looking at her with her chin on her hand.</p>
+<p>&quot;What?&quot; Robyn said.</p>
+<p>&quot;Nothing. You talk differently when you&#x27;re telling me about it.&quot;</p>
+<p>&quot;Do I?&quot;</p>
+<p>&quot;You sound happy.&quot;</p>
+<p>Robyn didn&#x27;t answer that. She finished her cold coffee, and Leonie took the cup from her and stacked it with her own.</p>
+<p>At half past three Marg put her head out the door and said it was time, love, she had to lock up. Leonie put her shoes back on, kissed Robyn on the cheek as she did every fortnight, and said, &quot;Nine weeks. I&#x27;ve counted.&quot;</p>
+<p>&quot;Nine weeks till what?&quot;</p>
+<p>&quot;Till school&#x27;s out.&quot; She picked up her bag. &quot;I&#x27;ll tell you the rest in a couple of Fridays.&quot;</p>
+<p>She went out through the gate and turned to wave, and Robyn lifted her hand.</p>
+<p>It was a hundred kilometres home. She drove it with the window down and the hand cream on the seat beside her, and it was a long time before she noticed she was still touching her cheek.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch4">
+<header class="ch-head"><p class="ch-num">Chapter 4</p><h2>The Invitation</h2></header>
+<p>Two Fridays later Leonie was at the plastic table again, with two coffees this time, and both of them hot.</p>
+<p>&quot;I&#x27;ve been thinking,&quot; she said.</p>
+<p>&quot;That sounds serious.&quot;</p>
+<p>&quot;It is. I have six weeks off at Christmas and nothing to do with them.&quot; She turned her cup round on the table. &quot;My landlady&#x27;s sister is coming to stay for the whole of January, so I&#x27;ve been told to make myself scarce. I could go to my mother&#x27;s in Wagga Wagga. I could go to the coast and sit on a beach.&quot;</p>
+<p>&quot;That sounds nice.&quot;</p>
+<p>&quot;It sounds like being on my own for six weeks.&quot; She looked up. &quot;Or I could come and help you.&quot;</p>
+<p>Robyn was reaching for her coffee and did not stop, but her hand felt strange on the cup.</p>
+<p>&quot;Help me.&quot;</p>
+<p>&quot;On the farm. I can work. I&#x27;m not made of glass.&quot; Leonie held up both arms and made a fist, and it was such a small, ridiculous muscle that Robyn nearly laughed. &quot;I can carry a bucket. I can open a gate. I&#x27;m told I can be trained.&quot;</p>
+<p>&quot;It isn&#x27;t a holiday.&quot;</p>
+<p>&quot;I know it isn&#x27;t.&quot;</p>
+<p>&quot;It&#x27;s December, so it will be forty degrees. We&#x27;ll be up at five. There&#x27;s no reception at the house at all &mdash; you have to drive up the ridge &mdash; and the internet drops out when it rains. I&#x27;ve got one bathroom.&quot;</p>
+<p>&quot;I&#x27;ve seen bathrooms.&quot;</p>
+<p>&quot;Leonie.&quot;</p>
+<p>&quot;What?&quot;</p>
+<p>Robyn put the coffee down. She had been looking for the right way to say it for a full minute, and could not find one that did not sound ungrateful.</p>
+<p>&quot;Nobody has stayed at the house in years,&quot; she said. &quot;Not since Mum died. The kids come for a night and go. I don&#x27;t know what I&#x27;d do with a person.&quot;</p>
+<p>&quot;You&#x27;d do what you do with the dogs. Feed me and tell me where to stand.&quot;</p>
+<p>&quot;It&#x27;s a mess.&quot;</p>
+<p>&quot;I&#x27;m not the health inspector.&quot;</p>
+<p>&quot;It&#x27;s not a nice house.&quot;</p>
+<p>&quot;You told me it was built in 1920 out of local stone and has a verandah on three sides.&quot; Leonie sat back. &quot;That is the nicest thing I have ever heard.&quot;</p>
+<p>Robyn looked at the table. It was true that she had said that. She could not remember when.</p>
+<p>&quot;I&#x27;m not asking you for a favour,&quot; Leonie said, more quietly. &quot;I know how you are. You think that if you say yes, you owe me something. You don&#x27;t. I want to come. I&#x27;ve been listening to you talk about that place for two years, and I&#x27;ve never seen it. It&#x27;s the only thing in your life you&#x27;ve ever talked about as though it mattered.&quot;</p>
+<p>&quot;It does matter.&quot;</p>
+<p>&quot;I know. So show me.&quot;</p>
+<p>A magpie landed on the fence and looked at them. Behind the bakery door, Marg was running the mixer.</p>
+<p>&quot;You&#x27;d have to sleep in the spare room,&quot; Robyn said at last. &quot;It hasn&#x27;t been used.&quot;</p>
+<p>&quot;That&#x27;s a yes.&quot;</p>
+<p>&quot;It&#x27;s a maybe.&quot;</p>
+<p>&quot;It&#x27;s a yes with a nervous face on it.&quot; Leonie clapped her hands once, and the magpie flew off. &quot;I&#x27;ll bring my own sheets. And I&#x27;m cutting your hair.&quot;</p>
+<p>&quot;You&#x27;re not.&quot;</p>
+<p>&quot;I trained for two years at my aunt&#x27;s salon before I did teaching. I&#x27;m very good. I&#x27;ll do it on the verandah, with a towel round your neck.&quot;</p>
+<p>&quot;I don&#x27;t need it cut.&quot;</p>
+<p>&quot;When did you last have it done?&quot;</p>
+<p>Robyn didn&#x27;t answer.</p>
+<p>&quot;That&#x27;s what I thought,&quot; Leonie said, and finished her coffee.</p>
+<p class="beat">* * *</p>
+<p>That night Robyn did not sit down.</p>
+<p>She got in at eight, fed the dogs, ate standing at the bench, and then walked down the hall to the door at the end and opened it.</p>
+<p>The spare room had been her brother&#x27;s once. He had gone to Perth at nineteen and stayed there, and after him it had been a room where things were put. She turned on the light. Boxes, a folded cot, the sewing machine. A wardrobe with the door hanging. On the bed, under a sheet, her mother&#x27;s good winter coats and the three cardigans she had worn until the wool wore through.</p>
+<p>Robyn took the sheet off and looked at them.</p>
+<p>She had not been able to give them away. She had told herself that she was too busy. She had told herself that they were still good.</p>
+<p>She picked up the blue cardigan and held it against her face. It smelled of dust now, and of the cedar chest, and very faintly, underneath, of Pond&#x27;s cold cream. She stood there until her eyes were dry.</p>
+<p>Then she carried the coats down the hall and hung them in the wardrobe in her own bedroom, and shut the door on them. She dragged the boxes out to the machinery shed one at a time. She stripped the mattress and turned it, and found a set of her mother&#x27;s good sheets in the linen press, ironed and folded in tissue paper. She made the bed. She stood back.</p>
+<p>It was almost midnight, and it looked like a room a person could sleep in.</p>
+<p>In the bathroom she found the towels were thin and grey. There was one bar of soap, a bottle of shampoo she had bought because it was on special, and a hairbrush with her own hair in it. The mirror above the basin showed her a woman in a work shirt at midnight, looking about as she felt.</p>
+<p>She thought, without meaning to, of the woman on the box of hair colour.</p>
+<p>&quot;Don&#x27;t be stupid,&quot; she said aloud, and her own voice sounded odd in the small tiled room.</p>
+<p>She cleaned the brush. She put the shampoo in the cupboard and made a list on the back of an envelope, in pencil: towels, soap, a bath mat, something that smelled nice. She looked at it for a moment. Then she added: hair dryer.</p>
+<p>She did not own one. She had not needed one for years.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch5">
+<header class="ch-head"><p class="ch-num">Chapter 5</p><h2>The Summer Skirt</h2></header>
+<p>The car came over the grid at eleven, and Robyn heard it from the kitchen.</p>
+<p>She had been listening for it since nine.</p>
+<p>She had also, in the four days since school finished, done a number of things she would not have admitted to. She had scrubbed the bath. She had bought towels in town, two of them, the thick kind, and a bar of soap that was not the yellow one from the laundry. She had swept the verandah on Tuesday and swept it again on Thursday because the wind had got up. And on Wednesday night she had stood in the spare room in the dark for a while, for no reason she could name.</p>
+<p>She went out and watched the last of the drive.</p>
+<p>A small blue hatchback came up through the heat haze with the dust standing behind it, going too fast over the corrugations, and then slowing very suddenly at the halfway mark, which meant Leonie had found the culvert.</p>
+<p>It pulled up under the pepper tree. The door opened and Leonie got out into forty degrees with her sunglasses pushed up into her hair.</p>
+<p>&quot;You did not tell me,&quot; she said, &quot;that the driveway was its own postcode.&quot;</p>
+<p>She was wearing a long cotton skirt, cream with small blue flowers on it, and a sleeveless top, and leather sandals. She looked like a woman on her way to lunch somewhere with a water view.</p>
+<p>Robyn came down the steps and stopped.</p>
+<p>&quot;What?&quot; Leonie said.</p>
+<p>&quot;Nothing.&quot;</p>
+<p>&quot;You&#x27;ve got a face on.&quot;</p>
+<p>&quot;I haven&#x27;t got a face on.&quot; Robyn took the bag out of her hands. &quot;How long have you had that skirt?&quot;</p>
+<p>&quot;Since Tuesday. I bought it for coming here.&quot;</p>
+<p>Robyn started for the house with the bag and heard herself say, &quot;Right,&quot; and knew how it sounded, and did not know how to take it back.</p>
+<p class="beat">* * *</p>
+<p>&quot;It&#x27;s a beautiful skirt,&quot; she said in the kitchen, which was true, and late.</p>
+<p>&quot;But.&quot;</p>
+<p>&quot;There&#x27;s three-corner jack in the house paddock and it&#x27;ll go straight through those sandals. The grass seed gets up under anything loose and works in. It&#x27;s December, so the snakes are moving, and you want to be able to see your own feet.&quot; Robyn filled the kettle. &quot;And there&#x27;s the step up into the ute, which you can&#x27;t do in that unless you&#x27;ve got no dignity left, and the seat comes up to about a hundred and ten degrees by lunchtime.&quot;</p>
+<p>Leonie looked down at herself.</p>
+<p>&quot;So I&#x27;m an idiot.&quot;</p>
+<p>&quot;You&#x27;re a teacher,&quot; Robyn said. &quot;Come on. I&#x27;ll find you something.&quot;</p>
+<p>Her bedroom was at the front, and cooler, with the blind down. She opened the wardrobe and her mother&#x27;s coats were in there, where she had put them a month ago, taking up half the rail and smelling of the cedar chest. She pushed them along and got down the shirts from the shelf.</p>
+<p>&quot;These&#x27;ll be big,&quot; she said. &quot;Everything&#x27;ll be big.&quot;</p>
+<p>Behind her there was the sound of a zip.</p>
+<p>Robyn kept her eyes on the shelf. She was holding a shirt already and she went on looking for one anyway, moving the same three shirts about with her hand.</p>
+<p>&quot;Have you got a singlet as well?&quot; Leonie said. &quot;I&#x27;ll roast in long sleeves.&quot;</p>
+<p>&quot;Long sleeves are what keeps the sun off you.&quot;</p>
+<p>&quot;That is the opposite of everything I know.&quot;</p>
+<p>&quot;It&#x27;s still true.&quot;</p>
+<p>Robyn turned round with the shirt.</p>
+<p>The skirt was over the end of the bed and Leonie was standing in her underwear in the middle of the room, entirely unbothered, holding her hair up off her neck with one hand and fanning it with the other. She was small and freckled across the shoulders and there was a pale strip where the straps of something had been.</p>
+<p>&quot;God, it&#x27;s hot in here,&quot; she said. &quot;And you said the front room was the cool one.&quot;</p>
+<p>&quot;It is.&quot;</p>
+<p>Robyn looked at the floor. That was worse, so she looked up and held out the shirt. Her face had gone hot.</p>
+<p>&quot;That&#x27;s Dad&#x27;s old one,&quot; she said. &quot;It&#x27;s the smallest I&#x27;ve got.&quot;</p>
+<p>Leonie put it on and held her arms out. The cuffs came past her fingers.</p>
+<p>&quot;I look like a scarecrow.&quot;</p>
+<p>&quot;Roll them three times and they&#x27;ll stay.&quot; Robyn found moleskins and a belt, and stood there while Leonie got into them and pulled the belt to the last hole and it was still loose enough to turn. &quot;Give it here.&quot;</p>
+<p>She took it out to the shed, punched a new hole with a nail and the vice, and brought it back. It took four minutes.</p>
+<p>&quot;There&#x27;s a hole in it now,&quot; Leonie said, wondering.</p>
+<p>&quot;There is.&quot;</p>
+<p>&quot;You just went and made a hole.&quot;</p>
+<p>&quot;It&#x27;s a belt.&quot;</p>
+<p>The boots were the last of it. Robyn had a spare pair, a size nine, and Leonie was nothing like a size nine, so she put two pairs of socks on in the heat and laced them up tight and said she was fine.</p>
+<p class="beat">* * *</p>
+<p>At the back door Robyn took the hat off the hook and put it on her.</p>
+<p>&quot;One more thing,&quot; she said. &quot;What you&#x27;ve got on under that shirt.&quot;</p>
+<p>&quot;What about it?&quot;</p>
+<p>&quot;You&#x27;ll be up and down off the tray forty times today and there&#x27;s four hours of fencing after lunch. By three o&#x27;clock you&#x27;ll want something that holds on.&quot; Robyn got the zinc down off the window ledge. &quot;Have you got a sports one?&quot;</p>
+<p>Leonie looked down at herself and laughed, at herself, not at Robyn.</p>
+<p>&quot;I&#x27;ve got a sports one. It&#x27;s grey and it&#x27;s hideous and I nearly left it at home.&quot;</p>
+<p>She was already going down the hall for it.</p>
+<p>She came back with it over her shoulder, stopped in the kitchen doorway, and began unbuttoning the shirt, and Robyn understood a second too late that she was going to change where she stood.</p>
+<p>There was nothing in it. It had not occurred to Leonie that there was anywhere else to be. She got the shirt open and one arm out of it and reached behind herself the way every woman on earth reaches, and the lace thing came away and went over the back of a chair, and she stood in the middle of the kitchen at half past eleven in the morning with the shirt hanging off her wrist, turning the grey one round to find the front of it.</p>
+<p>Robyn looked.</p>
+<p>She had been in change rooms and shearers&#x27; quarters and a hospital ward with four beds in it, and in fifty-five years she had never once looked, and she looked now. They were small, and they did not sit high, and they were paler than the rest of her, because the freckles stopped in a clean line across her chest where every summer of her life had stopped.</p>
+<p>There was nothing to see that Robyn had not seen on herself. That was not what she was looking at.</p>
+<p>She was looking at a woman standing in a kitchen with no clothes on above the waist, in daylight, in front of somebody, who had not once thought to apologise for it.</p>
+<p>&quot;This label,&quot; Leonie said, wrestling it over her head, &quot;has been scratching me since 2019.&quot;</p>
+<p>&quot;Cut it out.&quot;</p>
+<p>&quot;I&#x27;ll cut the whole thing and then where will I be.&quot;</p>
+<p>She got it down, and shook the shirt back onto her shoulder, and did up the buttons from the bottom the way people do when they are talking about something else.</p>
+<p>Robyn turned to the sink and ran the tap and washed two clean cups.</p>
+<p>&quot;Hold still,&quot; she said, when she turned back, and put the zinc on Leonie&#x27;s nose and the tops of her ears with her thumb, and it was the first time she had touched her.</p>
+<p class="beat">* * *</p>
+<p>They did the near troughs and the top gate and four hours on the north fence, and Leonie held the strainer and passed the pliers and asked what everything was called, and got a blister on her palm at two o&#x27;clock and showed it to Robyn like a girl showing a tooth.</p>
+<p>By dark they were both filthy. Leonie went down the hall to the shower and Robyn fed the dogs and stood at the sink with her hands under the tap and the light going purple over the shed.</p>
+<p>She heard the water go on. She heard, under it, that Leonie was singing.</p>
+<p>Later, when the house was quiet, Robyn went in to shut the blind and the skirt was still over the end of her bed where it had been left that morning.</p>
+<p>She picked it up. It weighed nothing at all.</p>
+<p>She hung it in her own wardrobe, next to her mother&#x27;s coats, because there was nowhere else for it to go.</p>
+<p>Then she stood with her hand on the door for a moment, and shut it.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch6">
+<header class="ch-head"><p class="ch-num">Chapter 6</p><h2>The Shower</h2></header>
+<p>By the fifth day the house had stopped being only hers.</p>
+<p>There were two towels on the line instead of one. There was a hairbrush on the end of the kitchen bench that had no business being there and never moved. The radio was on in the mornings, tuned to a station Robyn had not known the house could get, and there was a packet of biscuits in the cupboard of a kind she would never have bought, half gone.</p>
+<p>She had expected to find it an imposition. She kept waiting to.</p>
+<p>The next morning they went out to the middle dam because Ned had come back up the slope twice and would not settle.</p>
+<p>The water had dropped a metre since the shearing and left a wide grey collar of mud around it, baked and cracked at the edge and bottomless three feet in. A ewe was down in it on her side, twenty metres out, with only her head and shoulder clear and a crow already sitting on the fence watching.</p>
+<p>&quot;Is she alive?&quot;</p>
+<p>&quot;She&#x27;s alive.&quot; Robyn was already getting the rope out from behind the seat. &quot;Take your boots off.&quot;</p>
+<p>&quot;Take them off?&quot;</p>
+<p>&quot;You&#x27;ll lose them and then you&#x27;ll be out there barefoot anyway. Socks too.&quot;</p>
+<p>They went in. The crust gave at the second step and after that it was to the knee and then the thigh, cold underneath and warm on top and stinking of everything that had died in the dam since June. Leonie made a sound.</p>
+<p>&quot;Don&#x27;t stop,&quot; Robyn said. &quot;If you stop you go down.&quot;</p>
+<p>It took them twenty minutes. Robyn got the rope under the ewe&#x27;s brisket and behind her forelegs, and they hauled, and the mud gave her up an inch at a time, sucking after her the whole way. Leonie pulled with her heels dug in and her face set. She went over onto one hip. She did not let go, and came up black to the shoulder.</p>
+<p>The ewe came free and thrashed and got her feet under her in the shallows and stood there shaking, and then walked up the bank and began to eat.</p>
+<p>&quot;She&#x27;s eating,&quot; Leonie said. &quot;We nearly died and she&#x27;s eating.&quot;</p>
+<p>&quot;That&#x27;s sheep.&quot;</p>
+<p>Leonie looked down at herself. She was black from the ribs down on one side and her hair was flat to her head and there was a streak of it across her jaw.</p>
+<p>She started laughing and could not stop, and stood in the shallows holding her own ribs, and Robyn found that she was laughing too, which she had not done twice in a day for a very long time.</p>
+<p class="beat">* * *</p>
+<p>They drove home with the windows down and the mud drying on them, and neither of them sat back in the seat.</p>
+<p>&quot;There&#x27;s one bathroom,&quot; Robyn said at the gate, &quot;and about fifteen minutes of hot water. You go.&quot;</p>
+<p>&quot;You go. It&#x27;s your house.&quot;</p>
+<p>&quot;You&#x27;ve got it in your ear.&quot;</p>
+<p>Leonie put a finger in her ear and looked at it and went inside.</p>
+<p>Robyn pulled her boots off at the step and left them upside down on the rail, and stood in the yard and hosed her own arms and legs down to something that would not mark the floor. The dogs came and drank from the puddle she made. Inside she could hear the water running and, under it, the singing.</p>
+<p>She got the fire going under the copper for a second lot of hot water, and put the kettle on, and stood at the bench in her socks pulling the dried mud off her forearms in flakes.</p>
+<p>The water stopped. The door went.</p>
+<p>Leonie came down the hall with her hair in a towel and nothing else on, carrying her filthy clothes at arm&#x27;s length in front of her.</p>
+<p>&quot;Where do these go? They&#x27;re not going anywhere near a machine.&quot;</p>
+<p>&quot;Laundry tub,&quot; Robyn said. &quot;Cold water. Leave them to soak.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>She went past the doorway and along to the laundry, and the tap ran, and she came back past again and went into the spare room and shut the door, and the whole of it took perhaps forty seconds.</p>
+<p>Robyn stood with the flakes of dry mud on the bench in front of her.</p>
+<p>She had not looked away. That was the thing. She had stood in her own kitchen and watched a woman walk the length of her hallway with no clothes on, and had not thought to look at the floor, and had not felt her face go, and the strangeness of it was not that she had looked. It was that it had not cost her anything.</p>
+<p>Behind the door Leonie said something to herself and laughed at it.</p>
+<p>Robyn swept the mud off the bench into her hand and put it in the bin.</p>
+<p class="beat">* * *</p>
+<p>The copper gave her ten minutes of hot and then a minute of warm.</p>
+<p>She washed her hair twice to get the dam out of it and stood with her forehead against the tiles until the water went cool on her shoulders, and then a bit longer.</p>
+<p>In the bedroom she got as far as the clean nightdress on the bed and then stopped, with the towel round her, and looked at the wardrobe door.</p>
+<p>There was a long mirror on the inside of it. There had been one in there since 1963. Her mother had used it, and Robyn had used it as a girl to look at herself in her formal dress, turning, with her hands in her hair. She had not opened it for that reason in twenty years.</p>
+<p>She opened it.</p>
+<p>The coats swung on the rail, and the cream skirt with the blue flowers on it, and then the mirror came round and there she was in the low light with the towel in her hand.</p>
+<p>She made herself do it properly.</p>
+<p>Brown to the elbows and brown in a V at the throat and white everywhere else, so that she looked like two women joined at the seams. Shoulders she could not have bought in a gym. A stomach that had carried two children, and the silver lines low down that had come with Emma and never gone. It had thickened again these last three years. She had not changed what she ate. It had thickened anyway. Breasts that had fed two babies and then, in the last few years, had quietly settled into a different arrangement altogether, which nobody had warned her about either. The hip that had opinions. A long white scar on her shin from a gate in 1994.</p>
+<p>It was not a kind inventory. She had never in her life made a kind one.</p>
+<p>But she did not turn the light off, and she did not shut the door, and she stood there a good while longer than she needed to.</p>
+<p>Down the hall the spare-room door opened and Leonie called out, asking what they were doing about dinner.</p>
+<p>&quot;Give me a minute,&quot; Robyn said.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch7">
+<header class="ch-head"><p class="ch-num">Chapter 7</p><h2>Evenings</h2></header>
+<p>The evenings went the same way now.</p>
+<p>They came in at dark and one of them cooked and the other one sat on the bench with a drink and got in the way. They ate at the kitchen table, which Robyn had not done since her mother died, because a person eating alone will stand up. Then they took the bottle out to the verandah, where it was ten degrees cooler, and stayed until the mosquitoes won.</p>
+<p>Robyn had not talked this much in eleven years. She had not known she had it in her.</p>
+<p>On the Sunday Leonie came out with a towel, a comb and the kitchen scissors, and put a chair in the middle of the boards.</p>
+<p>&quot;No,&quot; Robyn said.</p>
+<p>&quot;Sit down.&quot;</p>
+<p>&quot;Leonie.&quot;</p>
+<p>&quot;When did you last have it cut?&quot;</p>
+<p>&quot;June.&quot;</p>
+<p>&quot;Which June?&quot;</p>
+<p>Robyn sat down.</p>
+<p>Leonie put the towel round her shoulders and tucked it into her collar, and took the pins out one at a time and put them in her own mouth, and then lifted the whole weight of it off Robyn&#x27;s neck and let it down.</p>
+<p>&quot;Right,&quot; she said, around the pins.</p>
+<p>&quot;Say what you like. I know what it is.&quot;</p>
+<p>&quot;I&#x27;m not saying anything.&quot; She took a hank of it and ran it out to the ends and held it up to the light. &quot;This is the bore water. It&#x27;s stripping it. And the last three inches are cooked through.&quot;</p>
+<p>&quot;It lives under a hat.&quot;</p>
+<p>&quot;It lives under a hat pinned up so tight I can see where the pins sit.&quot; She put her fingers on the place, above and behind Robyn&#x27;s ear, and pressed. &quot;Does that hurt?&quot;</p>
+<p>It did. It had hurt every afternoon for about fifteen years.</p>
+<p>&quot;That&#x27;s where your headaches come from,&quot; Leonie said. &quot;Not the sun.&quot;</p>
+<p>She started at the back. She worked slowly and she did not chatter while she did it, which was the first surprising thing. The comb went up through it and the scissors went across, and the cut hair came down onto the towel and onto the boards, and it was dry and pale and there was a great deal of it.</p>
+<p>&quot;You&#x27;ve got grey coming through at the front,&quot; she said.</p>
+<p>&quot;I know.&quot;</p>
+<p>&quot;It&#x27;s good grey. It&#x27;s coming in at the temple in a stripe, which people pay money for.&quot;</p>
+<p>&quot;There&#x27;s a box in the pharmacy,&quot; Robyn said. &quot;Warm Chestnut. I&#x27;ve looked at it about forty times.&quot;</p>
+<p>&quot;And?&quot;</p>
+<p>&quot;And I&#x27;m a fifty-five-year-old woman on my own on eleven thousand acres. Who exactly is it for?&quot;</p>
+<p>Leonie went on combing and cutting and did not answer for a while.</p>
+<p>&quot;That&#x27;s not the question, though,&quot; she said. &quot;Is it.&quot;</p>
+<p>The sun went off the paddocks and the light went long and yellow. Down at the shed one of the dogs got up, turned round, and lay down again.</p>
+<p>Nobody had had their hands in Robyn&#x27;s hair since her mother did her plaits for school. She had cut her own fringe over the kitchen sink for a decade with the same scissors that were now going past her ear. She sat very still and looked out at the country and did not say anything at all, and Leonie kept working.</p>
+<p class="beat">* * *</p>
+<p>Afterwards Robyn shook the towel out over the rail and would not go and look in the mirror, and Leonie poured two glasses and put her feet up on the other chair.</p>
+<p>&quot;Right,&quot; she said. &quot;First kiss.&quot;</p>
+<p>&quot;Oh, God.&quot;</p>
+<p>&quot;Come on. I&#x27;ve told you mine and it was humiliating.&quot;</p>
+<p>&quot;Yours was a girl at a swimming carnival.&quot;</p>
+<p>&quot;It was a girl at a swimming carnival who then told everybody.&quot; Leonie waved the glass. &quot;Yours.&quot;</p>
+<p>Robyn drank some wine and looked at the boards.</p>
+<p>&quot;Darren Pike,&quot; she said. &quot;Behind the bandstand at the oval. I was fifteen.&quot;</p>
+<p>&quot;What was the occasion?&quot;</p>
+<p>&quot;Rugby club dance. They had it in the pavilion every October and everyone&#x27;s mother made a plate.&quot; She turned the glass round. &quot;He&#x27;d been standing near me for about two hours. He had a shirt on that his brother had worn to somebody&#x27;s wedding. And at some point he said did I want to see something behind the bandstand, and I said what, and he said nothing, and I went anyway.&quot;</p>
+<p>&quot;And?&quot;</p>
+<p>&quot;And it went on for about four seconds and he got my nose.&quot;</p>
+<p>Leonie put her head back and laughed at the roof of the verandah.</p>
+<p>&quot;He got your nose.&quot;</p>
+<p>&quot;He got my nose, and then he said sorry, and then we went back in separately about three minutes apart, as though the entire town wasn&#x27;t watching the door.&quot; Robyn was laughing now too. &quot;And Mum knew. She never said a word about it. She just put an extra scone on my plate on the way home.&quot;</p>
+<p>&quot;That is the best thing I have ever heard.&quot;</p>
+<p>&quot;He died. Darren. About four years ago, a truck, out on the Newell. I sent a card.&quot;</p>
+<p>Leonie topped up both glasses.</p>
+<p>&quot;Fifteen,&quot; she said. &quot;And then what?&quot;</p>
+<p>&quot;Then I was sixteen, and then I was seventeen, and then I did the HSC in a room with a fan in it, and I left.&quot; Robyn shrugged. &quot;Sydney.&quot;</p>
+<p>&quot;And then Burt.&quot;</p>
+<p>&quot;And then Burt.&quot;</p>
+<p>Leonie did not follow it up, which was the second surprising thing that day.</p>
+<p>Leonie told a long story about a school concert with three separate disasters in it, and Robyn laughed until she had to put the glass down on the boards.</p>
+<p>She had her feet up. Her hair was off her neck. There was nothing waiting for her in the morning that she had not done a thousand times.</p>
+<p>She thought: I am happy. Right now, sitting here.</p>
+<p>It had been a long time since she had thought that about herself.</p>
+<p>She did not take it any further. She picked up the bottle and filled Leonie&#x27;s glass.</p>
+<p class="beat">* * *</p>
+<p>They went in at eleven and Leonie took the glasses and Robyn turned the verandah light off.</p>
+<p>Her hair was all over the boards, pale in the dark, a good deal of it, drifting already towards the edge where the wind came under the rail.</p>
+<p>She had swept those boards twice in four days before Leonie came.</p>
+<p>She left it where it was and went to bed.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch8">
+<header class="ch-head"><p class="ch-num">Chapter 8</p><h2>The Hallway</h2></header>
+<p>She woke at ten past two with the sheet stuck to her back and the nightdress twisted round her ribs.</p>
+<p>The fan was going and moving the same hot air about. She lay still until the worst of it passed, then swung her legs out and sat on the edge of the bed with her hands on her knees, waiting to stop dripping.</p>
+<p>Thirty-eight degrees at eight in the evening, and the stone walls held it all night and gave it back.</p>
+<p>She went out for water.</p>
+<p>The hall ran the length of the house, dark at both ends, with a square of moon on the floorboards halfway along from the window over the front door. She was at the square when the bathroom door opened at the other end and Leonie came out of the spare room and into it.</p>
+<p>They both stopped.</p>
+<p>&quot;Sorry,&quot; Leonie said. &quot;I thought you were asleep.&quot;</p>
+<p>&quot;I was.&quot;</p>
+<p>&quot;Is it always like this?&quot;</p>
+<p>&quot;Three or four nights in a summer. It&#x27;ll break tomorrow or the day after.&quot;</p>
+<p>Leonie had a towel over her shoulder and nothing else. She had told Robyn on the second night that she had slept without anything on since she was nineteen and that she was not going to start now on a stranger&#x27;s account, and Robyn had said that was fine, and it had not come up again.</p>
+<p>&quot;I&#x27;m going to stand under the cold tap,&quot; Leonie said. &quot;Is there enough in the tank?&quot;</p>
+<p>&quot;There&#x27;s plenty. Don&#x27;t use the hot at all and it won&#x27;t touch the pump.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>Neither of them moved.</p>
+<p>Robyn had her glass of water in her hand. She was looking, and she knew she was looking, and she could not find the part of herself that would have stopped it. The moon came in across the boards and up as far as Leonie&#x27;s knees, and the rest of her was a shape in the dark, and none of it was hidden.</p>
+<p>&quot;Robyn.&quot;</p>
+<p>&quot;Sorry.&quot; She looked at the glass.</p>
+<p>&quot;Don&#x27;t be sorry. God.&quot; Leonie leaned her shoulder against the doorframe. She did not cover anything and she did not arrange herself. She simply stood where she was and let it go on. &quot;It&#x27;s all right. Look if you want to look. I&#x27;d rather that than you standing in your own hallway apologising.&quot;</p>
+<p>&quot;I don&#x27;t know what I&#x27;m doing.&quot;</p>
+<p>&quot;You&#x27;re looking at a person. It&#x27;s two in the morning and it&#x27;s a hundred degrees and there&#x27;s nobody here.&quot;</p>
+<p>Robyn looked. It went on longer than she would have believed she was capable of.</p>
+<p>&quot;You should do it more,&quot; Leonie said.</p>
+<p>&quot;Do what.&quot;</p>
+<p>&quot;Be in a room without your arms crossed.&quot; She tipped her head. &quot;You do it all day. You come round a corner and you make yourself smaller. You&#x27;ve been doing it since I met you and I&#x27;ve never once worked out who you think is watching.&quot;</p>
+<p>&quot;I&#x27;m a big woman in the way.&quot;</p>
+<p>&quot;You&#x27;re a big woman who lifted a ewe out of a dam on Thursday while I fell over.&quot; Leonie pushed off the doorframe. &quot;Shoulders like a swimmer. Forearms I would kill for. Hands that have done something. And you walk round your own house like you&#x27;re about to knock something off a shelf.&quot;</p>
+<p>&quot;That isn&#x27;t the same as—&quot;</p>
+<p>&quot;It&#x27;s exactly the same as. It&#x27;s all the same thing.&quot;</p>
+<p>The house ticked. Out in the yard a dog scratched itself and the tags went.</p>
+<p>&quot;I&#x27;d have gone back to bed,&quot; Robyn said. &quot;A week ago. I&#x27;d have turned round and gone back and pretended I never got up.&quot;</p>
+<p>&quot;I know.&quot;</p>
+<p>&quot;I&#x27;m still standing here.&quot;</p>
+<p>&quot;I know,&quot; Leonie said. &quot;Goodnight, Robyn.&quot;</p>
+<p>She went into the bathroom and did not quite close the door, the way she never quite closed it, and the tap came on.</p>
+<p>Robyn drank her water in the hall and went back to her room.</p>
+<p class="beat">* * *</p>
+<p>She lay on top of the sheet with the fan going over her and did not sleep for a long time.</p>
+<p>What came to her was not the hallway.</p>
+<p>It was a school afternoon in 1983, in the bathroom at the other end of this house, with the blue lino and the mirror that had a chip out of the corner. She was twelve. She had found it at school and sat through two periods of maths with her cardigan tied round her waist and had not told anybody, and had walked the four kilometres up the driveway from the bus in the heat working out how she was going to get to the bathroom without being seen.</p>
+<p>Her mother had been in the kitchen. She had looked at Robyn once, across the room, and put down what she was holding, and come down the hall after her.</p>
+<p>She had not made anything of it. She had got a paper bag out of the cupboard under the basin and shown her, plainly, what went where, and where the bag lived, and what to do with the wrapper. She said it would come about every four weeks and that she was to say if it did not. She said there would be a day or two each month when her back would ache, and that this was not an excuse and not a punishment either, and that she would work through it the same as anybody.</p>
+<p>Then she had washed her hands and dried them on her apron.</p>
+<p>&quot;There&#x27;s nothing wrong with you,&quot; she said. &quot;That&#x27;s the main thing. Half the women in the district will tell you there is. There isn&#x27;t.&quot;</p>
+<p>And then she had gone out and made a pot of tea and put two cups on the table, and sat down.</p>
+<p>It was ten past three in the afternoon.</p>
+<p>Robyn had never once, in twelve years, seen her mother sit down in the daytime.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch9">
+<header class="ch-head"><p class="ch-num">Chapter 9</p><h2>The Ute in the Drive</h2></header>
+<p>The change came through before dawn.</p>
+<p>Robyn heard it start in the box gums at the top of the house paddock and got up and went out onto the verandah in the dark to feel it, and the temperature dropped eight degrees in about a minute. There were four points of rain in the gauge by morning and the whole place smelled of it.</p>
+<p>They spent the day on the shearing shed roof, replacing the sheets the March storm had lifted, with Leonie on the ground feeding screws up in a bucket on a rope and calling advice that Robyn ignored.</p>
+<p>It was a good day. She would think about that afterwards.</p>
+<p>They knocked off at four and were coiling the rope when Ned got up off the concrete and stood looking down the drive.</p>
+<p>Robyn straightened.</p>
+<p>The dust was up about two kilometres out, past the grid, coming slowly the way people come who do not know the road. She watched it. It was a white dual-cab, newish, and she did not know it and had never seen it before in her life.</p>
+<p>&quot;Are you expecting anyone?&quot; Leonie said.</p>
+<p>&quot;No.&quot;</p>
+<p>She kept coiling the rope. The ute came up past the culvert and slowed and came on, and at the house gate it swung in wide and pulled up on the gravel under the pepper tree.</p>
+<p>The engine went off.</p>
+<p>The door opened and a man got out and pushed it shut with the heel of his hand without looking at it.</p>
+<p>Robyn put the rope down on the concrete.</p>
+<p>She did not decide to. Her hands opened and the rope went down and she was standing with nothing in them, and afterwards she could not have said what had happened between one second and the next.</p>
+<p>&quot;Rob,&quot; he said.</p>
+<p>Nobody had called her that in eleven years.</p>
+<p>He had got heavier through the middle and thinner in the face. The hair was white and cut short and he had let it go on top. He wore a good shirt with the sleeves rolled and moleskins that had never been in a paddock, and he came across the gravel with his hands loose at his sides, smiling, and stopped six feet short.</p>
+<p>&quot;Look at you,&quot; he said. &quot;You&#x27;ve been in the sun.&quot;</p>
+<p>&quot;Burt.&quot;</p>
+<p>&quot;I know. I know.&quot; He put a hand up. &quot;I should have rung. I did try, months back, and the number I had was no good, and then I thought, well, I&#x27;m not going to sort this out down a phone line anyway.&quot;</p>
+<p>The dogs had come up. Ned went as far as Robyn&#x27;s leg and stayed there. Tilly circled out wide and would not settle.</p>
+<p>Burt looked past her.</p>
+<p>&quot;And who&#x27;s this?&quot;</p>
+<p>&quot;Leonie Vasey,&quot; Leonie said, and put her hand out, and he took it. &quot;I teach at the school in town.&quot;</p>
+<p>&quot;Burt Cooper.&quot; He held it a moment. &quot;Robyn&#x27;s husband.&quot;</p>
+<p>&quot;Right,&quot; Leonie said.</p>
+<p>&quot;She&#x27;ll have told you all about me.&quot; He grinned at her, and it was a good grin, the one that had worked on a nineteen-year-old in a share house in Glebe and had gone on working on bank managers and publicans and every woman at every barbecue for nearly forty years. &quot;Half of it&#x27;s true.&quot;</p>
+<p>&quot;She&#x27;s never mentioned you.&quot;</p>
+<p>The grin did not go anywhere. It stayed exactly where it was for about a second longer than it needed to.</p>
+<p>&quot;No,&quot; he said. &quot;Well.&quot;</p>
+<p>He turned back to Robyn.</p>
+<p>&quot;I&#x27;m not here to muck you about. I&#x27;ve got a couple of things we need to sit down over, you and me, and they&#x27;re not going to keep.&quot; He looked up at the house, at the roofline and the guttering and the tank stand, the way a man looks at a thing he is pricing. &quot;Bloody long way out here, isn&#x27;t it. Six hours from Dubbo and I missed the turn twice.&quot;</p>
+<p>&quot;How long are you staying?&quot;</p>
+<p>&quot;Couple of nights.&quot; He was already going round to the back of the ute. &quot;I&#x27;m not driving that again today.&quot;</p>
+<p>He dropped the tailgate and pulled out a bag.</p>
+<p>&quot;Your mother&#x27;s room still up the front?&quot;</p>
+<p>&quot;Mum&#x27;s room is where the linen goes,&quot; Robyn said.</p>
+<p>&quot;I&#x27;ll take whatever&#x27;s going.&quot; He had the bag over his shoulder and he was already walking. &quot;I&#x27;d kill for a cup of tea.&quot;</p>
+<p>He went up the three steps and in through the flywire door, and it banged behind him, and there was the sound of a bag going down on floorboards in a house where he had never once lived.</p>
+<p class="beat">* * *</p>
+<p>Leonie had not moved.</p>
+<p>She was looking at Robyn, and she had been looking at her since the grin.</p>
+<p>Robyn was standing on the concrete apron with the rope at her feet. Her weight was back. Her chin was down. Both arms were folded high across her chest, each hand gripping the opposite elbow, and her shoulders had come up and in so that she took up about two-thirds of the room she had taken up four minutes earlier.</p>
+<p>&quot;Robyn.&quot;</p>
+<p>&quot;What.&quot;</p>
+<p>&quot;Your arms.&quot;</p>
+<p>Robyn looked down at herself.</p>
+<p>It took her a moment to work out what she was being shown. Then she took hold of her own right wrist with her left hand and pulled the arm down to her side, deliberately, the way you would straighten something on a shelf, and stood there with both hands open.</p>
+<p>They stayed like that.</p>
+<p>Inside the house a tap ran and the kettle went on.</p>
+<p>&quot;Right,&quot; Robyn said. &quot;I&#x27;d better get the good cups out.&quot;</p>
+<p>She picked up the rope and hung it on its nail and went in.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch10">
+<header class="ch-head"><p class="ch-num">Chapter 10</p><h2>The Table</h2></header>
+<p>Robyn cooked.</p>
+<p>Leonie stood up twice to help and both times Robyn said she was right, thanks, and went on doing it. She did the lamb and the potatoes and three vegetables, which she had not done for anybody in eleven years, and she got the good cloth out of the dresser drawer and ironed the fold out of it standing at the end of the table while the oven heated.</p>
+<p>Leonie watched all of it from the doorway and said nothing.</p>
+<p>Burt had a shower and came out in a clean shirt smelling of somebody&#x27;s aftershave, and sat down at the head of the table, in her father&#x27;s chair, and put his phone face down beside the salt.</p>
+<p>He was good company for the first hour. Robyn had forgotten that part and remembered it now.</p>
+<p>He told Leonie about the trip out, and about a man he knew who had bought a pub at Nyngan and lost it in eighteen months, and a long story about a boat he had gone halves in. He asked Leonie which class she taught, and listened to the answer, and asked another question off the back of it. He ate everything on his plate and said it was the best feed he&#x27;d had in a year.</p>
+<p>&quot;She could always cook,&quot; he said. &quot;Her mother taught her.&quot;</p>
+<p>Then he leaned back and put his arm over the back of the chair.</p>
+<p>&quot;What are you running here now, Rob? Six thousand?&quot;</p>
+<p>&quot;About that.&quot;</p>
+<p>&quot;And you&#x27;re doing it on your own.&quot;</p>
+<p>&quot;I&#x27;ve got Col and Mick for the yards.&quot;</p>
+<p>&quot;Casual.&quot; He nodded slowly. &quot;I had a look at the last few sales out that way before I came. Comparable country, up past the river, went for two and a bit thousand an acre in March. You&#x27;ve got eleven.&quot;</p>
+<p>Robyn put her knife and fork together.</p>
+<p>&quot;Say what you came to say.&quot;</p>
+<p>&quot;I need four hundred thousand.&quot;</p>
+<p>Nobody said anything. Out in the yard one of the dogs turned over on the concrete.</p>
+<p>&quot;I&#x27;ve had a rough four years,&quot; Burt said. &quot;I&#x27;m not going to bore you with it. There&#x27;s people I owe and they&#x27;re not the kind you put off with a payment plan. And before you say it, I&#x27;ve tried the banks.&quot; He turned his glass. &quot;Four hundred. On eleven thousand acres. You wouldn&#x27;t feel it.&quot;</p>
+<p>&quot;I don&#x27;t have four hundred thousand.&quot;</p>
+<p>&quot;You&#x27;ve got an asset worth twenty-odd million and a mortgage a first-year bank johnny would clear in a morning.&quot;</p>
+<p>&quot;I&#x27;ve got a place that pays for itself in a good year. I don&#x27;t have cash. I&#x27;ve got a ute from 2009 and I&#x27;m still paying off the header.&quot;</p>
+<p>&quot;Then borrow it.&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>It came out of her flat and ordinary, the way she would have said it about a gate.</p>
+<p>Burt looked at her for a moment.</p>
+<p>&quot;Rob.&quot; He was patient. &quot;We&#x27;re still married. I want you to sit with that for a second before you get worked up. Eleven years you&#x27;ve been out here and I have never once come after a cent of it. Not when your father died. Not when the estate went through. I let you have it.&quot; He tapped the table twice, softly, with one finger. &quot;I&#x27;m not asking you for a gift. I&#x27;m asking for a share of something that is legally half mine, and I&#x27;m asking for less than a fifth of what I could take.&quot;</p>
+<p>&quot;It was my parents&#x27; farm.&quot;</p>
+<p>&quot;And you were my wife.&quot;</p>
+<p>Robyn started to get up for the plates.</p>
+<p>&quot;Sit down, I&#x27;m talking to you.&quot;</p>
+<p>She sat down.</p>
+<p>She did it before she knew she was doing it, the way she had put the rope down, and she was in the chair with her hands in her lap looking at the tablecloth, and the whole of her was quiet.</p>
+<p>Burt let it sit.</p>
+<p>&quot;I&#x27;ll tell you what worries me,&quot; he said, gently now. &quot;You&#x27;re out here on your own a hundred kilometres from a doctor, working like a dog, no help, no company. And I turn up and there&#x27;s a schoolteacher in the spare room and your hair&#x27;s been done. I&#x27;m not being funny.&quot; He turned to Leonie and his voice did not change at all. &quot;Has she been alright? Because she&#x27;s had trouble before, when she&#x27;s got herself run down. The kids have said things to me.&quot;</p>
+<p>&quot;The kids haven&#x27;t spoken to you in eleven years,&quot; Robyn said, to the tablecloth.</p>
+<p>&quot;Now that&#x27;s not true.&quot;</p>
+<p>&quot;Emma rang you on your sixtieth and you didn&#x27;t pick up.&quot;</p>
+<p>&quot;You see.&quot; He opened both hands towards her, for Leonie&#x27;s benefit, and smiled. &quot;That&#x27;s eleven years of it in one go. Everything&#x27;s a ledger.&quot;</p>
+<p>Leonie put her fork down.</p>
+<p>&quot;Mr Cooper,&quot; she said, &quot;I&#x27;ve been here a fortnight. She gets up at five, she does the work of three men, and she has been better company than anyone I know. There&#x27;s nothing whatever the matter with her.&quot;</p>
+<p>&quot;Well, that&#x27;s good to hear.&quot;</p>
+<p>&quot;I don&#x27;t think you were asking.&quot;</p>
+<p>Burt looked at Leonie properly then, for perhaps two seconds, and whatever he did with his face was pleasant the entire time.</p>
+<p>&quot;You&#x27;re a good friend to her,&quot; he said. &quot;She&#x27;s never had many. There&#x27;s a reason for that, and it isn&#x27;t me.&quot;</p>
+<p>He picked up his phone and stood.</p>
+<p>&quot;I&#x27;m going to turn in. Think about it overnight, Rob. Four hundred, and a bit of paper saying we&#x27;re square, and I&#x27;ll be down the road by Thursday and you won&#x27;t see me again.&quot; He put his hand on the back of her chair on the way past. &quot;Lovely meal, love.&quot;</p>
+<p>The door of the front room shut.</p>
+<p class="beat">* * *</p>
+<p>Robyn ran the sink.</p>
+<p>She scraped and stacked and washed in order, the plates and then the cutlery and then the pans, and Leonie stood beside her with the tea towel, and neither of them said anything for a good while.</p>
+<p>Robyn handed her the roasting dish.</p>
+<p>Leonie took it, and it went, and she had to put it down on the bench and hold on to the edge of it with both hands.</p>
+<p>Robyn looked at her.</p>
+<p>&quot;You&#x27;re shaking.&quot;</p>
+<p>&quot;I know I am.&quot;</p>
+<p>&quot;Sit down. I&#x27;ll finish these.&quot;</p>
+<p>&quot;Robyn, how are you not—&quot; Leonie stopped. &quot;You cooked him a roast.&quot;</p>
+<p>&quot;I know.&quot;</p>
+<p>&quot;You ironed the cloth.&quot;</p>
+<p>&quot;I know what I did.&quot;</p>
+<p>Robyn dried her hands. Then she put them over Leonie&#x27;s on the edge of the bench and held them there until they stopped.</p>
+<p>&quot;Twenty-five years,&quot; she said. &quot;You get very good at it.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch11">
+<header class="ch-head"><p class="ch-num">Chapter 11</p><h2>The Envelope</h2></header>
+<p>She did not sleep, and at four she got up and went into the office off the kitchen and shut the door.</p>
+<p>The office was her father&#x27;s. It had a roll-front desk and a wall of lever-arch files going back to 1968, wool dockets and rainfall books and invoices for machinery that had been sold for scrap before Robyn was thirty. Nobody had opened any of them in eleven years except her.</p>
+<p>She took down the file marked 1994–96 WOOL and laid it on the desk and turned the pages until she came to the manila envelope in the middle of it, flat and unmarked, where it had been since the week she left Sydney.</p>
+<p>She had done Burt&#x27;s books for nineteen years.</p>
+<p>That was the thing nobody ever thought about. She had done the invoices and the BAS and the wages and the reconciliations at the kitchen table after the children were in bed, because it saved paying a girl to do it, and because he had liked her to know how hard he worked. She had seen every dollar that came in and every dollar that went somewhere else. She had asked about it twice, early on.</p>
+<p>In the last fortnight before she drove out, she had sat in that kitchen and photocopied four years of it at the newsagent on the corner, forty cents a page, and put the copies in an envelope, and told nobody.</p>
+<p>She had never intended to use it. She had taken it the way a woman takes the spare key to a house she is not sure she will be let back into.</p>
+<p>Robyn put the envelope in the pocket of her coat and put the file back on the shelf.</p>
+<p class="beat">* * *</p>
+<p>Burt came out at half past seven, showered, cheerful, and sat down in her father&#x27;s chair.</p>
+<p>&quot;Well?&quot;</p>
+<p>Leonie was at the sink with her back to the room. She had not gone out to the paddocks and nobody had asked her to.</p>
+<p>&quot;No,&quot; Robyn said.</p>
+<p>&quot;Rob.&quot;</p>
+<p>&quot;You&#x27;re not getting four hundred thousand and you&#x27;re not getting four hundred. I&#x27;m not borrowing against this place and I&#x27;m not selling a paddock and I&#x27;m not signing anything.&quot;</p>
+<p>He sat back and looked at her, and for a while he did the patient face.</p>
+<p>Then he stopped doing it.</p>
+<p>The patient face went. What was left in her father&#x27;s chair was a big old man with a white head and nothing in his face at all.</p>
+<p>&quot;I&#x27;m not leaving without it.&quot;</p>
+<p>He stood up. He came round the end of the table.</p>
+<p>Robyn stayed where she was, by the dresser, with her hands at her sides. Out on the verandah Ned got up off the boards and stood at the flywire with his ears forward.</p>
+<p>Burt stopped in front of her and took hold of her wrist.</p>
+<p>&quot;You listen to me—&quot;</p>
+<p>He pulled.</p>
+<p>Her arm did not move.</p>
+<p>He pulled again, harder. She felt him put his shoulder into it.</p>
+<p>Her forearm stayed where it was.</p>
+<p>They both looked down at the same time.</p>
+<p>Burt let go.</p>
+<p>&quot;Sit down, Burt,&quot; Robyn said.</p>
+<p>He did not sit down. He went two steps back and put his hand on the corner of the table, and his breath was going.</p>
+<p>Robyn took the envelope out of her coat pocket and put it on the cloth.</p>
+<p>&quot;That&#x27;s a copy,&quot; she said. &quot;There&#x27;s another with Gwen Mackay in town, in her safe, and a third one you won&#x27;t find. It&#x27;s four years of your books in my handwriting, and the invoices that went with them, and the ones that didn&#x27;t. July 2010 through June 2014.&quot;</p>
+<p>She watched him work out what she was talking about, and then watched him work out how long she had been holding it.</p>
+<p>&quot;You did those books,&quot; he said.</p>
+<p>&quot;I did.&quot;</p>
+<p>&quot;You&#x27;d be in it as deep as me.&quot;</p>
+<p>&quot;I&#x27;ve thought about that for eleven years.&quot; She picked the envelope up again. &quot;I&#x27;ve decided I don&#x27;t mind.&quot;</p>
+<p>Burt looked at the table.</p>
+<p>&quot;There&#x27;s two other things and then you can go and pack,&quot; Robyn said. &quot;I saw Gwen in 2016 and made a will. You&#x27;re not in it. If I go under a tractor this afternoon this place goes to Emma and the boy and you don&#x27;t get an acre, and you&#x27;d spend more fighting it than you&#x27;d ever see.&quot;</p>
+<p>&quot;And the other?&quot;</p>
+<p>&quot;You&#x27;ll sign the divorce. Gwen will send the papers to whatever address you&#x27;re at. You&#x27;ll sign them inside a month.&quot;</p>
+<p>&quot;Or what.&quot;</p>
+<p>&quot;Or it goes to the police.&quot;</p>
+<p>The kettle, which Leonie had put on twenty minutes earlier and which nobody had touched, came to the boil and clicked off.</p>
+<p>&quot;I&#x27;ve got nothing, Robyn,&quot; Burt said.</p>
+<p>It was the first true thing he had said in the house.</p>
+<p>&quot;I know,&quot; she said. &quot;It isn&#x27;t going to be me.&quot;</p>
+<p class="beat">* * *</p>
+<p>He was fifteen minutes packing and he did not speak again.</p>
+<p>He carried the bag out and put it on the back seat instead of the tray. At the door of the ute he stopped and looked back up at the house, at the roofline and the guttering, and then at her standing on the concrete.</p>
+<p>&quot;Your old man never rated me,&quot; he said.</p>
+<p>&quot;No.&quot;</p>
+<p>He got in and started it and went down the drive, slowly, the whole four kilometres, and out through the gate, and the dust hung over the road and went sideways and came apart.</p>
+<p>Robyn watched it the entire way.</p>
+<p>Then her knees went.</p>
+<p>She got as far as the second step of the verandah and sat down on it with her boots in the dirt and her hands flat on the board either side of her, and she started to shake, and it came up through her arms and her jaw and she could not do anything about any of it.</p>
+<p>Leonie came out and sat down beside her on the step.</p>
+<p>She did not say anything. She did not put an arm round her.</p>
+<p>She sat there, close enough that their shoulders were touching, until it stopped.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch12">
+<header class="ch-head"><p class="ch-num">Chapter 12</p><h2>The Drive-In</h2></header>
+<p>For two days they did not talk about it.</p>
+<p>They drenched the weaners and shifted the ewes off the stubble.</p>
+<p>Robyn rang Gwen Mackay from the ridge where the signal was. Gwen said to leave it with her, and asked only the questions she needed.</p>
+<p>On the second night it was warm again and they took the bottle out to the verandah.</p>
+<p>Leonie put her feet up on the other chair and said nothing for about ten minutes, which for Leonie was an event.</p>
+<p>&quot;Ask,&quot; Robyn said.</p>
+<p>&quot;I&#x27;m not going to ask.&quot;</p>
+<p>&quot;Then I&#x27;ll have to start on my own and I&#x27;ll make a mess of it.&quot;</p>
+<p>&quot;Make a mess of it, then.&quot;</p>
+<p>Robyn looked out at the dark where the paddocks were.</p>
+<p>&quot;He was thirty-four,&quot; she said. &quot;I was nineteen. I was in a share house in Glebe with three other girls and a bathroom you had to book. He came to fix the hot water. He wasn&#x27;t the plumber, he owned the firm, but he came himself, and he had a look at it and told the landlord it was a disgrace and got it replaced inside a week. Nobody had ever done anything like that for me.&quot;</p>
+<p>&quot;I&#x27;ll bet.&quot;</p>
+<p>&quot;He took me to places I&#x27;d only read the names of. He paid for everything and he made it feel like nothing. He was interested in me.&quot; She turned the glass round. &quot;And when he told me what I should wear to meet his mother, I thought that was him being helpful, because I didn&#x27;t know. I was a farm girl who&#x27;d never eaten in a restaurant with cloth on the table.&quot;</p>
+<p>&quot;What did your parents make of him?&quot;</p>
+<p>&quot;Dad went quiet. He went quiet the same way he went quiet when I got into the university, and I read it the same way, and I was wrong the second time.&quot; She drank some wine. &quot;He never said a word against him in twenty-five years. Not one. I used to think that was him staying out of it. Now I think he was frightened I&#x27;d stop coming home.&quot;</p>
+<p>The dogs were asleep under the tank stand. Somewhere out past the machinery shed a curlew started up.</p>
+<p>&quot;He didn&#x27;t hit me,&quot; Robyn said. &quot;People want that to be the question, and I understand why. Three times in twenty-five years, and each of them was over in about four seconds, and afterwards he was so decent about it that I ended up comforting him. The rest of it was talking.&quot;</p>
+<p>&quot;Talking.&quot;</p>
+<p>&quot;He never shouted. You saw him. He is the most reasonable man in any room he walks into.&quot; She put the glass down on the boards. &quot;If I was upset, I was tired. If I was certain about something, I was obsessed with it. If I was right, it was a coincidence and I&#x27;d got there for the wrong reasons. He never told me I was stupid. He was always very worried about me. For twenty-five years I was somebody who was nearly coping, and the person who kept saying so was the person everybody thought was marvellous.&quot;</p>
+<p>&quot;And you believed it.&quot;</p>
+<p>&quot;I checked with him. Every time.&quot; Robyn rubbed her thumb along the arm of the chair. &quot;I&#x27;d have an opinion about something at a dinner and I&#x27;d look across at him before I said it. Emma did it too, by about fourteen. That&#x27;s the one I can&#x27;t get past.&quot;</p>
+<p>Leonie did not fill the gap.</p>
+<p>&quot;Can I tell you something I&#x27;ve never said to a living soul,&quot; Robyn said.</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;It didn&#x27;t start with him.&quot;</p>
+<p>She sat with it for a while. Leonie waited.</p>
+<p>&quot;There was a boy called Roger Hallam. He was the year above me and he was the captain of the rugby team and he had a car. I was sixteen. Everybody in that school would have got in that car.&quot; She said it evenly. &quot;We went to the drive-in at Parkes. And he put his hand where I hadn&#x27;t said he could, and kept it there, and I lay there and looked at the screen and waited for it to be over.&quot;</p>
+<p>&quot;Robyn.&quot;</p>
+<p>&quot;I didn&#x27;t say no. That&#x27;s the part I carried.&quot; She turned her head. &quot;Forty years I&#x27;ve had to think about that. It never once crossed my mind that saying no was a thing I was allowed to do. Not that it would be difficult. That it existed.&quot;</p>
+<p>&quot;That is not the same as—&quot;</p>
+<p>&quot;I know what it&#x27;s not. I know now.&quot; She picked the glass back up. &quot;At the time I thought I&#x27;d done something and couldn&#x27;t work out what. I couldn&#x27;t look at him after that. I&#x27;d go the long way round the quad. He went off to Orange at the end of the year and I was so relieved I could have cried, and I never told a single person, and at the reunion in 2001 he bought me a drink and asked after the kids.&quot;</p>
+<p>The curlew went again, further off.</p>
+<p>&quot;And then Burt was thirty-four and paid for the dinner,&quot; Robyn said. &quot;He did not look like danger to me. He looked like the opposite. He looked like a man who was going to decide things, so that I never had to sit in a car again not knowing what was coming next.&quot;</p>
+<p>Leonie got up, went inside, came back with the other bottle, and sat down.</p>
+<p>&quot;Did you ever tell your mum? Any of it?&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;Why not?&quot;</p>
+<p>Robyn looked at the boards between her boots for a long moment.</p>
+<p>&quot;Because she sat me down in that bathroom when I was twelve and told me there was nothing wrong with me,&quot; she said. &quot;And she made a pot of tea about it in the middle of the afternoon, and she had never sat down in the daytime in her life.&quot;</p>
+<p>She stopped.</p>
+<p>&quot;If I&#x27;d told her, I&#x27;d have had to tell her she was wrong.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch13">
+<header class="ch-head"><p class="ch-num">Chapter 13</p><h2>The River</h2></header>
+<p>It was forty-one by eleven and there was no wind at all.</p>
+<p>Robyn came down off the tank stand with her shirt stuck to her and stood in the shade of it for a minute with her head down.</p>
+<p>&quot;Right,&quot; she said. &quot;We&#x27;re not working in this.&quot;</p>
+<p>&quot;What&#x27;s the alternative?&quot;</p>
+<p>&quot;Get a towel.&quot;</p>
+<p>They took the ute east along the boundary track for twenty minutes, past the sheep camp and down through the box, to where the creek came in under the fence and turned.</p>
+<p>There was a hole there that never dried. Four river red gums stood over it with their roots out of the bank, and the water went from white sand at the near edge to something black and cold in the middle, and there was a shelf of rock on the far side with a wattle growing out of it. Robyn had swum there as a girl every summer of her life and had not been in it once since she came home.</p>
+<p>Leonie was out of her boots before the engine stopped.</p>
+<p>She went down the bank pulling her shirt over her head, hopping on one leg out of the moleskins, and she left everything in a heap on the sand and went in off the edge without checking the depth.</p>
+<p>She came up shouting.</p>
+<p>&quot;It&#x27;s freezing. Robyn. It&#x27;s absolutely freezing, get in.&quot;</p>
+<p>Robyn sat down on the tailgate and took her boots off, one and then the other, and set them side by side.</p>
+<p>Then she sat there.</p>
+<p>Leonie swam out and turned over and floated, and looked at her upside down across the water.</p>
+<p>&quot;Come on.&quot;</p>
+<p>&quot;I&#x27;m coming.&quot;</p>
+<p>&quot;You&#x27;re not, though.&quot;</p>
+<p>Robyn looked at the sand.</p>
+<p>&quot;Give me a minute,&quot; she said.</p>
+<p>Leonie came back in and stood up in the shallows with her arms folded and the water off her elbows, and waited, and said nothing.</p>
+<p>&quot;He used to walk round the house with nothing on,&quot; Robyn said.</p>
+<p>&quot;Burt.&quot;</p>
+<p>&quot;All day, half the time. Weekends. He was proud of himself and he had every right to be at thirty-four.&quot; She turned a bootlace over in her fingers. &quot;And he had names for me. Not cruel ones. That was the thing about it. They were affectionate. He&#x27;d say them at the table with the kids there and everybody would laugh, me included, because what else do you do.&quot;</p>
+<p>&quot;What sort of names?&quot;</p>
+<p>&quot;It doesn&#x27;t matter. They were about the parts of me that had changed after Emma.&quot; She put the lace down. &quot;If I&#x27;d objected I&#x27;d have been the one making a fuss over nothing. He&#x27;d have been hurt. He was very easily hurt.&quot;</p>
+<p>The water moved and settled.</p>
+<p>&quot;I started getting changed in the bathroom,&quot; Robyn said. &quot;In my own house. Door shut. I did that for about twenty-five years and I never once thought of it as a strange thing to do. He never asked me to. I just worked out it was easier.&quot;</p>
+<p>&quot;Robyn.&quot;</p>
+<p>&quot;I&#x27;m fifty-five and there is not one person alive who has seen me in daylight.&quot; She said it to the sand. &quot;That&#x27;s what&#x27;s wrong with me. It&#x27;s not the stomach or the bloody tan line. It&#x27;s that I don&#x27;t know how to be looked at without waiting for the funny bit.&quot;</p>
+<p>Leonie came up out of the water onto the sand.</p>
+<p>&quot;I&#x27;m not going to say anything,&quot; she said. &quot;I&#x27;m going to go back in and I&#x27;m going to swim to the rock, and I&#x27;ll be a while getting there.&quot;</p>
+<p>She turned round and went in and swam.</p>
+<p>Robyn sat on the tailgate in the heat with the cicadas going and watched her go out across the black water.</p>
+<p>Then she stood up.</p>
+<p>She undid the buttons from the top down and took the shirt off and folded it over the tailgate, which she had never in her life done with a work shirt. She got out of the moleskins and folded those. Her hands were not steady and she kept going. The bra was the worst of it and she did it anyway, and the rest, and she put them on the pile.</p>
+<p>She stood in the sun on the sand with her arms at her sides.</p>
+<p>Nobody said anything. Nobody laughed. Out on the water Leonie touched the rock and turned.</p>
+<p>Robyn went down the bank and in.</p>
+<p>The cold took the breath out of her and she came up gasping and swearing, and then the water got hold of her and she went out flat and let it.</p>
+<p>She had forgotten this. She had forgotten it entirely.</p>
+<p>Her hip did not hurt. Her back did not hurt. She could not feel the knee she had been favouring since September. Her whole weight was off her for the first time in eleven years, and she lay on her back in the middle of the hole and looked up through the gum leaves and made a sound she did not recognise.</p>
+<p>Leonie swam over and trod water a couple of metres off.</p>
+<p>&quot;There she is,&quot; she said.</p>
+<p>They stayed in until their fingers wrinkled. They raced to the rock and Leonie won and was unbearable about it. They hung off a root with their elbows on the bank and argued about whether a bird in the top of the gum was a kite or a kestrel.</p>
+<p>The sun came round off the water and onto the sand.</p>
+<p>Robyn waded out first.</p>
+<p>She came up the shelf into the shallows and out onto the bank, and the water ran off her, and she stopped at the top where her clothes were and stood with her back to the creek and the sun on her shoulders.</p>
+<p>She turned round.</p>
+<p>Leonie was in the shallows, standing still, looking at her.</p>
+<p>It was not the way you look at a friend. Robyn had never had anyone look at her like that in her life, and she knew what it was straight away.</p>
+<p>The towel was on the tailgate, three steps away.</p>
+<p>She did not go and get it.</p>
+<p>She stood on the sand with her arms at her sides and the water running off her, in the middle of the afternoon, in the open, and let herself be looked at.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch14">
+<header class="ch-head"><p class="ch-num">Chapter 14</p><h2>The Bank</h2></header>
+<p>The water dried on her shoulders in the heat and nobody said anything.</p>
+<p>Then Robyn came back down the sand.</p>
+<p>She did not think about it. If she had thought about it she would have picked up the towel and made a joke and driven them both home. She went down the three steps of the bank and into the shallows, and the cold came up over her feet and her ankles, and she stopped in front of Leonie, who had not moved at all.</p>
+<p>Leonie looked up at her.</p>
+<p>She was a good deal shorter, and standing in water, so it was further down than Robyn had expected. That was the first thing. Forty years she had been tilting her face up to somebody, and now she had to come down, and she got it wrong.</p>
+<p>She got the corner of Leonie&#x27;s mouth and most of her cheek.</p>
+<p>Robyn pulled back about six inches and shut her eyes.</p>
+<p>&quot;Darren Pike,&quot; she said.</p>
+<p>Leonie made a noise like a kettle and then lost it completely, with one hand over her face and the other one gripping Robyn&#x27;s forearm to stay upright, and Robyn stood in eighteen inches of creek water at fifty-five years of age, naked, mortified, laughing.</p>
+<p>&quot;Behind the bandstand,&quot; Leonie got out.</p>
+<p>&quot;Don&#x27;t.&quot;</p>
+<p>&quot;Nineteen eighty-six.&quot;</p>
+<p>&quot;I will drown you in this creek.&quot;</p>
+<p>Leonie took her hand away from her face. She was still holding Robyn&#x27;s forearm, and she did not let go of it, and she stopped laughing.</p>
+<p>&quot;Try again,&quot; she said.</p>
+<p>Robyn tried again.</p>
+<p>The first thing was the absence of it. There was no scrape, no rasp of a jaw, none of the small ordinary roughness she had spent her whole adult life not noticing, and the want of it was so strange that she stopped for a second and then came back. Everything was softer than she knew how to account for. Leonie&#x27;s mouth tasted of creek water and she was warm right through from the sun.</p>
+<p>Robyn did not know what to do with her hands.</p>
+<p>They were down at her sides, opening and closing on nothing, and then Leonie took the right one and put it flat against her own waist and held it there until it stayed, and Robyn felt it go all the way through her.</p>
+<p>She had her hand on a woman&#x27;s bare back in the middle of a hot afternoon. She could feel her own pulse in her thumb.</p>
+<p>They came apart and stood there in the shallows with their foreheads together and the water going round their ankles.</p>
+<p>&quot;All right?&quot; Leonie said.</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;No, I&#x27;m—&quot; Robyn breathed out. &quot;I&#x27;m not upset. I don&#x27;t know what this is. My legs have gone.&quot;</p>
+<p>&quot;Sit down, then.&quot;</p>
+<p>They sat down on the sand where it shelved, half in the water, and Robyn put her forehead on Leonie&#x27;s shoulder and stayed there a while. Leonie got her arm round her and held on and let her be.</p>
+<p>&quot;I&#x27;m fifty-five,&quot; Robyn said, into her shoulder.</p>
+<p>&quot;I know how old you are.&quot;</p>
+<p>&quot;Twenty-five years of him. And before that I didn&#x27;t know I was allowed to say anything at all.&quot; She lifted her head. &quot;I&#x27;ve never gone first. Not once, not with anybody. I&#x27;ve been waiting to see what was going to happen to me since I was fifteen.&quot;</p>
+<p>Leonie put a wet strand of hair back off Robyn&#x27;s face.</p>
+<p>&quot;You went first about four minutes ago.&quot;</p>
+<p>&quot;I know.&quot;</p>
+<p>&quot;Badly.&quot;</p>
+<p>&quot;Shut up.&quot;</p>
+<p>&quot;Really very badly.&quot;</p>
+<p>Robyn laughed, and then her face went, and she put the heel of her hand against her eye and held it there for a second and took it away again.</p>
+<p>&quot;Right,&quot; she said. &quot;The sun&#x27;s coming round.&quot;</p>
+<p class="beat">* * *</p>
+<p>The moleskins would not go on over wet legs.</p>
+<p>Leonie got one leg in as far as the knee, swore at it, and gave up. She gathered the whole lot into a bundle under her arm, walked up the bank and got into the ute with nothing on at all.</p>
+<p>Robyn stood on the sand holding her clothes.</p>
+<p>&quot;Get in,&quot; Leonie said out the window.</p>
+<p>&quot;Leonie.&quot;</p>
+<p>&quot;There is nobody within a hundred kilometres.&quot;</p>
+<p>&quot;I know how far it is. I live here.&quot;</p>
+<p>&quot;Then get in the car.&quot;</p>
+<p>Robyn put her clothes on the tray and got in the car.</p>
+<p>The seat burned her. She came straight back up off it and said something her mother would not have cared for, and they got the towels down and sat on those. The wheel was too hot to hold properly. She drove the first hundred metres with two fingers and her wrist.</p>
+<p>Somewhere around the sheep camp she thought about Col and Mick, and then remembered it was January and they would not be back until the autumn, and let it go.</p>
+<p>Robyn got the windows down and started up the boundary track.</p>
+<p>They did the first kilometre without saying anything.</p>
+<p>Robyn drove with her hands at ten and two and her back off the seat, and after about a minute she understood that she was not going to get the whole way home without looking.</p>
+<p>So she looked.</p>
+<p>Leonie had one knee up on the seat and her elbow out the window and her head back against the rest, with her eyes shut and her face turned into the sun. She had not covered anything. It plainly had not crossed her mind to.</p>
+<p>Robyn looked at her as long as she dared and then back at the track, and then looked again.</p>
+<p>The freckles stopped in that clean line across her chest. Below it she was pale all the way down, and there was a crease across her stomach where she was sitting, and the sun came in through the windscreen and lay along the whole length of her, and she was entirely at her ease.</p>
+<p>&quot;You can keep going,&quot; Leonie said, without opening her eyes.</p>
+<p>&quot;I&#x27;m driving.&quot;</p>
+<p>&quot;You&#x27;re doing nine kilometres an hour.&quot;</p>
+<p>Robyn laughed and did not look away.</p>
+<p>Leonie opened her eyes then and turned her head, and instead of pulling the knee down or putting an arm across herself she let it go on, and watched Robyn looking at her, which was a different thing again and worse.</p>
+<p>&quot;Now you,&quot; she said.</p>
+<p>&quot;Now me what?&quot;</p>
+<p>&quot;You&#x27;ve got both hands on a steering wheel and nowhere to put them.&quot; Leonie put her arm along the back of the seat and looked at her properly, slowly, all the way down and all the way back up. &quot;Do you have any idea what you look like driving a ute with nothing on?&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;No. You don&#x27;t. That&#x27;s been the whole problem.&quot;</p>
+<p>Robyn kept her eyes on the track and her hands where they were and could feel her own pulse in about four places. The wind came in the window across her chest and her stomach and her thighs and there was not one thing between her and the afternoon.</p>
+<p>At the second gate Leonie put her hand on Robyn&#x27;s leg, above the knee.</p>
+<p>It stayed there. It did not go anywhere else, and after about two kilometres Robyn worked out that it was not going to, and that this was deliberate, and that Leonie knew exactly what she was doing.</p>
+<p>&quot;You&#x27;re a terrible woman,&quot; she said.</p>
+<p>&quot;Eyes on the road.&quot;</p>
+<p>They went up through the box gums with the shadows going over them both, and past the sheep camp, and out onto the open track where the country ran away on three sides and anybody standing anywhere in eleven thousand acres could have seen straight into that cab.</p>
+<p>There was nobody. There had not been anybody for eleven years.</p>
+<p>Robyn drove the twenty minutes at about fifteen kilometres an hour.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch15">
+<header class="ch-head"><p class="ch-num">Chapter 15</p><h2>The Square of Moon</h2></header>
+<p>The dogs ran out to meet the ute and then stopped dead and stood looking at the pair of them with their ears up.</p>
+<p>&quot;Don&#x27;t,&quot; Robyn told them.</p>
+<p>She got out with her clothes over her arm and stood in her own yard in the four o&#x27;clock sun and did not put any of them on.</p>
+<p>Neither of them said anything about it. It was simply that there was no reason to, and once that had gone unsaid for about a minute it became the arrangement for the afternoon.</p>
+<p>They made tea and took it out to the verandah. Robyn fed the dogs, and shut the chooks in early because she could not be bothered coming back out, and stood at the tank checking the level with her hair drying stiff and grey-green with creek water.</p>
+<p>&quot;How far is it to the road?&quot; Leonie said.</p>
+<p>&quot;Four kilometres. Why?&quot;</p>
+<p>&quot;I want to walk down it.&quot;</p>
+<p>Robyn turned round with the dipstick in her hand.</p>
+<p>&quot;Like this?&quot;</p>
+<p>&quot;Like this.&quot;</p>
+<p>&quot;You can&#x27;t walk on that gravel with no boots on. And there&#x27;s three-corner jack all down the near side and it&#x27;s four o&#x27;clock in January, you&#x27;ll burn in twenty minutes.&quot;</p>
+<p>&quot;So we wear boots,&quot; Leonie said, &quot;and we wear hats.&quot;</p>
+<p>Robyn opened her mouth and then shut it again, because there was not actually anything wrong with that.</p>
+<p>So they went down the drive in boots and hats and nothing else.</p>
+<p>It was the strangest thing Robyn had ever done. The gravel crunched. The dogs came as far as the house gate and then stopped and sat down, because they had been taught to. The sun was still high enough to have weight in it and she could feel it on the whole of her, in places that had not seen it in fifty-five years, and the hot wind came up the drive off the stubble and went over her, and she started laughing somewhere around the first culvert and could not stop.</p>
+<p>&quot;You see,&quot; Leonie said.</p>
+<p>&quot;Shut up.&quot;</p>
+<p>&quot;You see.&quot;</p>
+<p>They got to the cattle grid, which was halfway, and Leonie put one boot up on the rail and looked down the rest of it at the letterbox.</p>
+<p>&quot;We could do the lot.&quot;</p>
+<p>&quot;We are not going to the road.&quot;</p>
+<p>&quot;Why not?&quot;</p>
+<p>&quot;Because the Pettits come past at about this time on a Saturday,&quot; Robyn said, &quot;and I have to live here.&quot;</p>
+<p>&quot;One kilometre.&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;Half.&quot;</p>
+<p>And then they both heard it at the same time — a vehicle, out on the road, still a fair way off and coming.</p>
+<p>Robyn got Leonie by the arm and they went off the side of the drive into the long grass and got down flat, and lay there on their stomachs about a metre apart with their hats pushed back and the dry stalks under them, and the ute went past the end of the drive without slowing and kept going east, and the dust came up and hung there.</p>
+<p>Leonie turned her face sideways in the grass.</p>
+<p>&quot;That was the Pettits.&quot;</p>
+<p>&quot;That was the Pettits.&quot;</p>
+<p>Robyn lay in the grass on her own place with her heart going and grass seed working into everything and the whole length of her bare in the sun, and looked across at Leonie, who was filthy and sunburnt across the shoulders and laughing with her mouth shut.</p>
+<p>&quot;Race you back,&quot; Leonie said.</p>
+<p>&quot;I&#x27;m fifty-five.&quot;</p>
+<p>&quot;Race you back.&quot;</p>
+<p>She was up and gone before Robyn had her knees under her, and she beat her by about forty metres, and she was unbearable about it for the rest of the afternoon.</p>
+<p>They came in at half past five with their boots full of grass seed and their shoulders pink.</p>
+<p>Robyn went down the hall to the bathroom to wash the creek out of her hair.</p>
+<p>She left the door open.</p>
+<p>She did not make a decision about it. She went in and turned the taps on and the door stayed where it was, and she stood under the water in her own bathroom in the middle of the afternoon with the hall open behind her, and out in the kitchen Leonie was banging cupboard doors looking for something.</p>
+<p>Twenty-five years she had shut that door. In two houses. On nobody.</p>
+<p>&quot;Where do you keep the big pot?&quot; Leonie called.</p>
+<p>&quot;Bottom left. Behind the crock.&quot;</p>
+<p>&quot;Found it.&quot;</p>
+<p>She came out with a towel round her head and nothing else and got the chops out of the fridge, and then had a good think about the fat, and put her apron on over the top of nothing at all and tied it at the back.</p>
+<p>Leonie looked at her from the doorway for some time.</p>
+<p>&quot;What,&quot; Robyn said.</p>
+<p>&quot;Nothing. I&#x27;m fine. Carry on.&quot;</p>
+<p>&quot;It spits.&quot;</p>
+<p>&quot;I&#x27;m sure it does.&quot;</p>
+<p>They ate at the table. Leonie put a shirt on eventually, for the chair, and Robyn stayed in the apron, and they had the last of the wine from the night Burt came, which neither of them remarked on.</p>
+<p>Afterwards, at the sink, Leonie came up behind her and put her arms round her waist and her face between her shoulder blades, and Robyn stood with her hands in the water and let the plate she was holding go under and stay under.</p>
+<p>She turned round and they kissed against the edge of the bench, and it went on a good while, and it was easy, which she had not expected anything about this to be.</p>
+<p>The sun went down behind the machinery shed and the kitchen window turned into a mirror.</p>
+<p>Robyn caught the two of them in it. A tall woman in an apron with her hair wet, and a small one holding on to her.</p>
+<p>She looked at that for a second and a half and then she looked away.</p>
+<p class="beat">* * *</p>
+<p>They turned the lights off at ten.</p>
+<p>Leonie took her hand in the hall, at the point where the hall divided, and Robyn&#x27;s feet stopped.</p>
+<p>They stood there. Leonie did not pull and did not let go.</p>
+<p>&quot;Not tonight,&quot; Robyn said.</p>
+<p>&quot;All right.&quot;</p>
+<p>&quot;I&#x27;m not—&quot; She stopped and started again. &quot;It isn&#x27;t that I don&#x27;t want to. I want to so much I can&#x27;t think straight, and that&#x27;s half the trouble.&quot;</p>
+<p>&quot;Tell me the other half.&quot;</p>
+<p>Robyn looked down the dark hall.</p>
+<p>&quot;I&#x27;m still married to him,&quot; she said. &quot;I know what he is. I sat at that table and told you what he is. And some part of me has been keeping a ledger all afternoon.&quot;</p>
+<p>&quot;Robyn—&quot;</p>
+<p>&quot;I know. I&#x27;m telling you what&#x27;s in my head, not what I think is true.&quot; She rubbed her thumb along Leonie&#x27;s knuckles. &quot;And my mother. I keep hearing her. Not saying anything against you. Just in the room, doing something, not looking at me.&quot;</p>
+<p>&quot;What would she have said?&quot;</p>
+<p>&quot;I don&#x27;t know. That&#x27;s what I can&#x27;t get round. She&#x27;s been dead nine years and I don&#x27;t know, and I&#x27;d give a good deal to.&quot;</p>
+<p>Leonie waited.</p>
+<p>&quot;And there&#x27;s the last one, and it&#x27;s the worst,&quot; Robyn said. &quot;He drove out of that gate ten days ago. What if this is only that. What if I&#x27;m so relieved I&#x27;d have felt this about anybody who was standing here.&quot;</p>
+<p>&quot;Do you think that?&quot;</p>
+<p>&quot;No.&quot; She said it straight away. &quot;But I&#x27;ve been wrong about what I felt before, and it cost me twenty-five years, and I would like to be sure this time before I do anything. I&#x27;d like to go first, and mean it, and not be swept along. I&#x27;ve been swept along my whole life.&quot;</p>
+<p>Leonie lifted Robyn&#x27;s hand and kissed the back of it and put it down.</p>
+<p>&quot;Then go and get some sleep,&quot; she said, &quot;and stop looking like you&#x27;ve let me down.&quot;</p>
+<p>She went into the spare room and pulled the door to, not quite shut, the way she never quite shut it.</p>
+<p class="beat">* * *</p>
+<p>In her own room Robyn took the nightdress down off the hook on the back of the door.</p>
+<p>She got it over her head and put her arm into something that was not a sleeve, and stood there in the dark with the thing half on and her elbow caught in the wrong place, and swore, and pulled the whole of it back off.</p>
+<p>She dropped it on the chair.</p>
+<p>She had been out of her clothes since four o&#x27;clock. Putting it on now would have been going backwards.</p>
+<p>She got into bed with nothing on and pulled the sheet up to her waist and lay there for about ten minutes.</p>
+<p>Then she got up.</p>
+<p>She went to the door and opened it all the way, and pushed it back flat against the wall so that it would stay there, and the moon came in off the hall boards as far as the end of the bed.</p>
+<p>Down the other end there was no light under the spare-room door. There was no sound either, and not the kind of no sound a sleeping person makes.</p>
+<p>Robyn got back into bed and lay on her side facing the door.</p>
+<p>She did not sleep.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch16">
+<header class="ch-head"><p class="ch-num">Chapter 16</p><h2>Going First</h2></header>
+<p>It was a long time before she heard the boards.</p>
+<p>Bare feet, unhurried, the loose one outside the bathroom that had needed a nail since 2009. Then Leonie was in the doorway with the hall behind her.</p>
+<p>&quot;Your door&#x27;s open,&quot; she said.</p>
+<p>&quot;I know it is.&quot;</p>
+<p>&quot;I&#x27;ve been lying down there for an hour and a half wondering whether you meant it.&quot;</p>
+<p>&quot;I couldn&#x27;t think how else to say it,&quot; Robyn said.</p>
+<p>Leonie came in and sat down on the edge of the bed, and the springs went, and she put her hand flat on Robyn&#x27;s shoulder over the top of the sheet.</p>
+<p>&quot;Say it anyway.&quot;</p>
+<p>&quot;Get in,&quot; Robyn said.</p>
+<p>Leonie pulled the sheet back and got in.</p>
+<p class="beat">* * *</p>
+<p>They lay facing each other with the fan going over them. Leonie put her hand on Robyn&#x27;s hip and left it there, and for a while that was all that happened.</p>
+<p>&quot;I&#x27;m going to be terrible at this,&quot; Robyn said.</p>
+<p>&quot;There&#x27;s no exam.&quot;</p>
+<p>&quot;I&#x27;m serious. I don&#x27;t know where to put my hands. I&#x27;ve been lying here since about eleven o&#x27;clock trying to work out where to put my hands.&quot;</p>
+<p>&quot;Put them on me.&quot;</p>
+<p>&quot;Where?&quot;</p>
+<p>&quot;Anywhere, Robyn. There is no wrong answer. It isn&#x27;t the wool cheque.&quot;</p>
+<p>So she put one hand on Leonie&#x27;s waist, where it had been put for her that afternoon in the creek, and left it there. Then she moved it, up over her ribs, and found the side of her breast with the edge of her thumb, and stopped.</p>
+<p>&quot;Go on,&quot; Leonie said.</p>
+<p>Robyn went on.</p>
+<p>She put her whole hand over it. It was small and soft and it moved under her palm, and the nipple came up hard against the middle of her hand, and she heard Leonie&#x27;s breath change for the first time, and something went through her from her chest to her knees.</p>
+<p>&quot;Oh,&quot; Robyn said.</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;That was from me.&quot;</p>
+<p>&quot;That was from you.&quot;</p>
+<p>Robyn kissed her, and this time she did not get it wrong, and she kept her hand where it was and learned what happened when she used her fingers, and then her thumb, and Leonie made a noise into her mouth and got a leg across hers.</p>
+<p>After that Robyn stopped worrying about her hands.</p>
+<p class="beat">* * *</p>
+<p>It was slow, because the night was too hot for anything else.</p>
+<p>Leonie got both hands into Robyn&#x27;s hair first, the way she had on the verandah with the scissors, and Robyn made a sound against her mouth that she had never made in front of another person. Then her shoulders. Then the length of her back, and the hard flat muscle above her hip that eleven years had put there. Leonie went over all of it slowly and with her whole hand, and she did not hurry, and she did not once pretend to be admiring the scenery.</p>
+<p>When she put her mouth on Robyn&#x27;s breast, Robyn arched up off the bed.</p>
+<p>&quot;All right?&quot;</p>
+<p>&quot;Don&#x27;t stop.&quot;</p>
+<p>&quot;That&#x27;s the first instruction you&#x27;ve given me in your life.&quot;</p>
+<p>&quot;Don&#x27;t stop.&quot;</p>
+<p>Leonie did not stop. She worked down the length of her, slowly, her mouth and then her hand and then her mouth again, and Robyn lay in her own bed with her fists in the sheet and her heart going and her mind completely empty for the first time in eleven years.</p>
+<p>Then Leonie put her hand between Robyn&#x27;s legs, and Robyn caught her wrist.</p>
+<p>&quot;Wait.&quot;</p>
+<p>Leonie stopped straight away. &quot;Tell me.&quot;</p>
+<p>&quot;I have to say something and I would rather die.&quot;</p>
+<p>&quot;Say it.&quot;</p>
+<p>Robyn put her arm over her eyes.</p>
+<p>&quot;I&#x27;m fifty-five,&quot; she said. &quot;Things have changed down there and nobody tells you the half of it. I don&#x27;t get wet the way I used to. It isn&#x27;t you and it isn&#x27;t that I don&#x27;t want it, I want it so much I can&#x27;t think, it&#x27;s that if you go at me quickly it will hurt, and I will be sore for two days, and I will not say one word about it.&quot;</p>
+<p>&quot;Right,&quot; Leonie said.</p>
+<p>&quot;That&#x27;s it. That&#x27;s the whole humiliating thing.&quot;</p>
+<p>&quot;That is not humiliating. That is a bloody instruction and I am grateful for it.&quot; The bed shifted. &quot;There&#x27;s a tube in my toilet bag and I am going to go and get it, and you are going to lie there and not build an entire theory about yourself while I&#x27;m gone.&quot;</p>
+<p>&quot;Leonie—&quot;</p>
+<p>&quot;And then you&#x27;re going to keep telling me. All night. Slower. Stop. That&#x27;s good. Not there. Out loud, in words.&quot; She was already at the door. &quot;It&#x27;s the only thing I want off you and it&#x27;s the only thing you&#x27;ve never done.&quot;</p>
+<p>She was forty seconds.</p>
+<p class="beat">* * *</p>
+<p>And Robyn talked.</p>
+<p>Badly at first, in a voice she did not recognise, half of it swallowed. Then better. Leonie went slowly and kept asking, and Robyn kept answering, and somewhere in the middle of it she stopped being embarrassed by her own voice and started using it.</p>
+<p>&quot;Slower.&quot;</p>
+<p>&quot;Like that?&quot;</p>
+<p>&quot;Yes. Like that. Don&#x27;t change it.&quot;</p>
+<p>Leonie did not change it. Two fingers, slow, with her thumb where it needed to be, and her mouth on Robyn&#x27;s neck, and the fan going round and round above them.</p>
+<p>It was the hands that undid her in the end. Not the newness of it. Small hands, and sure, and they knew exactly where to be, because Leonie had the same body and had never once had to guess.</p>
+<p>Some way into it a hot flush came on.</p>
+<p>It started in the middle of her chest and went out along her arms and up into her scalp, and inside fifteen seconds she was wet through from the hairline down.</p>
+<p>&quot;Oh, you have got to be joking,&quot; Robyn said.</p>
+<p>&quot;What?&quot;</p>
+<p>&quot;Now. It&#x27;s picked now.&quot;</p>
+<p>Leonie put her face down against Robyn&#x27;s shoulder and shook with it, and Robyn lay underneath her going like a furnace at two in the morning and laughed until the bed moved.</p>
+<p>&quot;Do you want the fan up?&quot;</p>
+<p>&quot;I want the fan up and I want to be a different woman.&quot;</p>
+<p>&quot;You can have the fan.&quot;</p>
+<p>Leonie reached over and turned it to three and came straight back, and did not lose her place, and after a couple of minutes the flush passed off.</p>
+<p>&quot;Keep going,&quot; Robyn said. &quot;Don&#x27;t you dare stop.&quot;</p>
+<p>&quot;I had no intention.&quot;</p>
+<p>It built in her slowly and then not slowly. She heard herself telling Leonie so, out loud, in plain words, and heard Leonie say yes, and then she had a handful of her hair and her heels dug into the mattress and everything in her went tight and held and broke, and she made a noise in her own bedroom that she had never made in her life.</p>
+<p>It went on. Then it let her go.</p>
+<p>She lay there with the fan going over her and her ears ringing.</p>
+<p>&quot;Fifty-five,&quot; she said, when she had the breath.</p>
+<p>&quot;What about it?&quot;</p>
+<p>&quot;That has never happened to me with another person in the room.&quot;</p>
+<p>Leonie put her head down on Robyn&#x27;s chest and did not make anything of it.</p>
+<p class="beat">* * *</p>
+<p>After a while Robyn rolled them over.</p>
+<p>She was a good deal bigger and she did it more easily than she expected, and Leonie went onto her back and laughed up at her.</p>
+<p>&quot;Hello.&quot;</p>
+<p>&quot;I want to do that for you,&quot; Robyn said. &quot;I&#x27;m frightened of it.&quot;</p>
+<p>&quot;Of me?&quot;</p>
+<p>&quot;Of being no good at it. Of you being kind about it afterwards.&quot;</p>
+<p>&quot;Then I won&#x27;t be kind,&quot; Leonie said. &quot;I&#x27;ll tell you. Out loud, in words. Same rule.&quot;</p>
+<p>So Robyn did it, and she was told.</p>
+<p>Lower. Not so hard. There — stay there. Her hands were too big and too rough for it and she had to think about every single thing she did, and halfway through her neck ached and she had to stop and move, and Leonie laughed at her and then stopped laughing. And then there came a point where the instructions ran out, because Leonie could not get the words together any more, and after that Robyn went on her own instinct and found that she had one.</p>
+<p>When it took Leonie she went rigid and quiet and then shuddered twice, and her hand closed hard in Robyn&#x27;s new-cut hair.</p>
+<p>Afterwards Robyn put her cheek on the inside of Leonie&#x27;s thigh and stayed there a while, because she did not want to move and nobody made her.</p>
+<p class="beat">* * *</p>
+<p>They ended up on their backs with the sheet somewhere on the floor and both of them wrecked with the heat.</p>
+<p>Robyn started crying about a minute later and could not have said why.</p>
+<p>It was not much and it did not last. Leonie put a flat hand on her sternum and left it there and asked nothing.</p>
+<p>&quot;I&#x27;m all right,&quot; Robyn said.</p>
+<p>&quot;I know.&quot;</p>
+<p>&quot;I don&#x27;t know what that was.&quot;</p>
+<p>&quot;You don&#x27;t have to.&quot;</p>
+<p>Out in the dark a fox went along the fence line and set the dogs off, and Robyn listened to them settle again.</p>
+<p>&quot;I&#x27;ve got to tell you something else.&quot;</p>
+<p>&quot;More instructions.&quot;</p>
+<p>&quot;I haven&#x27;t slept in a bed with a person in eleven years. I don&#x27;t know if I can. I might get up at three and sit in the kitchen and you&#x27;re not to take it personally.&quot;</p>
+<p>&quot;Noted.&quot;</p>
+<p>Leonie turned over and got herself in against Robyn&#x27;s back with an arm over her, which took some arranging, because she was a foot shorter and there was a good deal more of Robyn than there was of her.</p>
+<p>Robyn lay in the dark and waited to find it unbearable.</p>
+<p>The fan went round. The house ticked.</p>
+<p>She slept until ten past seven.</p>
+<p>She had not done that since Sydney.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch17">
+<header class="ch-head"><p class="ch-num">Chapter 17</p><h2>Ten Past Seven</h2></header>
+<p>She woke all at once, the way you do when something is wrong.</p>
+<p>The light on the wall was yellow and high. The fan was still going. There was an arm across her.</p>
+<p>The clock on the dresser said ten past seven.</p>
+<p>Robyn lay still and counted up what she had not done. The dogs had not been fed. The chooks had been shut in since five o&#x27;clock yesterday. The trough on the north side had been playing up all week and she had told herself she would look at it first thing. There were eleven thousand acres out there with nobody on them and she had been asleep in the middle of the morning like a sick woman.</p>
+<p>She waited to start panicking.</p>
+<p>She did not.</p>
+<p>Leonie was asleep against her back with her face in between Robyn&#x27;s shoulder blades and one arm slung over. Robyn turned over carefully, which took some doing, and looked at her.</p>
+<p>She had never seen her asleep. Without the talking and the eyebrows and the whole quick business of her face, she looked less like a woman of forty and more like something unfinished. Her mouth was open. There was a crease across her cheek from the pillow. One hand was shut into a fist under her chin.</p>
+<p>Robyn lay there and looked at her for a long time.</p>
+<p>Then she got up, quietly, and put yesterday&#x27;s shirt on, and went out to do the rounds two hours late.</p>
+<p class="beat">* * *</p>
+<p>Both dogs came at her the moment she was out the door, going round her legs, carrying on.</p>
+<p>&quot;Yes,&quot; she said. &quot;All right. Yes.&quot;</p>
+<p>She fed them. She let the chooks out and they came down the ramp in a hurry and went straight under the tank stand. She drove out to the north trough and the float had stuck again and the water was over the edge and had made a black patch of mud ten feet across, and she worked the arm free with a shifter and bent it back and watched it seat properly.</p>
+<p>That was everything that had gone wrong.</p>
+<p>She sat on the tailgate afterwards with the sun coming up over the range and thought about the eleven years she had spent getting up at ten to five because the place would fall over if she did not, and about the place, which had not fallen over.</p>
+<p class="beat">* * *</p>
+<p>Leonie came out onto the verandah at nine with her hair standing up and a mug in each hand.</p>
+<p>&quot;I have made you a cup of tea,&quot; she said, &quot;and I want it noted that I found the pot, the leaves and the strainer without assistance.&quot;</p>
+<p>&quot;There&#x27;s a bag in the tin.&quot;</p>
+<p>&quot;There is a what.&quot;</p>
+<p>They sat on the step in the shade with the mugs. The morning was cool and the flies were not up yet and down at the shed Tilly was eating something she should not have been eating.</p>
+<p>&quot;You were gone when I woke up,&quot; Leonie said.</p>
+<p>&quot;Trough.&quot;</p>
+<p>&quot;I thought you&#x27;d fled the state.&quot;</p>
+<p>&quot;I fled as far as the north boundary.&quot; Robyn drank her tea. &quot;I slept till ten past seven.&quot;</p>
+<p>&quot;Is that late?&quot;</p>
+<p>&quot;I have not done that since I lived in Sydney.&quot;</p>
+<p>Leonie put her shoulder against Robyn&#x27;s arm and left it there and did not say anything clever, and they sat and watched the dog eat whatever it was.</p>
+<p>&quot;Can I ask you something,&quot; Robyn said.</p>
+<p>&quot;Mm.&quot;</p>
+<p>&quot;Does anybody know where you are?&quot;</p>
+<p>Leonie turned her head. &quot;How do you mean?&quot;</p>
+<p>&quot;You&#x27;ve been here a month. If you&#x27;d gone off the road at the second ridge nobody would have come looking. Does your mother know? Did you tell the school? Is there anyone who&#x27;d ring.&quot;</p>
+<p>&quot;My landlady knows I&#x27;m not in the flat.&quot;</p>
+<p>&quot;That&#x27;s not the same thing.&quot;</p>
+<p>&quot;No,&quot; Leonie said. &quot;It isn&#x27;t.&quot;</p>
+<p>She turned her mug round in both hands.</p>
+<p>&quot;There&#x27;s nobody,&quot; she said. &quot;That&#x27;s the answer. It sounds worse out loud than it is.&quot;</p>
+<p>&quot;Your mum.&quot;</p>
+<p>&quot;I ring her the first Sunday of the month, and I&#x27;ll ring her the first Sunday of next month, and if I don&#x27;t she&#x27;ll wait until the one after.&quot; She said it lightly. &quot;We&#x27;re not on bad terms. I want to be clear that we&#x27;re not on bad terms.&quot;</p>
+<p>&quot;What are you on?&quot;</p>
+<p>Leonie drank some tea.</p>
+<p>&quot;She came out in 1979 and she never learned it properly,&quot; she said. &quot;She&#x27;s got about four hundred words of English. I&#x27;ve got about forty of Polish, and I got those off my aunt, not off her. We&#x27;ve been managing on that for forty years.&quot;</p>
+<p>Robyn turned her cup round on the table.</p>
+<p>&quot;So we talk about the weather in Wagga, and her hip, and whether I&#x27;m eating,&quot; Leonie said. &quot;And that&#x27;s not a tragedy. Half the country grew up like that. It&#x27;s only that when there&#x27;s something you actually need to say—&quot;</p>
+<p>She stopped. She looked out at the paddock.</p>
+<p>&quot;Anyway,&quot; she said. &quot;Are we doing the ewes today or am I allowed to lie down again.&quot;</p>
+<p>Robyn let her have it.</p>
+<p>She let her have it, and she put her hand on Leonie&#x27;s knee, and they went and did the ewes.</p>
+<p>But it sat in her all morning, through the drafting and the count and the long slow business of moving three hundred head across the road paddock, and by lunchtime she had worked out what it was.</p>
+<p>Two years.</p>
+<p>Two years of Fridays at a plastic table behind a bakery. Two years of a woman driving forty minutes to sit with her, and asking how she was, and waiting to hear the answer. Two years of pies and cold coffee and a hand taken across the table and turned over.</p>
+<p>And Robyn could not think of one question she had ever asked her. Not one. Not where she was from, not who her people were, not what she did on a Sunday, not why a woman of forty with that much life in her spent her Friday afternoons with a tired farmer and a paper bag.</p>
+<p>She had taken it. For two years she had sat there and taken it, and been grateful, and had never once thought to turn it round.</p>
+<p>At the gate she stopped with her hand on the chain.</p>
+<p>&quot;Tell me about your aunt,&quot; she said.</p>
+<p>Leonie looked up from the other side of the gate, surprised.</p>
+<p>&quot;My aunt?&quot;</p>
+<p>&quot;The salon. You said two years. I want to know about it.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch18">
+<header class="ch-head"><p class="ch-num">Chapter 18</p><h2>The Far Dam</h2></header>
+<p>She did not get an answer at the gate.</p>
+<p>Leonie said something short about her aunt having had a shop, and then asked whether the ewes were going in the near paddock or the far one, and Robyn told her, and the gate was opened and shut and that was the end of it.</p>
+<p>Robyn thought about that for the rest of the day.</p>
+<p>In the morning she made two rounds of sandwiches and filled the water bottles and put them in the esky before Leonie was up.</p>
+<p>&quot;Where are we going?&quot;</p>
+<p>&quot;Out the back. Far dam.&quot;</p>
+<p>&quot;Is there a job out there?&quot;</p>
+<p>&quot;No,&quot; Robyn said.</p>
+<p class="beat">* * *</p>
+<p>The track went out along the old boundary past the sheep camp and the stand of white cypress her grandfather had put in for shade. Six kilometres of it was rough and the last two were worse, and Leonie held the grab handle above the door with one hand and the esky down with the other and did not complain once.</p>
+<p>&quot;Nobody can ring me past the second ridge,&quot; Robyn said, over the noise.</p>
+<p>&quot;Is that good or bad?&quot;</p>
+<p>&quot;I have never told the phone company.&quot;</p>
+<p>They came up over the rise and the dam was below them, full to the top of the wall, with the sky sitting in it.</p>
+<p>They ate the sandwiches on the tailgate with their boots hanging.</p>
+<p>&quot;Right,&quot; Robyn said. &quot;Your aunt.&quot;</p>
+<p>&quot;You don&#x27;t let a thing go, do you.&quot;</p>
+<p>&quot;I&#x27;ve had two years of you asking me how I am. I&#x27;m going to have a turn.&quot;</p>
+<p>Leonie looked at the water for a while.</p>
+<p>&quot;Jadzia,&quot; she said. &quot;Jadwiga. Mum&#x27;s older sister. She came out in 1974 and married a bloke from Junee and had a hairdressing shop on Baylis Street for thirty years, and she sponsored Mum out in 1979, and Mum met my father at a dance about four months after she landed.&quot;</p>
+<p>&quot;What was he like?&quot;</p>
+<p>&quot;Ray. He drove a grader for the shire.&quot; She smiled at the dam. &quot;He was about six foot four and he had no opinions about anything at all. He thought Mum was the funniest person he&#x27;d ever met, which she is, in Polish.&quot;</p>
+<p>&quot;Was.&quot;</p>
+<p>&quot;Is. She&#x27;s alive. He isn&#x27;t.&quot; Leonie turned the water bottle round in her hands. &quot;He died in 1997. In the cab, out on the Oura road, pulled over in the gravel with the engine still running. Heart. I was eleven.&quot;</p>
+<p>Out on the dam one of the black ducks got up and went round and came back down.</p>
+<p>&quot;And after that,&quot; Robyn said.</p>
+<p>&quot;After that there was Mum, and me, and about two hundred dollars a fortnight.&quot; She said it evenly. &quot;And Mum had been here eighteen years and had never needed English, because Dad did all of that. He rang the bank. He talked to the school. He did the doctor and the insurance and the man about the roof.&quot;</p>
+<p>&quot;And then he didn&#x27;t.&quot;</p>
+<p>&quot;And then he didn&#x27;t.&quot;</p>
+<p>Leonie put the bottle down on the tray.</p>
+<p>&quot;So I did,&quot; she said. &quot;From eleven. I sat at the kitchen table with the phone and I rang the electricity and the bank and Centrelink and the funeral people, and Mum sat next to me with her hands in her lap, and I told her afterwards what they&#x27;d said. I wrote the letters. I went to the doctor with her and said where it hurt.&quot;</p>
+<p>Robyn did not say anything.</p>
+<p>&quot;I want to be fair about this,&quot; Leonie said. &quot;She worked. She cleaned at the hospital for twenty-two years and she never missed a shift and she never once asked me for a thing I didn&#x27;t offer first. It wasn&#x27;t a sad house. We laughed a lot. She just couldn&#x27;t do any of the outside part, and I could, so I did.&quot;</p>
+<p>&quot;You were eleven.&quot;</p>
+<p>&quot;I was very good at it,&quot; Leonie said.</p>
+<p>She said it the way you say a thing you have said before, in your head, a number of times.</p>
+<p>&quot;And the salon?&quot;</p>
+<p>&quot;Jadzia put me on the broom at twelve. Shampoos at fourteen, colours at sixteen. Cash, in an envelope, every Saturday, and that&#x27;s what paid for my shoes and my school camp and eventually about half my degree.&quot; Leonie tipped her head back at the sun. &quot;Best education I ever had. Four hours of a Saturday with your hands in other women&#x27;s hair. You find out everything. Who&#x27;s drinking, who&#x27;s leaving, who&#x27;s got a lump and hasn&#x27;t told anybody. They tell the girl at the basin what they won&#x27;t tell their own daughters.&quot;</p>
+<p>&quot;Why didn&#x27;t you stay in it?&quot;</p>
+<p>&quot;Mrs Dallinger,&quot; Leonie said. &quot;Year 10 English. I handed in something about my father and she kept me back after the bell and I thought I was in trouble.&quot; She shrugged. &quot;She didn&#x27;t say anything clever. She said, I read it twice. That&#x27;s all. I read it twice.&quot;</p>
+<p>&quot;And that did it.&quot;</p>
+<p>&quot;I decided I was going to be the one in the room who notices.&quot; She pulled a face at herself. &quot;Which sounds like a greeting card.&quot;</p>
+<p>&quot;It doesn&#x27;t.&quot;</p>
+<p>The wind came up off the water and went through the cypress behind them.</p>
+<p>&quot;Leonie,&quot; Robyn said.</p>
+<p>&quot;Mm.&quot;</p>
+<p>&quot;You&#x27;ve been looking after somebody since you were eleven years old.&quot;</p>
+<p>Leonie went on looking at the dam.</p>
+<p>&quot;That&#x27;s one way of putting it,&quot; she said.</p>
+<p>&quot;What&#x27;s the other way?&quot;</p>
+<p>&quot;The other way is that I&#x27;m very good company and people are pleased to see me.&quot; She picked the bottle back up. &quot;I&#x27;ve got about two hundred people in that town who&#x27;d stop and talk to me outside the IGA. I taught half their kids. I did Marg&#x27;s mother&#x27;s hair for her funeral because she asked me to and I hadn&#x27;t touched a pair of scissors professionally in fifteen years.&quot;</p>
+<p>&quot;That&#x27;s not what I asked.&quot;</p>
+<p>&quot;I know it isn&#x27;t.&quot;</p>
+<p>She drank some water.</p>
+<p>&quot;Can we do the sheep,&quot; she said.</p>
+<p>&quot;There aren&#x27;t any sheep out here. They&#x27;re all in the river paddock.&quot;</p>
+<p>&quot;Then why did we come all the way out here?&quot;</p>
+<p>Robyn looked down at the dam, and at the wall, and at the ducks.</p>
+<p>&quot;Because this is where I come,&quot; she said. &quot;When I can&#x27;t stand it. I&#x27;ve been coming out here on Saturdays for eleven years and I sit on this tailgate and do nothing for a quarter of an hour and then I go home. I have never brought anybody.&quot;</p>
+<p>Leonie turned and looked at her.</p>
+<p>&quot;Oh,&quot; she said.</p>
+<p>&quot;Yes.&quot;</p>
+<p>Neither of them said anything for a bit. Then Leonie put her hand flat on the tray between them, palm up, and left it there, and Robyn put hers into it.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch19">
+<header class="ch-head"><p class="ch-num">Chapter 19</p><h2>Town</h2></header>
+<p>There were eleven days of the holidays left.</p>
+<p>Neither of them had mentioned it.</p>
+<p>They crutched the ewes and did the water run and got the header out of the machinery shed and found a rat&#x27;s nest in the cab. Leonie learned to back a trailer, badly, and then less badly. The heat broke and came back. On the Sunday they drove up to the top of the second ridge with a bottle and watched a storm go down the valley without touching the place, and came home in the dark.</p>
+<p>Robyn had eaten three meals a day for a month and slept beside somebody for nineteen nights. She had put on a bit of weight. The grey look had gone from under her eyes, and she had stopped avoiding the mirror over the dresser.</p>
+<p>On the Thursday she said they were going into town.</p>
+<p class="beat">* * *</p>
+<p>She took the list. She always took the list.</p>
+<p>The stock and station agent, the hardware, the post office, the bank. Leonie came in and out with her and carried things, and twice stopped on the footpath to talk to people Robyn had known by sight for eleven years and had never spoken to.</p>
+<p>In the IGA, Robyn put flour and tins and dog food in the trolley, and then stood for a while in front of the fruit.</p>
+<p>&quot;What are we doing?&quot;</p>
+<p>&quot;I don&#x27;t know what you like,&quot; Robyn said. &quot;You&#x27;ve been here a month and I&#x27;ve been feeding you what I eat.&quot;</p>
+<p>&quot;I eat anything. I&#x27;m very easy.&quot;</p>
+<p>&quot;That&#x27;s not an answer.&quot;</p>
+<p>Leonie looked at her. Then she went off down the aisle and came back with a bag of apricots, a packet of good coffee, and a jar of pickled cucumbers with Polish writing on the lid.</p>
+<p>&quot;They&#x27;ve stocked those for one customer since about 1991,&quot; she said. &quot;There. Now you know three things.&quot;</p>
+<p class="beat">* * *</p>
+<p>The pharmacy was last.</p>
+<p>Denise was behind the counter. She looked up over her glasses at Robyn coming through the door, and started to say what she said every fortnight, and stopped.</p>
+<p>&quot;Well,&quot; she said. &quot;You look well, love.&quot;</p>
+<p>Robyn did not know what to say to that.</p>
+<p>&quot;I&#x27;ve been sleeping better,&quot; she said.</p>
+<p>&quot;It suits you.&quot; Denise rang up the magnesium tablets. &quot;Your mother had a good summer face too. She&#x27;d go brown by December and look ten years younger till March.&quot;</p>
+<p>Robyn paid and took the bag and went out past the hair colour, and got three steps past it, and came back.</p>
+<p>Leonie found her there a minute later, standing in front of the shelf with her hands at her sides.</p>
+<p>&quot;Warm Chestnut,&quot; Robyn said. &quot;Second shelf. The one with the woman on it.&quot;</p>
+<p>Leonie looked at the box, and then at Robyn&#x27;s hair.</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;What do you mean, no?&quot;</p>
+<p>&quot;I mean it&#x27;s the wrong colour for you and it would go orange inside a fortnight. You&#x27;ve got ash in your hair, not red. You&#x27;re about forty per cent grey at the front and the rest of it is ruined by bore water.&quot; She reached past the box and took down another one. &quot;This. And this, which is a toner, and you put it on afterwards. And a tint brush, because you&#x27;re not doing it out of a squeezy bottle like a fifteen-year-old.&quot;</p>
+<p>&quot;You&#x27;re enjoying this.&quot;</p>
+<p>&quot;I&#x27;ve wanted to do your hair for two years.&quot;</p>
+<p>Robyn looked at the three boxes in her hands.</p>
+<p>&quot;I&#x27;ve been looking at that shelf for about four years,&quot; she said.</p>
+<p>&quot;I know you have.&quot;</p>
+<p>&quot;How do you know that?&quot;</p>
+<p>&quot;You knew the name of one of them without looking,&quot; Leonie said. &quot;Nobody does that.&quot;</p>
+<p class="beat">* * *</p>
+<p>They went round to the flat so Leonie could pick up her mail.</p>
+<p>It was the back half of a weatherboard on Hoskins Street, with its own door down the side and a bougainvillea the landlady would not let her cut.</p>
+<p>Robyn stood in the doorway while she sorted through the letters.</p>
+<p>There was one room with a kitchenette at the end of it, and a door through to the bedroom. A good armchair and a reading lamp. Three shelves of paperbacks in alphabetical order. A rug that had cost more than anything else in the room.</p>
+<p>Two things were framed on the wall. One was a child&#x27;s painting of a sheep. The other was a photograph of a tall man standing beside a grader.</p>
+<p>There were no other photographs anywhere. On the fridge there was nothing but a school calendar for the coming year, with the first day of Term 1 circled in red biro.</p>
+<p>Robyn looked at the circle for a long moment.</p>
+<p>&quot;Two bills and a catalogue,&quot; Leonie said, coming back through. &quot;The excitement never stops.&quot;</p>
+<p>They went back down the side of the house to the street.</p>
+<p>A woman in a sunhat called out from across the road — somebody&#x27;s mother — and Leonie put a hand up and said something about the holidays, and the woman laughed.</p>
+<p>Robyn was about to put a hand on Leonie&#x27;s back to steer her round the parked cars.</p>
+<p>She did not do it.</p>
+<p>She had not decided against it. She had simply watched Leonie move half a step further away between one footfall and the next, without appearing to think about it, and her own hand had come back down to her side.</p>
+<p>Neither of them said anything about that either.</p>
+<p class="beat">* * *</p>
+<p>It was a hundred kilometres home.</p>
+<p>They were sixty of them along before either of them spoke.</p>
+<p>&quot;That circle on your calendar,&quot; Robyn said.</p>
+<p>&quot;The twenty-eighth.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;Staff go back on the twenty-sixth.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>That was all either of them said about it. Leonie put her feet up on the dashboard, which Robyn had told her twice not to do, and watched the paddocks go past on her side.</p>
+<p>At the house they carried the shopping in and put it away.</p>
+<p>Robyn stood at the bench with the three boxes from the pharmacy in her hand and could not think where to put them.</p>
+<p>Then she went down the hall to her room and opened the second drawer of the dresser, which had her father&#x27;s old jumpers in it and had done for nine years, and took the whole lot out and put them on the bed.</p>
+<p>She went back to the kitchen.</p>
+<p>&quot;I&#x27;ve cleared you a drawer,&quot; she said.</p>
+<p>Leonie stopped with the apricots in her hand.</p>
+<p>&quot;Robyn.&quot;</p>
+<p>&quot;It&#x27;s a drawer. Put some things in it.&quot; She picked up the dog bowls, because her hands wanted something to do. &quot;That&#x27;s all I&#x27;m saying about it.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch20">
+<header class="ch-head"><p class="ch-num">Chapter 20</p><h2>Thirty-Five Minutes</h2></header>
+<p>Leonie did her hair on Saturday afternoon, after the work was finished and before dinner, because she said it was a two-hour job and she was not starting it at nine at night.</p>
+<p>She set the kitchen up like a shop. A chair out from the table and turned to face the window. The oldest towel in the house round Robyn&#x27;s shoulders and another one on the floor. A bowl and the tint brush and the plastic gloves out of the box, and a saucer of Vaseline, which she rubbed along Robyn&#x27;s hairline and the tops of her ears.</p>
+<p>&quot;What&#x27;s that for?&quot;</p>
+<p>&quot;So you&#x27;re not walking round town for a week with a brown stripe across your forehead.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;Also take that shirt off and put the old blue one on. It will get on you. It always gets on you.&quot;</p>
+<p>Robyn went and changed and came back and sat down.</p>
+<p>Leonie mixed the colour in the bowl with the brush. The smell came up at once and filled the kitchen, sharp and chemical, and the dogs got up off the back step and went and lay down further away.</p>
+<p>&quot;That is a terrible smell.&quot;</p>
+<p>&quot;That smell is my entire adolescence,&quot; Leonie said. &quot;Put your chin down.&quot;</p>
+<p class="beat">* * *</p>
+<p>She parted the hair in a line down the middle with the end of the brush and started at the roots at the front.</p>
+<p>She worked in sections about an inch wide, holding each one up with two fingers and painting along the parting, then flipping it over and doing the next. She did not hurry and she did not talk while she was setting the line.</p>
+<p>&quot;Why the front first?&quot;</p>
+<p>&quot;Because that&#x27;s where the grey is and grey takes longest. If I did it all at once your ends would be two shades darker than your roots and you&#x27;d look like a bad wig.&quot; The brush went along another parting. &quot;Roots first, ends last, and the ends only get the final ten minutes. That&#x27;s the whole secret. That and not using the one with the woman on the box.&quot;</p>
+<p>&quot;You&#x27;re going to keep that up, aren&#x27;t you.&quot;</p>
+<p>&quot;For years.&quot;</p>
+<p>Robyn sat with her chin down and her hands in her lap and watched the light go off the machinery shed through the window.</p>
+<p>&quot;Can I ask you about something,&quot; she said.</p>
+<p>&quot;Mm.&quot;</p>
+<p>&quot;On the footpath outside your place. When that woman called out.&quot;</p>
+<p>The brush kept moving.</p>
+<p>&quot;I wondered if you&#x27;d noticed,&quot; Leonie said.</p>
+<p>&quot;You stepped away from me.&quot;</p>
+<p>&quot;I did.&quot;</p>
+<p>&quot;I was only going to move you round the cars.&quot;</p>
+<p>&quot;I know what you were doing.&quot; Leonie picked up another section. &quot;Her name is Kath Bannerman and I taught both her boys and she is a perfectly nice woman. It wasn&#x27;t her.&quot;</p>
+<p>&quot;What was it, then?&quot;</p>
+<p>&quot;Fifteen years of habit,&quot; Leonie said. &quot;I came to that town when I was twenty-five and I made a decision in about my first fortnight that I was going to be the teacher and not the lesbian. One or the other. Not both.&quot;</p>
+<p>&quot;Does anybody know?&quot;</p>
+<p>&quot;Marg knows. Denise knows and has never said a word about it in her life. I would say about half the parents have worked it out and the other half have never thought about it for a second.&quot; She turned Robyn&#x27;s head with two fingers under her jaw. &quot;Nobody&#x27;s ever been unkind to me. That&#x27;s the part people don&#x27;t understand. It isn&#x27;t fear. It&#x27;s that I decided once, a long time ago, to keep it small and quiet, and now my arm does it without asking me.&quot;</p>
+<p>Robyn thought about her own arms folding on the concrete.</p>
+<p>&quot;Yes,&quot; she said. &quot;I know about that.&quot;</p>
+<p>&quot;I thought you might.&quot;</p>
+<p class="beat">* * *</p>
+<p>Leonie finished the roots and started on the lengths, working it through with her fingers now, both hands, from the crown down.</p>
+<p>&quot;Your mum,&quot; Robyn said.</p>
+<p>The hands stopped for a second and then kept going.</p>
+<p>&quot;What about her.&quot;</p>
+<p>&quot;Does she know?&quot;</p>
+<p>Leonie did not answer straight away.</p>
+<p>&quot;No,&quot; she said. &quot;And I want to say something about that, and I&#x27;d rather say it while you can&#x27;t turn round and look at me.&quot;</p>
+<p>&quot;All right.&quot;</p>
+<p>&quot;It isn&#x27;t that I&#x27;m frightened of her. She&#x27;s the least frightening person alive. And it isn&#x27;t that she&#x27;s religious, because she stopped going to Mass when Dad died and never went back.&quot; Her fingers kept working through. &quot;It&#x27;s that we can&#x27;t have the conversation. Not that we won&#x27;t. We can&#x27;t.&quot;</p>
+<p>&quot;Because of the English.&quot;</p>
+<p>&quot;She has got enough English for the doctor and the shops and the woman next door. I have got enough Polish to say hello, and ask for food, and tell her I love her, which I do, every time, on the first Sunday of the month.&quot; The hands stopped again. &quot;Between the two of us we have got maybe five hundred words. You cannot say a thing like this in five hundred words, Robyn. You can say the fact. You cannot say any of the rest of it. And she would have no way at all of asking me a single question.&quot;</p>
+<p>The clock on the stove said twenty past six.</p>
+<p>&quot;So for about twenty years I&#x27;ve had this choice,&quot; Leonie said. &quot;Hand her a sentence she can understand and then sit there in silence while she works out what to do with it, with neither of us able to get one step further. Or don&#x27;t.&quot;</p>
+<p>&quot;And you don&#x27;t.&quot;</p>
+<p>&quot;And I don&#x27;t.&quot;</p>
+<p>She put the brush down in the bowl.</p>
+<p>&quot;The worst of it,&quot; she said, &quot;is that I think she already knows. I think she worked it out years ago. There&#x27;s a way she asks whether I&#x27;ve got anybody looking after me. And I have never once been able to find out, because finding out would take about four hundred more words than we&#x27;ve got.&quot;</p>
+<p>Robyn sat very still with the colour on her head.</p>
+<p>&quot;Leonie.&quot;</p>
+<p>&quot;Don&#x27;t turn round.&quot;</p>
+<p>&quot;I wasn&#x27;t going to.&quot; Robyn put her hand back over her shoulder, and Leonie took hold of it with a gloved one. &quot;When do I get rinsed?&quot;</p>
+<p>&quot;Thirty-five minutes,&quot; Leonie said. &quot;Don&#x27;t scratch.&quot;</p>
+<p class="beat">* * *</p>
+<p>She rinsed it at the kitchen sink with the spray hose off the laundry tap, with Robyn bent over and a towel round her neck, and the water ran brown and then rust-coloured and then clear.</p>
+<p>Then the toner, which was ten minutes and smelled worse. Then conditioner. Then a long time with the towel.</p>
+<p>Leonie combed it out wet and cut about an inch off the ends, which she said were beyond saving, and dried it with the hair dryer Robyn had bought in December and never taken out of the box.</p>
+<p>&quot;Right,&quot; she said at last. &quot;Go and look.&quot;</p>
+<p>Robyn went down the hall to her room and opened the wardrobe door.</p>
+<p>It was not a different woman. That was the first thing, and it was a relief, because some part of her had been braced for a different woman.</p>
+<p>It was her own hair, the colour it had been at about forty, with the grey at the temples gone and the dry pale ends gone with it, and it moved when she turned her head.</p>
+<p>She stood there for a while.</p>
+<p>Then she went back out to the kitchen, where Leonie was washing the bowl at the sink with her back turned, waiting and pretending not to.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch21">
+<header class="ch-head"><p class="ch-num">Chapter 21</p><h2>The Drawer</h2></header>
+<p>Leonie went back to town on the twenty-fifth.</p>
+<p>They had five days before that and they did not waste any of them. They got the last of the fencing done on the north boundary. They went back to the creek twice. On the second-last night they took a bottle and a blanket up to the top of the second ridge and lay on their backs in the dark and Leonie named three constellations, two of them wrong.</p>
+<p>Robyn did not mention the twenty-fifth and neither did Leonie.</p>
+<p>On the last morning Robyn went out early and did the rounds on her own, and when she came back at nine the little blue hatchback was packed and Leonie was in the kitchen washing up the breakfast things.</p>
+<p>&quot;I&#x27;ve put some stuff in that drawer,&quot; she said, with her back turned.</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;I didn&#x27;t want to make a thing of it.&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>They stood in the yard beside the car. The dogs came and sat down and looked from one of them to the other.</p>
+<p>&quot;Four Fridays and then it&#x27;s a long weekend,&quot; Leonie said. &quot;I could come out.&quot;</p>
+<p>&quot;Come out.&quot;</p>
+<p>&quot;I&#x27;ll ring you on Sunday. Stand on the ridge at seven.&quot;</p>
+<p>&quot;I&#x27;ll be there.&quot;</p>
+<p>Leonie put her arms round Robyn&#x27;s middle and held on, and Robyn put her chin on the top of her head and held on back, and neither of them said anything else that was any use.</p>
+<p>Then she got in and started it and went down the drive.</p>
+<p>Robyn stood on the concrete and watched the whole four kilometres, the dust coming up behind the car and hanging there and then drifting off the road into the paddock, and the car turning left at the letterbox and going out of sight behind the cypress.</p>
+<p>She was still standing there ten minutes after the dust had gone.</p>
+<p class="beat">* * *</p>
+<p>The house was very quiet.</p>
+<p>It had always been quiet. That was the thing she had not expected — nothing about it had changed, and it was unbearable.</p>
+<p>She did the afternoon jobs and she did them properly. She came in at dark and fed the dogs and ate standing at the bench, and then caught herself doing it and sat down at the table on purpose, which made it worse.</p>
+<p>The radio was off. The hairbrush was gone off the end of the bench.</p>
+<p>At nine o&#x27;clock she went down the hall and opened the second drawer of the dresser.</p>
+<p>It was full.</p>
+<p>Two work shirts, washed and folded. A pair of shorts. Three pairs of socks. A toothbrush in a plastic sleeve, still in its packet. A tube of hand cream. The tube out of the toilet bag, which made Robyn sit down on the edge of the bed and laugh until her eyes went.</p>
+<p>And in the corner, in a twist of tissue paper, the little brass fish earrings she had been wearing the first afternoon at the plastic table behind the bakery.</p>
+<p>Robyn held them in her hand for a long time.</p>
+<p>She had not asked for any of it. She had said it was a drawer and told her to put some things in it, and Leonie had gone and filled it, which was more than the drawer meant and they both knew it.</p>
+<p>She put the earrings back in the tissue and shut the drawer.</p>
+<p>The nightdress was still on the chair where she had dropped it in January. She left it there and got into bed with nothing on, and lay on her own side of it, and did not sleep much.</p>
+<p class="beat">* * *</p>
+<p>February was hot and March was worse.</p>
+<p>The feed dried off and she started the ewes on grain. The pump at the second bore packed up and she spent two days on it and then paid a man from Parkes to come out and do in four hours what she had failed to do in two days. A fox got into the chooks and killed six and ate one.</p>
+<p>She had stopped getting dressed straight away.</p>
+<p>That was one of the things that did not go back. For eleven years she had been out of her clothes about four minutes a day, between the shower and the work shirt. Now she made her tea with nothing on and stood at the window with it while the light came up over the machinery shed, and some mornings she did not put a thing on until the dogs were fed.</p>
+<p>There was nobody within a hundred kilometres. There never had been.</p>
+<p>She had not shut her bedroom door either. It still stood flat back against the wall where she had pushed it that first night, and the moon still came in off the hall boards as far as the end of the bed, and she still lay on her side facing it.</p>
+<p>Nobody came down the hall. She knew nobody was going to. She looked at it anyway.</p>
+<p>And she wanted her. That was new, and it did not fade off the way she had assumed it would. It came at her in the middle of ordinary things — at the trough, in the ute, with her hands in the sink — and some nights it was bad enough that she dealt with it herself, in her own bed with the door open and the fan going, and lay there afterwards at fifty-five years of age feeling about sixteen.</p>
+<p>She went into town once a fortnight, the same as before.</p>
+<p>On Fridays Marg kept the back door open till half past three, and Leonie would be at the plastic table with her shoes off, and they would have an hour and a half. They sat the way they had always sat. Leonie did not touch her in that yard and Robyn did not expect her to.</p>
+<p>They talked on Sundays at seven. Robyn would drive up to the ridge and park with the window down, and they would talk for forty minutes about nothing — a boy in Grade 4, the price of wool, what the dogs had done. Leonie rang her mother at six and Robyn at seven, every first Sunday, in that order.</p>
+<p>&quot;How was she?&quot; Robyn asked, the first time.</p>
+<p>&quot;Her hip&#x27;s no better and the woman next door has had her fence done. Eleven minutes.&quot;</p>
+<p>&quot;Is that usual?&quot;</p>
+<p>&quot;That&#x27;s a long one,&quot; Leonie said.</p>
+<p>She came out on the long weekend in March and stayed three nights, and when she drove off on the Monday Robyn went straight out and worked until dark, which she knew exactly what she was doing and did it anyway.</p>
+<p>In the second week of April, Emma rang and said she had four days and was going to come up.</p>
+<p>&quot;I&#x27;ll be here,&quot; Robyn said.</p>
+<p>Then she stood on the ridge with the phone in her hand and the sun going down behind her, and worked out that she had four days to decide what she was going to tell her daughter.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch22">
+<header class="ch-head"><p class="ch-num">Chapter 22</p><h2>Emma</h2></header>
+<p>Emma drove up from Sydney on her own and got in at four in the afternoon.</p>
+<p>She had left the two little ones with their father, which she had not done since the youngest was born. She mentioned it getting out of the car, and then again while the kettle boiled.</p>
+<p>She was thirty-three. She had Robyn&#x27;s shoulders and her father&#x27;s hands, and she stood in the kitchen with her bag still over her arm and looked at her mother.</p>
+<p>&quot;You&#x27;ve done something to your hair.&quot;</p>
+<p>&quot;A bit of colour.&quot;</p>
+<p>&quot;You&#x27;ve never put colour in your hair in your life.&quot;</p>
+<p>&quot;Well, I have now,&quot; Robyn said, and put the kettle on.</p>
+<p class="beat">* * *</p>
+<p>For two days they worked.</p>
+<p>Emma came out in borrowed boots and did whatever she was told, and was better at it than Robyn expected. She had not lived on the place as a child but she had spent every school holiday on it, and some of it had stayed in her hands. She could open a gate without being told which way it swung. She counted sheep by fives the way Robyn&#x27;s father had.</p>
+<p>In the evenings they cooked and ate at the table and talked about the children.</p>
+<p>Emma noticed things and said nothing about most of them. The hairbrush on the end of the bench, which was not Robyn&#x27;s. The second towel. The packet of good coffee that Robyn did not drink. Her mother sitting down to eat.</p>
+<p>On the first morning Robyn put her dressing gown on to go down the hall, out of thirty years of habit.</p>
+<p>On the second she forgot.</p>
+<p>She came out of her room at ten past six with nothing on and her boots in her hand, the way she had been doing it since January, and got as far as the kitchen door before she remembered there was somebody in the house.</p>
+<p>Emma was at the bench with the kettle.</p>
+<p>&quot;Morning,&quot; she said.</p>
+<p>&quot;Morning.&quot;</p>
+<p>Robyn put the boots down by the back door and got her work shirt off the hook and put it on, and did up two of the buttons, and filled the dogs&#x27; bowls.</p>
+<p>Nothing was said. Nothing happened.</p>
+<p>But that night, with the dishes done, Emma said: &quot;Can I say something and you&#x27;re not allowed to go funny about it.&quot;</p>
+<p>&quot;Go on.&quot;</p>
+<p>&quot;I have never seen you with your clothes off in my life.&quot;</p>
+<p>Robyn stopped with the tea towel in her hand.</p>
+<p>&quot;I was going to say never since I was little,&quot; Emma said, &quot;and then I worked out it&#x27;s never. Not once. Not at the beach, not getting changed, not anything. You used to come out of the bathroom in Sydney with a towel round you and a second towel over your shoulders.&quot;</p>
+<p>&quot;I know I did.&quot;</p>
+<p>&quot;I thought that was just mothers,&quot; Emma said. &quot;Then I had Sophie and I got in the shower with her and it never once occurred to me to mind, and I thought, hang on.&quot;</p>
+<p>Robyn hung the tea towel on the rail.</p>
+<p>&quot;It wasn&#x27;t mothers,&quot; she said. &quot;It was your father.&quot;</p>
+<p>&quot;Yeah.&quot;</p>
+<p>&quot;He had names for me. After I had you.&quot; Robyn said it steadily. &quot;They weren&#x27;t cruel. That was the clever part. So I got changed in the bathroom and I kept doing it for twenty-five years and I never once thought of it as a strange thing to do.&quot;</p>
+<p>Emma sat down at the table.</p>
+<p>&quot;This morning,&quot; she said, &quot;you walked through that door and you weren&#x27;t thinking about it at all.&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;Mum, you looked—&quot; She stopped and tried again. &quot;You looked like somebody who lives here.&quot;</p>
+<p>Robyn came and sat down opposite her.</p>
+<p>&quot;You want to know the worst of it,&quot; she said. &quot;I&#x27;ve got lines all down here from carrying you. Silver ones. They came up when I was about seven months and they never went.&quot; She put her hand flat on her own stomach. &quot;Twenty-five years I was ashamed of them. Thirty-three years old and I made them, and I let a man make me ashamed of them.&quot;</p>
+<p>&quot;I&#x27;ve got them too,&quot; Emma said. &quot;From Sophie.&quot;</p>
+<p>&quot;Then you listen to me. There is nothing wrong with you.&quot;</p>
+<p>It came out of her before she knew where it had come from, in her mother&#x27;s words, in her mother&#x27;s kitchen.</p>
+<p>Emma looked at her for a second.</p>
+<p>&quot;Nan used to say that,&quot; she said.</p>
+<p>&quot;I know she did.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch23">
+<header class="ch-head"><p class="ch-num">Chapter 23</p><h2>The Third Night</h2></header>
+<p>On the third night they opened a second bottle, which they had not done together before in their lives.</p>
+<p>&quot;Can I ask you something,&quot; Emma said.</p>
+<p>&quot;You can ask.&quot;</p>
+<p>&quot;Why do you look about ten years younger than you did at Christmas?&quot;</p>
+<p>Robyn turned her glass round on the table.</p>
+<p>&quot;There&#x27;s something I have to tell you first,&quot; she said. &quot;And you&#x27;re not going to like it.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;Your father came here in January.&quot;</p>
+<p>Emma put her glass down.</p>
+<p>&quot;He what?&quot;</p>
+<p>&quot;He turned up in a ute at four in the afternoon with a bag and stayed two nights. He wanted four hundred thousand dollars. He owes it to people he shouldn&#x27;t have borrowed off and he thought I&#x27;d give it to him because we&#x27;re still married.&quot; Robyn kept her voice level. &quot;I said no. On the second morning he got hold of my wrist and I didn&#x27;t move, and then I showed him four years of his own books that I copied before I left Sydney, and he got in the ute and went. He&#x27;s signing the divorce.&quot;</p>
+<p>Emma did not say anything for a while.</p>
+<p>What came into her face was not shock. It was something harder and much older than that, and Robyn had never seen it before and did not know her daughter had it.</p>
+<p>&quot;Good,&quot; Emma said.</p>
+<p>&quot;Em.&quot;</p>
+<p>&quot;No. Good. I hope they take his house.&quot; She picked the glass back up and her hand was not entirely steady. &quot;Did he hurt you?&quot;</p>
+<p>&quot;He tried to pull me off my feet and he couldn&#x27;t.&quot;</p>
+<p>&quot;Did he hurt you,&quot; Emma said again.</p>
+<p>&quot;No. He didn&#x27;t.&quot;</p>
+<p>Emma nodded slowly and looked at the table.</p>
+<p>&quot;I&#x27;m sorry you had to hear that about him,&quot; Robyn said. &quot;I know it&#x27;s not what a girl wants to—&quot;</p>
+<p>&quot;Mum.&quot; Emma looked up. &quot;I know what he is.&quot;</p>
+<p>&quot;You were a child.&quot;</p>
+<p>&quot;I was twelve when I started walking out of the room,&quot; Emma said. &quot;I know what he is. I&#x27;ve known since about 2005.&quot;</p>
+<p>Robyn went very still.</p>
+<p>&quot;What do you remember?&quot;</p>
+<p>&quot;All of it.&quot; Emma said it quite gently. &quot;I remember him telling people at the Kellys&#x27; barbecue that you&#x27;d been a bit fragile lately, and you standing there holding a plate. I remember him explaining to Nan why you hadn&#x27;t come. I remember you asking him whether we could get a dog, and him saying of course we could, if you thought you could manage it, and you never mentioning it again.&quot; She stopped. &quot;I remember you looking at him before you said anything. At a table, with people there. You&#x27;d look over at Dad first.&quot;</p>
+<p>Robyn put her hand over her mouth.</p>
+<p>&quot;I thought you didn&#x27;t see any of it,&quot; she said.</p>
+<p>&quot;I saw everything.&quot;</p>
+<p>&quot;I spent twenty-five years making sure you didn&#x27;t.&quot;</p>
+<p>&quot;I know you did,&quot; Emma said. &quot;That&#x27;s the bit I actually remember.&quot;</p>
+<p>They sat there. Out in the yard a dog got up and turned round and lay down again.</p>
+<p>&quot;I started doing it too,&quot; Emma said. &quot;The looking. When I was about fourteen. I did it at Michael&#x27;s parents&#x27; place three years ago and he asked me afterwards why I&#x27;d checked with him before I said what I thought about a film.&quot;</p>
+<p>&quot;Oh, Em.&quot;</p>
+<p>&quot;Michael&#x27;s all right,&quot; Emma said quickly. &quot;Michael is nothing like him. That&#x27;s not what I&#x27;m saying.&quot;</p>
+<p>&quot;I know what you&#x27;re saying.&quot;</p>
+<p>&quot;I just learned it off you both and I didn&#x27;t know I was learning it.&quot;</p>
+<p>Robyn got up and went round the table and put her arms round her daughter from behind, and Emma held on to her forearm with both hands, and that went on for a while.</p>
+<p class="beat">* * *</p>
+<p>When they sat down again Emma wiped her face with the back of her wrist and poured them both another one.</p>
+<p>&quot;Right,&quot; she said. &quot;Now tell me why your hair&#x27;s done.&quot;</p>
+<p>&quot;That&#x27;s a separate thing.&quot;</p>
+<p>&quot;Is it, though.&quot;</p>
+<p>Robyn looked at the tablecloth, and then made herself stop looking at it.</p>
+<p>&quot;Leonie stayed here for six weeks over the holidays,&quot; she said. &quot;She came out to help on the farm. She went back on the twenty-fifth of January.&quot;</p>
+<p>&quot;The teacher.&quot;</p>
+<p>&quot;The teacher.&quot;</p>
+<p>&quot;The one whose name comes up about four times in every phone call.&quot;</p>
+<p>Robyn stopped.</p>
+<p>&quot;Does it?&quot;</p>
+<p>&quot;Mum, I could pick her out of a line-up and I&#x27;ve never met her.&quot; Emma was almost smiling. &quot;Dan and I worked it out at Christmas. He said no and I said yes and I was right, and he owes me fifty dollars and he is going to pay it.&quot;</p>
+<p>&quot;You—&quot;</p>
+<p>&quot;Say it anyway. I want to hear you say it.&quot;</p>
+<p>Robyn put both hands flat on the table.</p>
+<p>&quot;She&#x27;s not a friend who came to help,&quot; she said. &quot;I&#x27;m with her. She&#x27;s got a drawer in my room and I want her to live here, and I have not worked out how to ask her.&quot;</p>
+<p>&quot;Right,&quot; Emma said.</p>
+<p>&quot;That&#x27;s it.&quot;</p>
+<p>&quot;Mum.&quot; Emma reached across and took her hand. &quot;You&#x27;ve been on your own out here for eleven years. You get up at five and you go to bed at ten and you talk to dogs. I have been ringing you every Sunday for a decade asking if you&#x27;re eating, because I didn&#x27;t know what else to ask.&quot; She squeezed it. &quot;And at Christmas you laughed at something on the phone, and I had to sit down.&quot;</p>
+<p>&quot;Don&#x27;t.&quot;</p>
+<p>&quot;When do I get to meet her?&quot;</p>
+<p>&quot;Friday,&quot; Robyn said. &quot;If you want. She&#x27;s in town.&quot;</p>
+<p>&quot;Then I want.&quot;</p>
+<p class="beat">* * *</p>
+<p>Later, when the bottle was finished and the dogs were in, Emma stopped in the hall on her way to bed.</p>
+<p>&quot;Is this where she sleeps?&quot; she said, at the spare-room door.</p>
+<p>&quot;She doesn&#x27;t sleep in there.&quot;</p>
+<p>&quot;Right,&quot; Emma said. &quot;Good. Night, Mum.&quot;</p>
+<p>And Robyn stood in her own hallway at eleven o&#x27;clock at night, fifty-five years old, with her face going hot like a girl.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch24">
+<header class="ch-head"><p class="ch-num">Chapter 24</p><h2>Out Loud, In Words</h2></header>
+<p>Emma met Leonie on the Friday, at the plastic table behind the bakery, with Marg looking out the flyscreen about every ninety seconds.</p>
+<p>Robyn had been afraid it would go badly. It did not.</p>
+<p>Leonie asked about the children, and then asked a second question off the back of the answer. Inside ten minutes Emma was telling her about the three-year-old and the toilet training. She was laughing. Robyn had not heard her laugh like that since she was nineteen.</p>
+<p>At half past three Marg said it was time, love, she had to lock up.</p>
+<p>On the footpath Emma put her hand out to shake Leonie&#x27;s, and then changed her mind and hugged her.</p>
+<p>In the ute going home she did not say anything for about twenty kilometres.</p>
+<p>&quot;Well?&quot; Robyn said.</p>
+<p>&quot;She&#x27;s got your measure,&quot; Emma said. &quot;She told me to stop ringing you to ask if you&#x27;re eating. She said ask her what she did that day instead, because she&#x27;ll tell you, and then you&#x27;ll have something to talk about.&quot;</p>
+<p>&quot;Did she.&quot;</p>
+<p>&quot;She&#x27;s been doing that to you for two years, hasn&#x27;t she.&quot;</p>
+<p>&quot;Yes,&quot; Robyn said. &quot;She has.&quot;</p>
+<p class="beat">* * *</p>
+<p>The winter came in cold and wet, which was a good thing for the paddocks and hard on everything else.</p>
+<p>In June a letter came from Gwen Mackay with a copy of the signed papers in it. Burt had signed every page where the tabs were and sent them back and had not written anything, not even on the compliments slip. Robyn read the letter standing at the letterbox with the rain coming in sideways, and then drove up the hill and put it in the file marked 1994–96 WOOL, next to the envelope, because that was where things of his went.</p>
+<p>She did not feel much. She had expected to feel something, and she did not.</p>
+<p class="beat">* * *</p>
+<p>Dan came up in July with a trailer and a borrowed welder.</p>
+<p>He was thirty and built like his grandfather and he had come for three days to do the yards, which had needed doing for four years, and he did not stop for the whole of Saturday. Leonie came out for the weekend and spent most of it holding things and passing things and being told she was holding it wrong.</p>
+<p>On the Sunday afternoon she went out to shut the chooks in, and Dan came into the kitchen for a beer and leaned against the bench.</p>
+<p>&quot;She&#x27;s all right, your mate,&quot; he said. &quot;Leonie.&quot;</p>
+<p>&quot;She is.&quot;</p>
+<p>&quot;Bloody good looking woman, too. For forty.&quot;</p>
+<p>&quot;Dan.&quot;</p>
+<p>&quot;I&#x27;m only saying. Shame she&#x27;s—&quot; He stopped with the bottle halfway up. &quot;Em reckons she&#x27;s got someone. Which is a waste, if you ask me.&quot;</p>
+<p>Robyn went on drying the pan she was drying.</p>
+<p>&quot;Nobody&#x27;s asking you,&quot; she said.</p>
+<p>Emma had rung him, then. Of course she had. Robyn put the pan on the rack and decided she would have that out with her daughter some other day.</p>
+<p>&quot;Fair enough.&quot;</p>
+<p>He drank some of his beer. Robyn put the pan on the rack and picked up the next one and waited, because she had watched her son think since he was four years old and she knew what it looked like.</p>
+<p>&quot;Hang on,&quot; Dan said.</p>
+<p>Robyn did not turn round.</p>
+<p>&quot;Mum.&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;Is it—&quot; He put the bottle down on the bench. &quot;Is that you?&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>Out in the yard the chook house door banged and Leonie said something to one of the dogs.</p>
+<p>Dan stood there with both hands on the bench behind him and looked at the floor for what felt to Robyn like a very long time, and she made herself stand still and let him have it.</p>
+<p>&quot;Right,&quot; he said at last.</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;I&#x27;ve just said a thing, haven&#x27;t I.&quot;</p>
+<p>&quot;You have.&quot;</p>
+<p>&quot;Yeah.&quot; He rubbed the back of his neck, which was his father&#x27;s gesture and had never once meant what it meant on his father. &quot;Sorry.&quot;</p>
+<p>&quot;That&#x27;s all right.&quot;</p>
+<p>&quot;No, it&#x27;s—&quot; He stopped again and started again. &quot;How long?&quot;</p>
+<p>&quot;Since January.&quot;</p>
+<p>&quot;And are you—&quot; He made a shape with one hand that meant nothing at all. &quot;Is it good?&quot;</p>
+<p>Robyn put the tea towel down.</p>
+<p>&quot;I have been on my own out here for eleven years,&quot; she said. &quot;And I was on my own for twenty-five before that, in a house with your father in it. Yes. It&#x27;s good.&quot;</p>
+<p>Dan nodded at the floor a few times.</p>
+<p>&quot;Well, then,&quot; he said. &quot;Good.&quot;</p>
+<p>He picked his beer back up.</p>
+<p>&quot;Don&#x27;t tell her I said that about her being wasted,&quot; he said.</p>
+<p>&quot;I&#x27;m going to tell her the minute you&#x27;re down the drive.&quot;</p>
+<p>&quot;Yeah,&quot; he said. &quot;Fair enough.&quot;</p>
+<p>And that was the whole conversation, and over dinner he asked Leonie three questions about the school and ate everything on the table and went back out at seven with a torch to finish the gate.</p>
+<p class="beat">* * *</p>
+<p>In the last week of August, Leonie rang on a Wednesday, which she never did.</p>
+<p>&quot;Bogan Gate,&quot; she said. &quot;The two-teacher school. Shirley&#x27;s retiring at the end of the year and they&#x27;ve put the position up.&quot;</p>
+<p>Robyn was standing on the ridge with the wind going round the ute.</p>
+<p>&quot;How far is that from here?&quot;</p>
+<p>&quot;Forty-one minutes,&quot; Leonie said. &quot;I drove it on Saturday with a stopwatch like a lunatic.&quot;</p>
+<p>&quot;Are you going to put in for it?&quot;</p>
+<p>&quot;I put in for it on Monday.&quot;</p>
+<p>Robyn looked out at the paddocks going grey.</p>
+<p>&quot;It&#x27;s a smaller school,&quot; she said.</p>
+<p>&quot;It&#x27;s twenty-six children and me and a part-time. I&#x27;d lose the Stage 3 classroom and I&#x27;d be teaching Kindergarten to Year 6 in one room, and I&#x27;d be on the same money and doing twice the work, and I would have to give up a staffroom with four people in it that I have sat in for fifteen years.&quot; She paused. &quot;I want you to know I have thought about all of that.&quot;</p>
+<p>&quot;When do you hear?&quot;</p>
+<p>&quot;October.&quot;</p>
+<p>Neither of them said anything for a moment.</p>
+<p>&quot;Robyn,&quot; Leonie said. &quot;I&#x27;ve just told you I&#x27;ve applied for a job forty-one minutes from your front gate.&quot;</p>
+<p>&quot;I heard you.&quot;</p>
+<p>&quot;I&#x27;m not going to say the rest of it. I said I&#x27;d never make you do anything and I&#x27;m not going to start by doing this.&quot;</p>
+<p>Robyn stood on the ridge with the phone against her ear.</p>
+<p>She thought about a dark bedroom in January and a woman saying, you are going to keep telling me, out loud, in words, because it is the only thing you have never done.</p>
+<p>&quot;Come and live here,&quot; she said.</p>
+<p>&quot;Say it again.&quot;</p>
+<p>&quot;Come and live here. In my house. Not for the holidays and not at weekends.&quot; Her voice did something in the middle of it and she kept going. &quot;I want you here when I come in at dark. I want your rubbish hairbrush on my bench. I have had a drawer sitting open in that room since January like an idiot and I want the rest of it.&quot;</p>
+<p>The wind went round the ute.</p>
+<p>&quot;All right,&quot; Leonie said.</p>
+<p>&quot;All right?&quot;</p>
+<p>&quot;All right. Yes. God, Robyn.&quot; She was crying and not bothering to hide it. &quot;I&#x27;ve been waiting since about the fourth of January for you to ask me that.&quot;</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch25">
+<header class="ch-head"><p class="ch-num">Chapter 25</p><h2>The Pavilion</h2></header>
+<p>Leonie got the job in the second week of October.</p>
+<p>She rang from the car park outside the school. She was too excited to get the words in the right order, so she said the whole thing twice, and Robyn stood on the ridge and let her. She would start at Bogan Gate at the beginning of the new year. She would give notice on the flat at the end of November.</p>
+<p>&quot;Twenty-six kids,&quot; she said. &quot;Kindergarten to Year 6. One room.&quot;</p>
+<p>&quot;You&#x27;ll be good at it.&quot;</p>
+<p>&quot;I know I will,&quot; Leonie said, and then burst into tears again.</p>
+<p>They got the shearing done in the third week, eight days with the contractor and Col and Mick in the yards, and Leonie came out for the last two days of it and skirted fleeces at the table with her sleeves rolled, which Robyn watched more than once and said nothing about.</p>
+<p class="beat">* * *</p>
+<p>The rugby club dance was on the last Saturday of the month, the way it had been every year since before Robyn was born.</p>
+<p>&quot;I&#x27;m not going.&quot;</p>
+<p>&quot;You are going.&quot;</p>
+<p>&quot;Leonie, I have not been to that dance since 1987.&quot;</p>
+<p>&quot;Then you are overdue.&quot;</p>
+<p>The dress was in the wardrobe behind her mother&#x27;s coats. Navy, with three-quarter sleeves, bought in Sydney for a funeral in 2012 and worn twice since. Robyn got it out and held it up against herself and could not tell anything at all from the mirror.</p>
+<p>&quot;Put it on.&quot;</p>
+<p>She put it on. It was loose through the waist and tight across the shoulders, which it had never been before, because she had a different back now.</p>
+<p>&quot;Right,&quot; Leonie said. &quot;Sit down, I&#x27;m doing your face.&quot;</p>
+<p>&quot;I can do my own face.&quot;</p>
+<p>&quot;When did you last do your own face?&quot;</p>
+<p>Robyn sat down.</p>
+<p>The shoes were the trouble. She had one pair, navy, two-inch, bought with the dress. She got them on and stood up and put a hand out to the dresser straight away.</p>
+<p>&quot;Oh, no.&quot;</p>
+<p>&quot;Walk up the hall.&quot;</p>
+<p>Robyn walked up the hall. Eleven years of flat boots on uneven ground had put her weight in her heels, and the shoes took it off them and tipped her forward, and her calves were burning before she got to the kitchen.</p>
+<p>&quot;How does anybody do this,&quot; she said.</p>
+<p>&quot;Practice. And they hurt everybody. That&#x27;s not you being fifty-five, that&#x27;s the shoes.&quot; Leonie stood back and looked at her. &quot;Shorter steps. Don&#x27;t try to stride. And stand up — you&#x27;re tipping your shoulders forward to make up for it.&quot;</p>
+<p>&quot;I am going to break an ankle in front of the entire district.&quot;</p>
+<p>&quot;Then I&#x27;ll drive you to the hospital and you&#x27;ll still have been to the dance.&quot;</p>
+<p class="beat">* * *</p>
+<p>They parked in the gravel beside the oval at half past seven.</p>
+<p>The pavilion had new guttering and the same lights. Somebody&#x27;s mother had made a plate. There was a trestle along the back wall with the plates on it and an urn at the end, and a bloke with a laptop and two speakers where the band used to be.</p>
+<p>At the door Robyn put her hand out, down low, and waited.</p>
+<p>Leonie looked at it for about a second and a half.</p>
+<p>Then she took it, and they went in through the door holding hands, past four people on the step who had all known Robyn Cooper since she was in a pram.</p>
+<p>Nothing happened.</p>
+<p>That was the first thing. A woman from the CWA said hello, love, and asked after the wool. Marg came over and said she&#x27;d saved them two seats and then stood in front of them for ten minutes telling them about her hip. Denise came past with a cup of tea in each hand and looked at Robyn in the navy dress and said, &quot;Well, now,&quot; and kept walking, and Robyn went red to her ears.</p>
+<p>Kath Bannerman asked Leonie about the new job and said the Bogan Gate kids were lucky to get her and she was sorry to lose her, and meant both.</p>
+<p>They danced twice. Robyn had not danced since her own wedding and she was no good at it, and the second time Leonie put both arms round her neck in front of about ninety people and they moved roughly in a circle for three minutes, and Robyn kept her eyes shut for most of it.</p>
+<p class="beat">* * *</p>
+<p>Ron Pettit got her at the urn.</p>
+<p>He farmed the next property along the road. He had known her father for forty years. He was about six beers into the evening, and he stood beside her with his cup and looked out at the floor.</p>
+<p>&quot;Your old man would be spinning,&quot; he said.</p>
+<p>Robyn put the teapot down.</p>
+<p>&quot;Would he,&quot; she said.</p>
+<p>&quot;Well.&quot; He tipped his head at the floor. &quot;Carrying on like that. In front of everyone. It&#x27;s a bit much, Robyn.&quot;</p>
+<p>She stood there and felt her arms want to come up and cross themselves over her chest.</p>
+<p>She did not let them.</p>
+<p>She stood with her hands down by her sides in a navy dress and shoes that were killing her, and she looked Ron Pettit in the face.</p>
+<p>&quot;My father let a man take twenty-five years off me,&quot; she said, &quot;because he was frightened I&#x27;d stop coming home. He never said one word. So I don&#x27;t think he gets a vote, and I don&#x27;t think you do either.&quot;</p>
+<p>Ron&#x27;s mouth moved.</p>
+<p>&quot;I didn&#x27;t mean—&quot;</p>
+<p>&quot;Ronnie.&quot; Marg had come up behind him with a plate of sandwiches in her hand. &quot;Go and sit down.&quot;</p>
+<p>&quot;I was only saying—&quot;</p>
+<p>&quot;I know what you were saying. Go and sit down.&quot;</p>
+<p>He went and sat down.</p>
+<p>Marg put the plate on the trestle and straightened it, which it did not need.</p>
+<p>&quot;He lost Carol in March and he&#x27;s not coping,&quot; she said. &quot;That&#x27;s not an excuse. Have a sandwich.&quot;</p>
+<p>&quot;Marg—&quot;</p>
+<p>&quot;Your mother sat on that committee with me for nineteen years,&quot; Marg said. &quot;Have a sandwich, love.&quot;</p>
+<p class="beat">* * *</p>
+<p>They went outside at about eleven because Robyn could not stand up in the shoes any longer.</p>
+<p>The oval was dark and the grass was wet and the music came out through the door in bursts when somebody opened it. Robyn took the shoes off and carried them one in each hand, the way she had carried her school shoes down the driveway to the bus every morning of her girlhood so that her mother would not see the dust on them.</p>
+<p>She stopped at the bandstand.</p>
+<p>It had been repainted twice and it had a steel mesh gate on it now, but it was the same bandstand, and the dark patch of grass behind it was the same dark patch of grass.</p>
+<p>&quot;This is it,&quot; she said.</p>
+<p>&quot;This is what?&quot;</p>
+<p>&quot;Darren Pike. Nineteen eighty-six. I was standing about here.&quot;</p>
+<p>Leonie started laughing.</p>
+<p>&quot;Four seconds,&quot; Robyn said. &quot;And he got my nose, and then he said sorry, and then I went back in and ate a sausage roll and my mother put an extra scone on my plate on the way home.&quot;</p>
+<p>&quot;Forty years.&quot;</p>
+<p>&quot;Forty years.&quot;</p>
+<p>Robyn looked at the dark grass behind the bandstand for a bit.</p>
+<p>&quot;Fifteen years old and flat-chested and a hand-me-down dress off my cousin,&quot; she said. &quot;And he got my nose. And look at me now. You&#x27;ve made a silk purse out of a sow&#x27;s ear.&quot;</p>
+<p>Leonie did not laugh.</p>
+<p>&quot;Say that again.&quot;</p>
+<p>&quot;It&#x27;s only an expression. My mother said it about everything.&quot;</p>
+<p>&quot;Say which one of us you think is the ear.&quot;</p>
+<p>Robyn opened her mouth.</p>
+<p>&quot;No,&quot; Leonie said. &quot;Go on. You&#x27;ve just told me you were a pig and I turned you into something. Say it slowly and listen to it.&quot;</p>
+<p>The music came out through the pavilion door and went again.</p>
+<p>&quot;I don&#x27;t do that any more,&quot; Robyn said. &quot;Do I.&quot;</p>
+<p>&quot;You do it about twice a week and you don&#x27;t hear yourself doing it.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>&quot;I didn&#x27;t make anything,&quot; Leonie said. &quot;I want you to have that. I have not made one single thing. It was all in there the whole time and somebody sat on the lid of it for twenty-five years, and the only thing I did was ask you questions and wait.&quot;</p>
+<p>&quot;That&#x27;s not nothing.&quot;</p>
+<p>&quot;No,&quot; Leonie said. &quot;It isn&#x27;t. But it isn&#x27;t sewing.&quot;</p>
+<p>Robyn stood on the wet grass with her shoes in her hands and thought about a woman in an apron at ten past three in the afternoon, sitting down in the daytime for the first time in Robyn&#x27;s life, to tell her the same thing.</p>
+<p>Leonie put her hands on either side of Robyn&#x27;s face.</p>
+<p>&quot;Go on, then,&quot; she said.</p>
+<p>Robyn was in her stockings on wet grass with her shoes still in her hands, and Leonie was a foot shorter, and she had to come a long way down.</p>
+<p>She did not get it wrong.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="chapter" id="ch26">
+<header class="ch-head"><p class="ch-num">Chapter 26</p><h2>March</h2></header>
+<p>Leonie moved in on the first Saturday of December, in a hired trailer with Dan driving it, because he had offered before anybody asked him to.</p>
+<p>It took one load. Fifteen years of a life came up that driveway in a six-by-four: the good armchair, the reading lamp, four boxes of paperbacks, a kettle, and the rug that had cost more than everything else put together.</p>
+<p>&quot;That&#x27;s it?&quot; Robyn said.</p>
+<p>&quot;That&#x27;s it. I&#x27;ve never owned anything I couldn&#x27;t carry.&quot;</p>
+<p>They put the armchair in the corner of the front room where the light came in, and the rug in front of it, and the books went on two shelves Dan put up on the Sunday morning before he left.</p>
+<p>The two framed things went in the hall, between the bedroom and the bathroom, where Robyn would walk past them a dozen times a day. A child&#x27;s painting of a sheep in thick crayon. And a tall man standing beside a grader on a road outside Wagga in 1996, squinting into the sun, who had never heard of this place and whose daughter now lived in it.</p>
+<p class="beat">* * *</p>
+<p>The summer went the way summers go.</p>
+<p>Leonie started at Bogan Gate in the last week of January and came home every afternoon at five with chalk on her and stories about twenty-six children. The drive was forty-one minutes each way and she said she would get sick of it and did not.</p>
+<p>The house filled up with things that were not Robyn&#x27;s. A second car in the yard. A pile of marking on the end of the table. A packet of good coffee that got replaced before it ran out. Shoes by the back door that were not work boots.</p>
+<p>In February Robyn sold the header she had been paying off for six years, because Leonie asked her one night what it was actually for, and Robyn worked out that she had been keeping it in case she ever cropped again and that she was never going to crop again.</p>
+<p>She stopped setting the alarm. She got up at about half past five most mornings anyway. On the mornings she did not, nothing fell over.</p>
+<p class="beat">* * *</p>
+<p>On the first Sunday of March they drove up to the ridge at six, the way they had every first Sunday since she moved in, so that Leonie could ring her mother.</p>
+<p>Robyn parked where she always parked and turned the engine off, and they sat in the ute with the windows down and the light going long across the paddocks.</p>
+<p>She did not get out, and she did not pretend to be doing something else.</p>
+<p>She listened to one end of it in a language she did not have a word of: the slow careful Polish, the long gaps, her own name once, clearly, in the middle of a sentence.</p>
+<p>Then a longer gap.</p>
+<p>Leonie said something, and listened, and said, &quot;Tak. Tak, mamo.&quot;</p>
+<p>When it was finished she put the phone face down on her knee and sat looking out the windscreen.</p>
+<p>&quot;I told her I&#x27;d moved,&quot; she said. &quot;I told her where. I told her who with.&quot;</p>
+<p>&quot;And?&quot;</p>
+<p>&quot;And she asked me one question.&quot; Leonie turned her head. Her eyes were wet and she was almost laughing. &quot;She said, is she good to you.&quot;</p>
+<p>&quot;What did you say?&quot;</p>
+<p>&quot;I said yes.&quot;</p>
+<p>&quot;And what did she say?&quot;</p>
+<p>&quot;She said good.&quot; Leonie wiped her face with the back of her wrist. &quot;And then she told me about the woman next door&#x27;s fence.&quot;</p>
+<p>Robyn reached across the seat and got hold of her.</p>
+<p>&quot;That&#x27;s all of it,&quot; Leonie said into her shirt. &quot;That&#x27;s every word we&#x27;ve got. Thirty years and that&#x27;s the whole conversation and I will take it.&quot;</p>
+<p class="beat">* * *</p>
+<p>Robyn went into the cemetery on the third Saturday of March, the way she had every March for eleven years.</p>
+<p>She took the bucket and the scrubbing brush and a bottle of water, and Leonie drove, and parked under the peppercorn tree by the gate.</p>
+<p>&quot;Do you want me to come in?&quot;</p>
+<p>&quot;Not this time.&quot;</p>
+<p>&quot;Right.&quot;</p>
+<p>The cemetery was on a rise at the edge of town with the paddocks starting on the other side of the fence. Her parents were in the fourth row from the back, side by side, two grey granite stones with the lichen grown back over both of them since October.</p>
+<p>She did her father&#x27;s first, because that was the order.</p>
+<p>She wet it and worked the brush along the top edge and into the letters, and rinsed it, and stood up with her hands on her hips.</p>
+<p>&quot;I said something about you at the dance,&quot; she said. &quot;In front of Ron Pettit. I said you never said a word about him and you should have.&quot;</p>
+<p>The wind came up off the paddocks and over the fence.</p>
+<p>&quot;I still think it,&quot; she said. &quot;But I know why. You thought I&#x27;d stop coming home.&quot; She picked the bucket up. &quot;I came home, Dad. I&#x27;ve been here eleven years.&quot;</p>
+<p>She moved across to her mother&#x27;s stone and knelt down on the grass beside it with the brush.</p>
+<p>It took a while. She did the whole face of it and then the lettering, every letter, the way her mother had done everything.</p>
+<p>Then she sat back on her heels.</p>
+<p>&quot;Right,&quot; she said. &quot;I&#x27;ve got something to tell you and I&#x27;ve been nine years working up to it.&quot;</p>
+<p>She put the brush in the bucket.</p>
+<p>&quot;There&#x27;s a woman. Her name&#x27;s Leonie Vasey and she teaches at Bogan Gate and she&#x27;s forty years old and she lives in your house. She sleeps in your bed, which is my bed. She does my hair at the kitchen table.&quot; Robyn stopped and started again. &quot;She&#x27;s in the ute down there at the gate right now because I asked her to wait.&quot;</p>
+<p>A crow went over and said something and kept going.</p>
+<p>&quot;I never told you anything,&quot; Robyn said. &quot;Not about him, not about any of it. Twenty-five years and I never said one word to you, and I want you to know it wasn&#x27;t because I didn&#x27;t trust you.&quot;</p>
+<p>She put her hand flat on the top of the stone. It was warm from the sun.</p>
+<p>&quot;You sat me down in that bathroom when I was twelve,&quot; she said, &quot;and you told me there was nothing wrong with me. And I couldn&#x27;t tell you about Burt, because if I had I&#x27;d have had to tell you that you were wrong.&quot;</p>
+<p>She stayed there with her hand on it.</p>
+<p>&quot;You weren&#x27;t wrong,&quot; she said. &quot;Mum. You weren&#x27;t wrong. It took me till fifty-five to find out, and I&#x27;m sorry you&#x27;re not here for it. But you weren&#x27;t wrong.&quot;</p>
+<p>She knelt there on the grass for a while longer.</p>
+<p>Then she tipped the last of the water out onto the base of the stone, the way her mother used to, because the runoff was good for the grass.</p>
+<p class="beat">* * *</p>
+<p>Leonie had the window down and both feet up on the dash.</p>
+<p>She took one look at Robyn&#x27;s face and did not ask a single thing, and reached over and opened the driver&#x27;s door from the inside.</p>
+<p>Robyn put the bucket in the back and got in.</p>
+<p>&quot;I told her about you,&quot; she said.</p>
+<p>&quot;Did you.&quot;</p>
+<p>&quot;All of it. Out loud. In words.&quot;</p>
+<p>Leonie took her hand off the gearstick and put it over Robyn&#x27;s, and held it there.</p>
+<p>They sat in the ute under the peppercorn tree for a minute or two, and then Robyn started the engine, and they went down the hill and through the town and out the other side, and turned west onto the road that ran the hundred kilometres home.</p>
+<p class="end">&#10022;</p>
+</section>
+
+<section class="colophon" id="about-this-book">
+  <p class="ch-num">About this book</p>
+  <p><em>Silk Purse</em> was developed in consultation with AI. The cover image was also created with AI.</p>
+</section>
+
+<section class="letters" id="letters">
+  <p class="ch-num">Letters from readers</p>
+  <p class="c-intro">Sharyn reads every letter. With the writer&rsquo;s permission, a selection is published here.</p>
+  <!-- Published reader letters go here, newest first. -->
+  <p class="write"><a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLScuGYPs_Ox6s7XhYL7QzpCi9FilTWQGFcc0iGi19Mo_mQELeA/viewform" target="_blank" rel="noopener">Write to Sharyn</a></p>
+</section>
+
+</main>
+
+<footer>
+  <p>Silk Purse</p>
+  <p>&copy; Sharyn Underhill. All rights reserved.</p>
+</footer>
+
+<button class="top" id="top" type="button" aria-label="Back to top">&uarr;</button>
+
+<script>
+(function(){
+  var root=document.documentElement, KEY="su-theme";
+  try{var s=localStorage.getItem(KEY); if(s) root.setAttribute("data-theme",s);}catch(e){}
+  document.getElementById("theme").addEventListener("click",function(){
+    var cur=root.getAttribute("data-theme");
+    if(!cur){ cur = matchMedia("(prefers-color-scheme: dark)").matches ? "dark":"light"; }
+    var next = cur==="dark" ? "light":"dark";
+    root.setAttribute("data-theme",next);
+    try{localStorage.setItem(KEY,next);}catch(e){}
+  });
+  var prog=document.getElementById("prog"), top=document.getElementById("top");
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    prog.style.width = (max>0 ? (h.scrollTop/max*100):0) + "%";
+    top.classList.toggle("on", h.scrollTop > 800);
+  }
+  addEventListener("scroll",onScroll,{passive:true}); onScroll();
+  top.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"});});
+})();
+</script>
+</body>
+</html>
