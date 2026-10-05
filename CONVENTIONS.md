@@ -179,6 +179,12 @@ whose writer ticked a "Yes" publishing option are added, newest first:
   <p class="from">&mdash; Name as given, or &ldquo;A reader&rdquo; if anonymous</p>
 </blockquote>
 ```
+Each book's "Write to Sharyn" button pre-selects that book in the form's
+"Which book are you writing about?" question by adding
+`?usp=pp_url&amp;entry.1533486748=Book+Title` to the form link (spaces as `+`).
+For a new book, also add its title as an option in that form question, spelt
+exactly as in the link.
+
 Never publish a reader's email address or any detail they didn't ask to share.
 
 **AI disclosure** lives only in the `About this book` colophon at the end of each
