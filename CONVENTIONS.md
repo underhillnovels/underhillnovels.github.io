@@ -38,6 +38,7 @@ images/<slug>-share.jpg     Link-preview card for that book
 images/author-portrait.jpg  Pencil portrait (About section)
 images/author-mark.png      "su" monogram (source for the icons)
 images/icon-64.png, icon-180.png   Browser-tab and home-screen icons
+downloads/<slug>.epub, .pdf EPUB and A5 PDF editions, generated (never hand-edited)
 CNAME                       underhillnovels.com — do not edit
 sitemap.xml, robots.txt     Search-engine files — update sitemap.xml for every new page
 .nojekyll                   Keeps GitHub Pages from processing files
@@ -256,9 +257,15 @@ cover, portrait, other images).
    home page entry); give the book page its own `<link rel="canonical">` and a
    `Book` JSON-LD block copied from `rowena-thornhill.html`, with its own title,
    url, image, description, datePublished and wordCount.
-6. Check the page at desktop width and at 320px, in light and dark mode, and
+6. **Ebooks:** add the book to `BOOKS` in the build script kept *outside* this
+   repository (`../tools/build_ebooks.py`), run `py build_ebooks.py`, then add
+   the "Download EPUB / PDF" buttons under the title-page meta line and the
+   "or download EPUB · PDF" links on the home-page card. Rebuild the ebooks
+   after **any** change to a book's text, note or colophon. The script sets the
+   PDF author to Sharyn Underhill and writes no other names into either file.
+7. Check the page at desktop width and at 320px, in light and dark mode, and
    confirm there is no sideways scroll.
-7. Commit and push (§7), then load the live page to confirm.
+8. Commit and push (§7), then load the live page to confirm.
 
 ---
 

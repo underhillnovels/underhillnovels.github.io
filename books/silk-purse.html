@@ -77,6 +77,11 @@ body{
 .titlepage .rule{width:64px; height:2px; background:var(--gold); margin:2.2rem auto}
 .titlepage .meta{font-family:var(--sans); font-size:.8rem; color:var(--mute); margin:0}
 
+.titlepage .dl{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:1.6rem 0 0}
+.titlepage .dl a{font-family:var(--sans); font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; text-decoration:none;
+  color:var(--ink); border:1px solid var(--rule); border-radius:999px; padding:7px 14px}
+.titlepage .dl a:hover{border-color:var(--gold)}
+.titlepage .dl small{color:var(--mute); letter-spacing:0; text-transform:none; margin-left:4px}
 .note{
   border:1px solid var(--rule); background:var(--card); border-radius:10px;
   padding:16px 18px; margin:0 0 4rem;
@@ -185,6 +190,7 @@ footer p{font-family:var(--sans); font-size:.78rem; color:var(--on-plum-mute); m
     <p class="by">Sharyn Underhill</p>
     <div class="rule"></div>
     <p class="meta">A novel &middot; 26 chapters &middot; 30,047 words</p>
+    <p class="dl"><a href="../downloads/silk-purse.epub" download>Download EPUB <small>563 KB</small></a><a href="../downloads/silk-purse.pdf" download>Download PDF <small>1.2 MB</small></a></p>
   </div>
 
   <aside class="note">
