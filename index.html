@@ -8,7 +8,7 @@
 <meta name="author" content="Sharyn Underhill">
 <meta property="og:title" content="Sharyn Underhill">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://underhillnovels.com/images/silk-purse-share.jpg">
+<meta property="og:image" content="https://underhillnovels.com/images/relationship-to-witness-share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://underhillnovels.com/">
@@ -91,6 +91,11 @@ h2.sec{font-family:var(--display); font-weight:600; font-size:clamp(2rem,5vw,2.8
 .stack .front{width:min(18rem,54%); right:4%; top:0; z-index:2}
 .stack .back{width:min(15rem,45%); left:0; top:14%; transform:rotate(-6deg)}
 .stack .front:hover{transform:translateY(-4px)}
+.stack.three .front{width:min(16.5rem,48%); right:2%; top:0; z-index:3}
+.stack.three .mid{width:min(14.5rem,42%); left:24%; top:9%; transform:rotate(-4deg); z-index:2}
+.stack.three .back{width:min(13rem,38%); left:0; top:20%; transform:rotate(-9deg); z-index:1}
+.stack.three .mid:hover{transform:rotate(-4deg) translateY(-4px)}
+.stack.three .back:hover{transform:rotate(-9deg) translateY(-4px)}
 .stack .back:hover{transform:rotate(-6deg) translateY(-4px)}
 @media (max-width:760px){
   .hero .wrap{grid-template-columns:1fr; padding-top:3.5rem; padding-bottom:3.5rem; gap:2.5rem}
@@ -103,6 +108,7 @@ section.block{padding:5.5rem 0}
 .novel{--book:var(--gold-ink); display:grid; grid-template-columns:9.5rem minmax(0,1fr); gap:1.6rem; align-items:start;
   background:var(--card); border:1px solid var(--rule); border-top:4px solid var(--book); border-radius:6px; padding:1.6rem}
 .novel.rowena{--book:var(--dusk)}
+.novel.witness{--book:var(--accent)}
 .novel .cv{border-radius:3px; overflow:hidden; box-shadow:0 1px 2px rgb(0 0 0 / .1), 0 14px 28px -14px rgb(0 0 0 / .45)}
 .novel h3{font-family:var(--display); font-weight:600; font-size:1.7rem; line-height:1.1; margin:0 0 .35rem}
 .novel .meta{font-family:var(--sans); font-size:.76rem; color:var(--mute); margin:0 0 .9rem; letter-spacing:.02em}
@@ -171,22 +177,25 @@ footer p{font-family:var(--sans); font-size:.78rem; margin:.3rem 0}
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="eyebrow">New novel &middot; Silk Purse</p>
+      <p class="eyebrow">New novel &middot; Relationship to Witness</p>
       <h1>Sharyn<br>Underhill</h1>
       <div class="rule"></div>
       <p class="tag">Fiction about desire, power, and the lives women choose for themselves.</p>
       <p class="genre">Sensual literary fiction &middot; for adult readers</p>
       <div class="btns">
-        <a class="btn gold" href="books/silk-purse.html">Read Silk Purse</a>
+        <a class="btn gold" href="books/relationship-to-witness.html">Read Relationship to Witness</a>
         <a class="btn ghost" href="#novels">All novels</a>
       </div>
     </div>
-    <div class="stack">
+    <div class="stack three">
       <a class="back" href="books/rowena-thornhill.html" aria-label="The Transformation of Rowena Thornhill">
-        <img src="images/rowena-cover-600.jpg" srcset="images/rowena-cover-600.jpg 600w, images/rowena-cover.jpg 1410w" sizes="16rem" width="600" height="957" alt="Cover of The Transformation of Rowena Thornhill">
+        <img src="images/rowena-cover-600.jpg" width="600" height="957" alt="Cover of The Transformation of Rowena Thornhill">
       </a>
-      <a class="front" href="books/silk-purse.html" aria-label="Silk Purse">
-        <img src="images/silk-purse-cover-600.jpg" srcset="images/silk-purse-cover-600.jpg 600w, images/silk-purse-cover.jpg 1200w" sizes="19rem" width="600" height="900" alt="Cover of Silk Purse: two empty folding chairs beside a farm dam at sunset, a tall gum tree and golden paddocks behind">
+      <a class="mid" href="books/silk-purse.html" aria-label="Silk Purse">
+        <img src="images/silk-purse-cover-600.jpg" width="600" height="900" alt="Cover of Silk Purse">
+      </a>
+      <a class="front" href="books/relationship-to-witness.html" aria-label="Relationship to Witness">
+        <img src="images/relationship-to-witness-cover-600.jpg" srcset="images/relationship-to-witness-cover-600.jpg 600w, images/relationship-to-witness-cover.jpg 1200w" sizes="18rem" width="600" height="900" alt="Cover of Relationship to Witness: an empty caf&eacute; in early light, a round table and two chairs">
       </a>
     </div>
   </div>
@@ -197,10 +206,21 @@ footer p{font-family:var(--sans); font-size:.78rem; margin:.3rem 0}
     <p class="label">The novels</p>
     <h2 class="sec">Free to read online</h2>
     <div class="novels">
+      <article class="novel witness">
+        <a class="cv" href="books/relationship-to-witness.html"><img src="images/relationship-to-witness-cover-600.jpg" width="600" height="900" alt="Cover of Relationship to Witness"></a>
+        <div>
+          <span class="badge">New</span> <span class="badge adult">18+</span>
+          <h3>Relationship to Witness</h3>
+          <p class="meta">A novel &middot; 40 chapters &middot; about 59,000 words</p>
+          <p class="hook">Jess Heart has defended men in Hobart&rsquo;s criminal courts for fourteen years without once looking too hard at the women in the gallery. Then a legal aid brief arrives that she cannot put down, and she goes to find the complainant &mdash; only to look at her. Everything that happens afterwards is asked for first, and freely given.</p>
+          <p class="warn">For adult readers. Deals with family violence, coercive control and the slow loss of a self, and contains explicit sexual content.</p>
+          <a class="go" href="books/relationship-to-witness.html">Start reading &rarr;</a> <span class="dl">or download <a href="downloads/relationship-to-witness.epub" download>EPUB</a> &middot; <a href="downloads/relationship-to-witness.pdf" download>PDF</a></span>
+        </div>
+      </article>
       <article class="novel silk">
         <a class="cv" href="books/silk-purse.html"><img src="images/silk-purse-cover-600.jpg" width="600" height="900" alt="Cover of Silk Purse"></a>
         <div>
-          <span class="badge">New</span> <span class="badge adult">18+</span>
+          <span class="badge">Second novel</span> <span class="badge adult">18+</span>
           <h3>Silk Purse</h3>
           <p class="meta">A novel &middot; 26 chapters &middot; about 30,000 words</p>
           <p class="hook">Robyn Cooper has run eleven thousand acres on the western slopes alone for eleven years. Then Leonie Vasey, a schoolteacher who fixes people, comes to stay for the summer &mdash; and the husband Robyn left in Sydney comes up the drive.</p>
@@ -243,6 +263,7 @@ footer p{font-family:var(--sans); font-size:.78rem; margin:.3rem 0}
       <p>She lives in rural Tasmania. The bush there is not scenic; it is old, indifferent and hard on the unprepared, and she prefers it to gentler country. Weather does things to a landscape slowly and without asking, which is roughly what her novels are about.</p>
       <p><em>The Transformation of Rowena Thornhill</em> is her first &mdash; a story of domination and remaking, written to be taken seriously rather than enjoyed quickly, and set a long way from home, in Italy, where nobody knows anyone.</p>
       <p><em>Silk Purse</em>, her second, stays closer to home: a woman not remade but uncovered.</p>
+      <p><em>Relationship to Witness</em>, her third, is about the stories we tell for other people, and the one we cannot tell about ourselves.</p>
       </div>
     </div>
   </div>
