@@ -203,7 +203,7 @@ Never publish a reader's email address or any detail they didn't ask to share.
 
 **Rights line:** every book page carries, directly under the download buttons,
 `<p class="rights">&copy; YEAR Sharyn Underhill. All rights reserved. Published by the author;
-underhillnovels.com is the official and only authorised source of this text.</p>`, and the
+underhillnovels.com is the official home of this text.</p>`, and the
 footer reads `&copy; YEAR Sharyn Underhill. All rights reserved. Published by the author at
 underhillnovels.com.` These exist so that store reviewers (e.g. Google Play Books) can see who
 holds the rights to the text they find online.
